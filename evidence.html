@@ -1,0 +1,8604 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="coverage.html">
+      
+      
+        <link rel="next" href="source-preview.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>証拠 - LLMWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/llmwiki.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="index.html" title="LLMWiki" class="md-header__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLMWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              証拠
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="LLMWiki" class="md-nav__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLMWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作品総覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登場人物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="relations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相関関係
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="timeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出来事の流れ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="chapters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界設定
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    場所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="organizations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    組織
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="items.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アイテム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語・概念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="open-questions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    待確認情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coverage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抽出状況
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出典と原文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出典と原文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="evidence.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="項目の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ○○子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        おさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すん子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すん子嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        とん子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        トイフェルスドレック君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フロックコートの伯父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ボー・ナッシ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三介 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三平 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三毛君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三毛子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下女 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人苦沙弥先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人苦沙弥君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二十五六の薄い髯を生やした男 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        令嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        伯父 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        倫理の先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        僕 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八っちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八木さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        勘左衛門 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        叔母さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        叔父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        古井武右衛門 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吉田虎蔵 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和唐内 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学者 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ば (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ばちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊やちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多々良 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天道公平 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        妻君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        巡査 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御三 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御客さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御宮 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御師匠さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        敵 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水島 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        浅田宗伯 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        浜田平助 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烏金の長範先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        爺さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        珍客 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        珍野苦沙弥先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理野陶然 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甘木 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        私 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        縫田針作 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        美学者 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_68" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老梅 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        藤さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車夫 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋のかみさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋の黒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鄭寧 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_79" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田のじいさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の奥さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の富子さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の御母堂 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の旦那 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田夫人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田某 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木藤十郎 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        頭の禿げた爺さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        馬鹿竹 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        黒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼻子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_96" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼻子夫人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インスピレーション (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_98" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上 (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴァイオリン (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四本の麦酒 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大きな机 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        山の芋 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        山の芋の箱 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猿股 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甲割 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        羽織 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        赤いケース入りの鋏 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鉄扇 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鏡 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        北側の空地 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        南郷街道 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        台所 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吉原 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向う横丁の角屋敷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向島の阿部さんの御屋敷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向横丁 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾妻橋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        土手三番町 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大平 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大英国バスの温泉場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寝室 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        崩れた黒塀のうち (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庚申山 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庭 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日本堤分署 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_127" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書斎 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東の離れ (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        椽側 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洗湯 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        湯槽 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        牛込の山伏町 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        竹垣 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        築地 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        臥竜窟 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        落雲館 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蛸壺峠 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        越後の国は蒲原郡筍谷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        運動場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金善 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田邸 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鎌倉 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        青桐 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鞍懸村 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        首懸の松 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        個性の発展 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        個性中心の世 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_148" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夫婦雑居の損 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        朗読会 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_150" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東郷大将の比喩 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        松脂の執着心 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        碁 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_153" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衣服の重要性 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鏡の二面性 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大日本女子裁縫最高等大学院 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_157" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        朗読会 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        落雲館 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上による大事件の発生 (プロット線)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_160" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ニュートンの運動の第一法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ニュートンの運動の第二法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_162" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人間は服装で持つ (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        名目読み (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        昔の夫婦関係 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        機会の法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_166" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退屈の耐え難さ (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_167" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        出来事の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="出来事の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_168" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が初めて人間を見る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書生に投げられて気絶する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が吾輩を飼うことを許可する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が猫を物指で叩く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩は度々黒と邂逅する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_173" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋の黒が跛になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_174" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下女が第二の絵端書を持って来た
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_175" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が訪問した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月と、根津、上野、池の端、神田辺を散歩
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_177" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が神田の某亭で晩餐を食べ、正宗を飲んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が雑煮を食べる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_179" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小供に見付けられた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_180" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風子が船頭の役で朗読会を開いたが、女学生の笑い声で中断し散会した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        今朝の雑煮事件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が翻訳の話を始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が訪問する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_184" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が川に飛び込んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君を連れて摂津大掾を聞きに行こうとしたが、急に悪寒がし出して眼がぐらぐらした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が書斎から出てきて原稿を書き始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_187" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が天然居士の墓銘を書き直す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_188" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が主人の家に来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君が迷亭に不平を洩らす
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_191" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が演説の稽古を始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_192" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が絞罪の歴史について語る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_193" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が首縊りの生理作用についての演説を途中でやめて帰った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_194" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        越智東風が高輪泉岳寺でドイツ人夫婦と遭遇し、通訳に苦労して（引用文を非表示）と言って帰った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        演奏会の帰りに吾妻橋で何かあった
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫であるため人間の言語を話せない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が金田家の廊下をこっそり歩く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の妻が寒月のことを聞きに来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女が君の事を聞きに来た
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田夫婦と来客が話している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が毛布を書斎へ投げ込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が猫を椽側へ投げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_203" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が吾輩を椽側へ投げつける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_204" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が勝手口から舞い込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が博士論文の稿を起した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が近づく
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        障子が破られ赤い舌が見える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_208" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が寝室に現れる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_209" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒が古毛布を抱える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が山の芋の箱を古毛布に包む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人夫婦が熟睡している間に陰士が盗みを行う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人夫婦が巡査に盗難の状況を説明する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒が山の芋を盗んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒に逢う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人と多々良君が上野公園と芋坂へ出かける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が鼠を捕る決心をした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼠を捕るのに失敗する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が物音に驚いて起きる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が座敷に現れ、扇子を使っている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_220" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が屋根の上で卵のフライを試みた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が当世流の考を開陳し、敷島の煙を迷亭先生の顔へ吹き付ける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が女生徒の自尊自信を称賛する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風君が訪問し、挨拶する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        運動だけは取りあえずやる事に取り極めた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_225" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂狩り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂狩り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蝉取り運動
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蝉取り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_229" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        松滑り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_230" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        垣巡り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烏が三羽飛来し、列を正してとまる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が歩き出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_233" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が垣根から落ちる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が洗湯に裏口から忍び込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_235" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        苦沙弥先生が湯槽の中で真赤になってすくんでいる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_236" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君に猫の頭を撲るよう請求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君が猫の頭を敲く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君に猫を鳴くように撲るよう指示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_239" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が生徒を詰問し、生徒が言い訳をする
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下の事件が起った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が生徒の侵入を発見し追跡する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が夢から覚め、主人に蹴られる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交渉が散文的な談判で結了した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が敵の一人を生捕る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_245" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        催眠術はついに不成功に了る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が珍客の帰宅後、書斎で物思いにふける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_247" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が書斎に籠って考えている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が鏡を見つめている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が鏡を見ながら顔を触ったり、あかんべえをしたりする
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_250" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        凱旋祝賀会の開催案内
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_251" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が縫田針作からの書面を屑籠に捨てる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九年前の大地震で独仙が寄宿の二階から飛び降りて怪我をした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御三が炭を取り出して砕く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_254" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が顔を洗いに行く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ばが箸を茶碗に突き込み味噌汁をこぼす
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        馬鹿竹が地蔵に動くよう頼み、地蔵が動いた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_257" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が日本堤分署から戻る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_258" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江さんが涙を落とした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が客間へ行く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江さんが茶を供する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三人で共同して艶書を送った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君が退校になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君が頭を畳に押しつけて別れを告げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        語り手が寒月君に別の令嬢を勧める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭君と独仙君が碁盤を挟んで対局している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_266" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭君と独仙君が碁で勝負している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が話をつづける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_268" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三人が笑い、主人も笑い、独仙君は寝る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_269" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が庚申山で怪音を聞く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月に妻子がいることが判明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_271" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙君が苦沙弥の説明に同意する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_272" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が文明の不平を述べる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙君が山羊髯を気にしながら弁じ出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_274" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が古い本を読み始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_275" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三平君の結婚披露の前祝い
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_276" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が甕に落ちる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_277" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        章の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="章の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_278" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_279" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_280" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_281" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_282" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_283" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_284" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_285" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_286" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_287" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_288" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="source-preview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原文プレビュー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="項目の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ○○子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        おさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すん子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すん子嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        とん子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        トイフェルスドレック君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フロックコートの伯父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ボー・ナッシ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三介 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三平 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三毛君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三毛子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下女 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人苦沙弥先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人苦沙弥君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二十五六の薄い髯を生やした男 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        令嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        伯父 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        倫理の先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        僕 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八っちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八木さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        勘左衛門 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        叔母さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        叔父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        古井武右衛門 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吉田虎蔵 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和唐内 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学者 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ば (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ばちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊やちゃん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多々良 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天道公平 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        妻君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        巡査 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御三 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御客さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御宮 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御師匠さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        敵 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水島 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        浅田宗伯 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        浜田平助 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烏金の長範先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        爺さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        珍客 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        珍野苦沙弥先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理野陶然 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甘木 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        私 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        縫田針作 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        美学者 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_68" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老梅 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        藤さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車夫 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋のかみさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋の黒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鄭寧 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_79" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田のじいさん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の奥さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の富子さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の御母堂 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の旦那 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田夫人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田某 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木君 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鈴木藤十郎 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江嬢 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        頭の禿げた爺さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        馬鹿竹 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        黒 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼻子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_96" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼻子夫人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インスピレーション (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_98" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上 (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴァイオリン (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四本の麦酒 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大きな机 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        山の芋 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        山の芋の箱 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猿股 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甲割 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        羽織 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        赤いケース入りの鋏 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鉄扇 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鏡 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        北側の空地 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        南郷街道 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        台所 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吉原 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向う横丁の角屋敷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向島の阿部さんの御屋敷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向横丁 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾妻橋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        土手三番町 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大平 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大英国バスの温泉場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寝室 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        崩れた黒塀のうち (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庚申山 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庭 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日本堤分署 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_127" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書斎 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東の離れ (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        椽側 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洗湯 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        湯槽 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        牛込の山伏町 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        竹垣 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        築地 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        臥竜窟 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        落雲館 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蛸壺峠 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        越後の国は蒲原郡筍谷 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        運動場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金善 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田邸 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鎌倉 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        青桐 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鞍懸村 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        首懸の松 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        個性の発展 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        個性中心の世 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_148" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夫婦雑居の損 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        朗読会 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_150" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東郷大将の比喩 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        松脂の執着心 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        碁 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_153" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衣服の重要性 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鏡の二面性 (モチーフ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大日本女子裁縫最高等大学院 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_157" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        朗読会 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        落雲館 (組織)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆上による大事件の発生 (プロット線)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_160" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ニュートンの運動の第一法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ニュートンの運動の第二法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_162" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人間は服装で持つ (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        名目読み (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        昔の夫婦関係 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        機会の法則 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_166" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        退屈の耐え難さ (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_167" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        出来事の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="出来事の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_168" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が初めて人間を見る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書生に投げられて気絶する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が吾輩を飼うことを許可する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が猫を物指で叩く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩は度々黒と邂逅する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_173" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        車屋の黒が跛になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_174" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下女が第二の絵端書を持って来た
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_175" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が訪問した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月と、根津、上野、池の端、神田辺を散歩
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_177" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が神田の某亭で晩餐を食べ、正宗を飲んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が雑煮を食べる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_179" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小供に見付けられた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_180" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風子が船頭の役で朗読会を開いたが、女学生の笑い声で中断し散会した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        今朝の雑煮事件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が翻訳の話を始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が訪問する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_184" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が川に飛び込んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君を連れて摂津大掾を聞きに行こうとしたが、急に悪寒がし出して眼がぐらぐらした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が書斎から出てきて原稿を書き始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_187" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が天然居士の墓銘を書き直す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_188" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が主人の家に来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君が迷亭に不平を洩らす
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_191" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が演説の稽古を始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_192" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が絞罪の歴史について語る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_193" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が首縊りの生理作用についての演説を途中でやめて帰った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_194" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        越智東風が高輪泉岳寺でドイツ人夫婦と遭遇し、通訳に苦労して（引用文を非表示）と言って帰った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        演奏会の帰りに吾妻橋で何かあった
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫であるため人間の言語を話せない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が金田家の廊下をこっそり歩く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田の妻が寒月のことを聞きに来る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女が君の事を聞きに来た
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        金田夫婦と来客が話している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が毛布を書斎へ投げ込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が猫を椽側へ投げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_203" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が吾輩を椽側へ投げつける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_204" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が勝手口から舞い込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が博士論文の稿を起した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が近づく
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        障子が破られ赤い舌が見える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_208" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が寝室に現れる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_209" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒が古毛布を抱える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        陰士が山の芋の箱を古毛布に包む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人夫婦が熟睡している間に陰士が盗みを行う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人夫婦が巡査に盗難の状況を説明する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒が山の芋を盗んだ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        泥棒に逢う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人と多々良君が上野公園と芋坂へ出かける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が鼠を捕る決心をした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鼠を捕るのに失敗する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が物音に驚いて起きる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が座敷に現れ、扇子を使っている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_220" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が屋根の上で卵のフライを試みた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が当世流の考を開陳し、敷島の煙を迷亭先生の顔へ吹き付ける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭が女生徒の自尊自信を称賛する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        東風君が訪問し、挨拶する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        運動だけは取りあえずやる事に取り極めた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_225" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂狩り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蟷螂狩り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蝉取り運動
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蝉取り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_229" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        松滑り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_230" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        垣巡り
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烏が三羽飛来し、列を正してとまる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が歩き出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_233" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が垣根から落ちる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が洗湯に裏口から忍び込む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_235" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        苦沙弥先生が湯槽の中で真赤になってすくんでいる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_236" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君に猫の頭を撲るよう請求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        細君が猫の頭を敲く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が細君に猫を鳴くように撲るよう指示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_239" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が生徒を詰問し、生徒が言い訳をする
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下の事件が起った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が生徒の侵入を発見し追跡する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吾輩が夢から覚め、主人に蹴られる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交渉が散文的な談判で結了した
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が敵の一人を生捕る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_245" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        催眠術はついに不成功に了る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が珍客の帰宅後、書斎で物思いにふける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_247" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が書斎に籠って考えている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が鏡を見つめている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が鏡を見ながら顔を触ったり、あかんべえをしたりする
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_250" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        凱旋祝賀会の開催案内
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_251" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が縫田針作からの書面を屑籠に捨てる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九年前の大地震で独仙が寄宿の二階から飛び降りて怪我をした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        御三が炭を取り出して砕く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_254" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が顔を洗いに行く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坊ばが箸を茶碗に突き込み味噌汁をこぼす
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        馬鹿竹が地蔵に動くよう頼み、地蔵が動いた
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_257" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が日本堤分署から戻る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_258" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江さんが涙を落とした
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が客間へ行く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雪江さんが茶を供する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三人で共同して艶書を送った
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君が退校になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武右衛門君が頭を畳に押しつけて別れを告げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        語り手が寒月君に別の令嬢を勧める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭君と独仙君が碁盤を挟んで対局している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_266" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        迷亭君と独仙君が碁で勝負している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月君が話をつづける
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_268" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三人が笑い、主人も笑い、独仙君は寝る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_269" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月が庚申山で怪音を聞く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        寒月に妻子がいることが判明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_271" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙君が苦沙弥の説明に同意する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_272" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が文明の不平を述べる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独仙君が山羊髯を気にしながら弁じ出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_274" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主人が古い本を読み始める
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_275" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三平君の結婚披露の前祝い
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_276" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        猫が甕に落ちる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_277" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        章の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="章の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_278" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_279" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_280" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_281" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_282" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_283" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_284" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_285" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_286" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_287" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_288" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">証拠</h1>
+<h2 id="_2">項目の証拠</h2>
+<h3 id="_3">○○子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_4">おさん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_5">すん子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_6">すん子嬢 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_7">とん子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_8">トイフェルスドレック君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_9">フロックコートの伯父さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_10">ボー・ナッシ (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_11">三介 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_12">三平 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_13">三毛君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_14">三毛子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_15">下女 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_16">主人 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_17">主人苦沙弥先生 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_18">主人苦沙弥君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_19">二十五六の薄い髯を生やした男 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_20">令嬢 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_21">伯父 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_22">倫理の先生 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_23">僕 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_24">八っちゃん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_25">八木さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_26">勘左衛門 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_27">叔母さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_28">叔父さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_29">古井武右衛門 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_30">吉田虎蔵 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_31">吾輩 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_32">和唐内 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_33">哲学者 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_34">坊ば (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_35">坊ばちゃん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_36">坊やちゃん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_37">多々良 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_38">天道公平 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_39">女 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_40">妻君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_41">寒月 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_42">巡査 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_43">御三 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_44">御客さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_45">御宮 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_46">御師匠さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_47">敵 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_48">書生 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_49">東風 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_50">東風子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_51">武右衛門君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_52">水島 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_53">泥棒 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_54">浅田宗伯 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_55">浜田平助 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_56">烏金の長範先生 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_57">爺さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_58">独仙 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_59">珍客 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_60">珍野苦沙弥先生 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_61">理野陶然 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_62">甘木 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_63">白君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_64">私 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_65">細君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_66">縫田針作 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_67">美学者 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_68">老人 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_69">老梅 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_70">藤さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_71">蟷螂君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_72">車夫 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_73">車屋のかみさん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_74">車屋の黒 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_75">迷亭 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_76">鄭寧 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_77">金さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_78">金田 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_79">金田のじいさん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_80">金田の奥さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_81">金田の富子さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_82">金田の御母堂 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_83">金田の旦那 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_84">金田夫人 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_85">金田某 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_86">鈴木さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_87">鈴木君 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_88">鈴木藤十郎 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_89">陰士 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_90">雪江 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_91">雪江嬢 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_92">頭の禿げた爺さん (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_93">馬鹿竹 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_94">黒 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_95">鼻子 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_96">鼻子夫人 (<code>登場人物</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_97">インスピレーション (<code>用語</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_98">逆上 (<code>用語</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_99">ヴァイオリン (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_100">四本の麦酒 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_101">大きな机 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_102">山の芋 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_103">山の芋の箱 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_104">猿股 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_105">甲割 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_106">羽織 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_107">赤いケース入りの鋏 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_108">鉄扇 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_109">鏡 (<code>アイテム</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_110">北側の空地 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_111">南郷街道 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_112">台所 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_113">吉原 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_114">向う横丁の角屋敷 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_115">向島の阿部さんの御屋敷 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_116">向横丁 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_117">吾妻橋 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_118">土手三番町 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_119">大平 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_120">大英国バスの温泉場 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_121">寝室 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_122">崩れた黒塀のうち (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_123">庚申山 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_124">庭 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_125">教場 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_126">日本堤分署 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_127">書斎 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_128">東の離れ (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_129">椽側 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_130">洗湯 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_131">湯槽 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_132">牛込の山伏町 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_133">竹垣 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_134">築地 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_135">臥竜窟 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_136">落雲館 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_137">蛸壺峠 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_138">越後の国は蒲原郡筍谷 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_139">運動場 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_140">金善 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_141">金田邸 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_142">鎌倉 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_143">青桐 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_144">鞍懸村 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_145">首懸の松 (<code>場所</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_146">個性の発展 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_147">個性中心の世 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_148">夫婦雑居の損 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_149">朗読会 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_150">東郷大将の比喩 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_151">松脂の執着心 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_152">碁 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_153">衣服の重要性 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_154">逆上 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_155">鏡の二面性 (<code>モチーフ</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_156">大日本女子裁縫最高等大学院 (<code>組織</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_157">朗読会 (<code>組織</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_158">落雲館 (<code>組織</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_159">逆上による大事件の発生 (<code>プロット線</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_160">ニュートンの運動の第一法則 (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_161">ニュートンの運動の第二法則 (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_162">人間は服装で持つ (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_163">名目読み (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_164">昔の夫婦関係 (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_165">機会の法則 (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_166">退屈の耐え難さ (<code>世界ルール</code>)</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h2 id="_167">出来事の証拠</h2>
+<h3 id="_168">吾輩が初めて人間を見る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_169">書生に投げられて気絶する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_170">主人が吾輩を飼うことを許可する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_171">主人が猫を物指で叩く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_172">吾輩は度々黒と邂逅する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_173">車屋の黒が跛になる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_174">下女が第二の絵端書を持って来た</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_175">寒月が訪問した</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_176">寒月と、根津、上野、池の端、神田辺を散歩</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_177">主人が神田の某亭で晩餐を食べ、正宗を飲んだ</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_178">猫が雑煮を食べる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_179">小供に見付けられた</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_180">東風子が船頭の役で朗読会を開いたが、女学生の笑い声で中断し散会した</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_181">今朝の雑煮事件</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_182">主人が翻訳の話を始める</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_183">寒月が訪問する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_184">寒月が川に飛び込んだ</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_185">主人が細君を連れて摂津大掾を聞きに行こうとしたが、急に悪寒がし出して眼がぐらぐらした</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_186">主人が書斎から出てきて原稿を書き始める</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_187">主人が天然居士の墓銘を書き直す</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_188">迷亭が主人の家に来る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_189">細君が迷亭に不平を洩らす</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_190">寒月君が来る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_191">寒月が演説の稽古を始める</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_192">寒月が絞罪の歴史について語る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_193">寒月が首縊りの生理作用についての演説を途中でやめて帰った</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_194">越智東風が高輪泉岳寺でドイツ人夫婦と遭遇し、通訳に苦労して（引用文を非表示）と言って帰った</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_195">演奏会の帰りに吾妻橋で何かあった</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_196">猫であるため人間の言語を話せない</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_197">猫が金田家の廊下をこっそり歩く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_198">金田の妻が寒月のことを聞きに来る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_199">女が君の事を聞きに来た</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_200">金田夫婦と来客が話している</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_201">主人が毛布を書斎へ投げ込む</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_202">主人が猫を椽側へ投げる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_203">主人が吾輩を椽側へ投げつける</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_204">迷亭が勝手口から舞い込む</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_205">寒月が博士論文の稿を起した</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_206">陰士が近づく</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_207">障子が破られ赤い舌が見える</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_208">陰士が寝室に現れる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_209">泥棒が古毛布を抱える</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_210">陰士が山の芋の箱を古毛布に包む</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_211">主人夫婦が熟睡している間に陰士が盗みを行う</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_212">主人夫婦が巡査に盗難の状況を説明する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_213">泥棒が山の芋を盗んだ</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_214">泥棒に逢う</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_215">主人と多々良君が上野公園と芋坂へ出かける</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_216">吾輩が鼠を捕る決心をした</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_217">鼠を捕るのに失敗する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_218">主人が物音に驚いて起きる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_219">迷亭が座敷に現れ、扇子を使っている</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_220">迷亭が屋根の上で卵のフライを試みた</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_221">寒月君が当世流の考を開陳し、敷島の煙を迷亭先生の顔へ吹き付ける</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_222">迷亭が女生徒の自尊自信を称賛する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_223">東風君が訪問し、挨拶する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_224">運動だけは取りあえずやる事に取り極めた</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_225">蟷螂狩り</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_226">蟷螂狩り</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_227">蝉取り運動</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_228">蝉取り</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_229">松滑り</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_230">垣巡り</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_231">烏が三羽飛来し、列を正してとまる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_232">吾輩が歩き出す</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_233">吾輩が垣根から落ちる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_234">猫が洗湯に裏口から忍び込む</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_235">苦沙弥先生が湯槽の中で真赤になってすくんでいる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_236">主人が細君に猫の頭を撲るよう請求</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_237">細君が猫の頭を敲く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_238">主人が細君に猫を鳴くように撲るよう指示</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_239">主人が生徒を詰問し、生徒が言い訳をする</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_240">下の事件が起った</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_241">主人が生徒の侵入を発見し追跡する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_242">吾輩が夢から覚め、主人に蹴られる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_243">交渉が散文的な談判で結了した</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_244">主人が敵の一人を生捕る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_245">催眠術はついに不成功に了る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_246">主人が珍客の帰宅後、書斎で物思いにふける</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_247">主人が書斎に籠って考えている</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_248">主人が鏡を見つめている</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_249">主人が鏡を見ながら顔を触ったり、あかんべえをしたりする</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_250">凱旋祝賀会の開催案内</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_251">主人が縫田針作からの書面を屑籠に捨てる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_252">九年前の大地震で独仙が寄宿の二階から飛び降りて怪我をした</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_253">御三が炭を取り出して砕く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_254">主人が顔を洗いに行く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_255">坊ばが箸を茶碗に突き込み味噌汁をこぼす</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_256">馬鹿竹が地蔵に動くよう頼み、地蔵が動いた</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_257">主人が日本堤分署から戻る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_258">雪江さんが涙を落とした</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_259">主人が客間へ行く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_260">雪江さんが茶を供する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_261">三人で共同して艶書を送った</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_262">武右衛門君が退校になる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_263">武右衛門君が頭を畳に押しつけて別れを告げる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_264">語り手が寒月君に別の令嬢を勧める</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_265">迷亭君と独仙君が碁盤を挟んで対局している</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_266">迷亭君と独仙君が碁で勝負している</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_267">寒月君が話をつづける</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_268">三人が笑い、主人も笑い、独仙君は寝る</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_269">寒月が庚申山で怪音を聞く</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_270">寒月に妻子がいることが判明</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_271">独仙君が苦沙弥の説明に同意する</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_272">主人が文明の不平を述べる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_273">独仙君が山羊髯を気にしながら弁じ出す</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_274">主人が古い本を読み始める</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_275">三平君の結婚披露の前祝い</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_276">猫が甕に落ちる</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h2 id="_277">章の証拠</h2>
+<h3 id="_278">五</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_279">一</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_280">二</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_281">三</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_282">四</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_283">六</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_284">七</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_285">八</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_286">九</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_287">十</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+<h3 id="_288">十一</h3>
+<details class="quote">
+<summary>出典を確認</summary>
+<p><em>公開デモモードでは詳細な原文表示を隠しています。</em></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
