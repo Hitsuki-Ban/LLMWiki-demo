@@ -21,6 +21,43 @@
   -webkit-box-decoration-break: clone;
 }
 
+.llmwiki-evidence-chip,
+.llmwiki-source-jump {
+  align-items: center;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  color: var(--md-default-fg-color--light);
+  display: inline-flex;
+  font-size: 0.76em;
+  font-weight: 600;
+  gap: 0.2em;
+  line-height: 1.2;
+  min-height: 1.45rem;
+  padding: 0.08rem 0.32rem;
+  text-decoration: none;
+  vertical-align: 0.08em;
+  white-space: nowrap;
+}
+
+a.llmwiki-evidence-chip:hover,
+a.llmwiki-source-jump:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+a.llmwiki-evidence-chip:focus-visible,
+a.llmwiki-source-jump:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+.llmwiki-source-jump {
+  font-size: 0.82em;
+  justify-content: center;
+  min-width: 1.65rem;
+  padding-inline: 0.24rem;
+}
+
 [id^="evidence-"],
 [id^="excerpt-"] {
   scroll-margin-top: 4rem;
@@ -29,5 +66,18 @@
 @media screen and (max-width: 76.1875em) {
   .md-header__title--active .md-header__topic:first-child {
     display: none;
+  }
+
+  a.llmwiki-evidence-chip,
+  a.llmwiki-source-jump {
+    min-height: 2.75rem;
+  }
+
+  a.llmwiki-evidence-chip {
+    padding-inline: 0.55rem;
+  }
+
+  a.llmwiki-source-jump {
+    min-width: 2.75rem;
   }
 }
