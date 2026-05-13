@@ -1,0 +1,1408 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>原文 - LLMWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/llmwiki.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../index.html" title="LLMWiki" class="md-header__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLMWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              原文
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="LLMWiki" class="md-nav__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLMWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作品総覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登場人物
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    登場人物
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-5520ea38445f.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ジョバンニ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-b9a96c47482a.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カムパネルラ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-72c402e803a2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ザネリ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-64c62dc21287.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    女の子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-b214cc8c9c0d.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カムパネルラのお父さん
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-a0c5fa2d9f7c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    青年
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-e175d0e007a1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鳥捕り
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/others.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    その他の登場人物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相関関係
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出来事の流れ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界設定
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../locations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    場所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    組織
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アイテム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語・概念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-questions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    待確認情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coverage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抽出状況
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出典と原文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出典と原文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evidence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../source-preview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文 1（第2部）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本文 1（第2部）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 9
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 16
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">原文</h1>
+<h2 id="12">本文 1（第2部）</h2>
+<p>第2部 / 全3部</p>
+<p><span class="llmwiki-source-meta">本文区間数: 8</span></p>
+<p><a id="excerpt-9"></a></p>
+<h3 id="9">本文区間 9</h3>
+<p><span class="llmwiki-source-meta">本文区間 9 ・ 文字位置: 17600-20000</span></p>
+<div class="llmwiki-source-text">そんな苦情は、おれのとこへ持って来たって仕方がねえや、ばさばさのマントを着て脚と口との途方もなく細い大将へやれって、斯う云ってやりましたがね、はっは。」<br>
+　すすきがなくなったために、向うの野原から、ぱっとあかりが射して来ました。<br>
+「鷺の方はなぜ手数なんですか。」<span id="evidence-17731-17737"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>は、さっきから、訊こうと思っていたのです。<br>
+「それはね、鷺を喰べるには、」<span id="evidence-17774-17777"></span><mark class="llmwiki-source-evidence">鳥捕り</mark>は、こっちに向き直りました。<br>
+「天の川の水あかりに、十日もつるして置くかね、そうでなけぁ、砂に三四日うずめなけぁいけないんだ。そうすると、水銀がみんな蒸発して、喰べられるようになるよ。」<br>
+「こいつは鳥じゃない。ただのお菓子でしょう。」やっぱりおなじことを考えていたとみえて、カムパネルラが、思い切ったというように、尋ねました。鳥捕りは、何か大へんあわてた風で、<br>
+「そうそう、ここで降りなけぁ。」と云いながら、立って荷物をとったと思うと、もう見えなくなっていました。<br>
+「どこへ行ったんだろう。」<br>
+　二人は顔を見合せましたら、燈台守は、にやにや笑って、少し伸びあがるようにしながら、二人の横の窓の外をのぞきました。二人もそっちを見ましたら、たったいまの鳥捕りが、黄いろと青じろの、うつくしい燐光を出す、いちめんのかわらははこぐさの上に立って、まじめな顔をして両手をひろげて、じっとそらを見ていたのです。<br>
+「あすこへ行ってる。ずいぶん奇体だねえ。きっとまた鳥をつかまえるとこだねえ。汽車が走って行かないうちに、早く鳥がおりるといいな。」と云った途端、がらんとした桔梗いろの空から、さっき見たような鷺が、まるで雪の降るように、ぎゃあぎゃあ叫びながら、いっぱいに舞いおりて来ました。するとあの鳥捕りは、すっかり注文通りだというようにほくほくして、両足をかっきり六十度に開いて立って、鷺のちぢめて降りて来る黒い脚を両手で片っ端から押えて、布の袋の中に入れるのでした。すると鷺は、蛍のように、袋の中でしばらく、青くぺかぺか光ったり消えたりしていましたが、おしまいとうとう、みんなぼんやり白くなって、眼をつぶるのでした。ところが、つかまえられる鳥よりは、つかまえられないで無事に天の川の砂の上に降りるものの方が多かったのです。それは見ていると、足が砂へつくや否や、まるで雪の融けるように、縮まって扁べったくなって、間もなく熔鉱炉から出た銅の汁のように、砂や砂利の上にひろがり、しばらくは鳥の形が、砂についているのでしたが、それも二三度明るくなったり暗くなったりしているうちに、もうすっかりまわりと同じいろになってしまうのでした。<br>
+　鳥捕りは二十疋ばかり、袋に入れてしまうと、急に両手をあげて、兵隊が鉄砲弾にあたって、死ぬときのような形をしました。と思ったら、もうそこに鳥捕りの形はなくなって、却って、<br>
+「ああせいせいした。どうもからだに恰度合うほど稼いでいるくらい、いいことはありませんな。」というききおぼえのある声が、<span id="evidence-18829-18834"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>の隣りにしました。見ると鳥捕りは、もうそこでとって来た鷺を、きちんとそろえて、一つずつ重ね直しているのでした。<br>
+「どうしてあすこから、いっぺんにここへ来たんですか。」ジョバンニが、なんだかあたりまえのような、あたりまえでないような、おかしな気がして問いました。<br>
+「どうしてって、来ようとしたから来たんです。ぜんたいあなた方は、どちらからおいでですか。」<br>
+　ジョバンニは、すぐ返事しようと思いましたけれども、さあ、ぜんたいどこから来たのか、もうどうしても考えつきませんでした。カムパネルラも、顔をまっ赤にして何か思い出そうとしているのでした。<br>
+「ああ、遠くからですね。」鳥捕りは、わかったというように雑作なくうなずきました。<br>
+<br>
+<span id="evidence-19147-19157"></span><mark class="llmwiki-source-evidence">九、ジョバンニの切符</mark><br>
+<br>
+「もうここらは<span id="evidence-19166-19169"></span><mark class="llmwiki-source-evidence">白鳥区</mark>のおしまいです。ごらんなさい。あれが名高い<span id="evidence-19190-19199"></span><mark class="llmwiki-source-evidence">アルビレオの観測所</mark>です。」<br>
+　窓の外の、まるで花火でいっぱいのような、あまの川のまん中に、黒い大きな建物が四棟ばかり立って、その一つの平屋根の上に、眼もさめるような、青宝玉と黄玉の大きな二つのすきとおった球が、輪になってしずかにくるくるとまわっていました。黄いろのがだんだん向うへまわって行って、青い小さいのがこっちへ進んで来、間もなく二つのはじは、重なり合って、きれいな緑いろの両面凸レンズのかたちをつくり、それもだんだん、まん中がふくらみ出して、とうとう青いのは、すっかりトパースの正面に来ましたので、緑の中心と黄いろな明るい環とができました。それがまただんだん横へ外れて、前のレンズの形を逆に繰り返し、とうとうすっとはなれて、サファイアは向うへめぐり、黄いろのはこっちへ進み、また丁度さっきのような風になりました。銀河の、かたちもなく音もない水にかこまれて、ほんとうにその黒い測候所が、睡っているように、しずかによこたわったのです。<br>
+「あれは、水の速さをはかる器械です。水も……。」鳥捕りが云いかけたとき、<br>
+「切符を拝見いたします。」三人の席の横に、赤い帽子をかぶったせいの高い車掌が、いつかまっすぐに立っていて云いました。鳥捕りは、だまってかくしから、小さな紙きれを出しました。車掌はちょっと見て、すぐ眼をそらして、（あなた方のは？）というように、指をうごかしながら、手をジョバンニたちの方へ出しました。<br>
+「さあ、」ジョバンニは困って、もじもじしていましたら、カムパネルラは、わけもないという風で、小さな鼠いろの切符を出しました。ジョバンニは、すっかりあわててしまって、もしか上着のポケットにでも、入っていたかとおもいながら、手を入れて見ましたら、何か大きな畳んだ紙きれにあたりました。こんなもの入っていたろうかと思って、急いで出してみましたら、それは四つに折ったはがきぐらいの大きさの緑いろの紙でした。車掌が手</div>
+
+<p><a id="excerpt-10"></a></p>
+<h3 id="10">本文区間 10</h3>
+<p><span class="llmwiki-source-meta">本文区間 10 ・ 文字位置: 19800-22200</span></p>
+<div class="llmwiki-source-text">、」<span id="evidence-19802-19807"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>は困って、もじもじしていましたら、<span id="evidence-19824-19830"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>は、わけもないという風で、小さな鼠いろの切符を出しました。ジョバンニは、すっかりあわててしまって、もしか上着のポケットにでも、入っていたかとおもいながら、手を入れて見ましたら、何か大きな畳んだ紙きれにあたりました。こんなもの入っていたろうかと思って、急いで出してみましたら、それは四つに折ったはがきぐらいの大きさの<span id="evidence-19987-19992"></span><mark class="llmwiki-source-evidence">緑いろの紙</mark>でした。車掌が手を出しているもんですから何でも構わない、やっちまえと思って渡しましたら、車掌はまっすぐに立ち直って叮寧にそれを開いて見ていました。そして読みながら上着のぼたんやなんかしきりに直したりしていましたし燈台看守も下からそれを熱心にのぞいていましたから、ジョバンニはたしかにあれは証明書か何かだったと考えて少し胸が熱くなるような気がしました。<br>
+「これは三次空間の方からお持ちになったのですか。」車掌がたずねました。<br>
+「何だかわかりません。」もう大丈夫だと安心しながらジョバンニはそっちを見あげてくつくつ笑いました。<br>
+「よろしゅうございます。南十字へ着きますのは、次の第三時ころになります。」車掌は紙をジョバンニに渡して向うへ行きました。<br>
+　カムパネルラは、その紙切れが何だったか待ち兼ねたというように急いでのぞきこみました。ジョバンニも全く早く見たかったのです。ところがそれはいちめん黒い唐草のような模様の中に、おかしな十ばかりの字を印刷したものでだまって見ていると何だかその中へ吸い込まれてしまうような気がするのでした。すると<span id="evidence-20460-20463"></span><mark class="llmwiki-source-evidence">鳥捕り</mark>が横からちらっとそれを見てあわてたように云いました。<br>
+「おや、こいつは大したもんですぜ。こいつはもう、ほんとうの天上へさえ行ける切符だ。天上どこじゃない、どこでも勝手にあるける通行券です。こいつをお持ちになれぁ、なるほど、こんな不完全な幻想第四次の銀河鉄道なんか、どこまででも行ける筈でさあ、あなた方大したもんですね。」<br>
+「何だかわかりません。」ジョバンニが赤くなって答えながらそれを又畳んでかくしに入れました。そしてきまりが悪いのでカムパネルラと二人、また窓の外をながめていましたが、その鳥捕りの時々大したもんだというようにちらちらこっちを見ているのがぼんやりわかりました。<br>
+「もうじき鷲の停車場だよ。」カムパネルラが向う岸の、三つならんだ小さな青じろい三角標と地図とを見較べて云いました。<br>
+　ジョバンニはなんだかわけもわからずににわかにとなりの鳥捕りが気の毒でたまらなくなりました。鷺をつかまえてせいせいしたとよろこんだり、白いきれでそれをくるくる包んだり、ひとの切符をびっくりしたように横目で見てあわててほめだしたり、そんなことを一一考えていると、もうその見ず知らずの鳥捕りのために、ジョバンニの持っているものでも食べるものでもなんでもやってしまいたい、もうこの人のほんとうの幸になるなら自分があの光る天の川の河原に立って百年つづけて立って鳥をとってやってもいいというような気がして、どうしてももう黙っていられなくなりました。ほんとうにあなたのほしいものは一体何ですか、と訊こうとして、それではあんまり出し抜けだから、どうしようかと考えて振り返って見ましたら、そこにはもうあの鳥捕りが居ませんでした。網棚の上には白い荷物も見えなかったのです。また窓の外で足をふんばってそらを見上げて鷺を捕る支度をしているのかと思って、急いでそっちを見ましたが、外はいちめんのうつくしい砂子と白いすすきの波ばかり、あの鳥捕りの広いせなかも尖った帽子も見えませんでした。<br>
+「あの人どこへ行ったろう。」カムパネルラもぼんやりそう云っていました。<br>
+「どこへ行ったろう。一体どこでまたあうのだろう。僕はどうしても少しあの人に物を言わなかったろう。」<br>
+「ああ、僕もそう思っているよ。」<br>
+「僕はあの人が邪魔なような気がしたんだ。だから僕は大へんつらい。」ジョバンニはこんな変てこな気もちは、ほんとうにはじめてだし、こんなこと今まで云ったこともないと思いました。<br>
+「何だか苹果の匂がする。僕いま苹果のこと考えたためだろうか。」カムパネルラが不思議そうにあたりを見まわしました。<br>
+「ほんとうに苹果の匂だよ。それから野茨の匂もする。」ジョバンニもそこらを見ましたがやっぱりそれは窓からでも入って来るらしいのでした。いま秋だから野茨の花の匂のする筈はないとジョバンニは思いました。<br>
+　そしたら俄かにそこに、つやつやした黒い髪の六つばかりの男の子が赤いジャケツのぼたんもかけずひどくびっくりしたような顔をしてがたがたふるえてはだしで立っていました。隣りには黒い洋服をきちんと着たせいの高い青年が一ぱいに風に吹かれているけやきの木のような姿勢で、男の子の手をしっかりひいて立っていました。<br>
+「あら、ここどこでしょう。まあ、きれいだわ。」青年のうしろにもひとり十二ばかりの眼の茶いろな可愛らしい女の子が黒い外套を着て青年の腕にすがって不思議そうに窓の外を見ているのでした。<br>
+「ああ、ここはランカシャイヤだ。いや、コンネクテカット州だ。いや、ああ、ぼくたちはそらへ来たのだ。わたしたちは天へ行くのです。ごらんなさい。あのしるしは天上のしるしです。もうなんにもこわいことありません。わたくしたちは神さまに召されているのです。」黒服の青年はよろこびにかがやいてその女の子に云いました。けれどもなぜかまた額に深く皺を刻んで、それに大へんつかれているらしく、無理に笑いながら男の子をジョバンニのとなりに座らせました。<br>
+　それから女の子にやさしくカムパネルラのとなりの席を指さしました。女の子はすなおにそこへ座って、きちんと両手を組み合せました。<br>
+「ぼくおおねえさんのとこへ行くんだよう。」腰掛けたばかりの男の子は顔を変にし</div>
+
+<p><a id="excerpt-11"></a></p>
+<h3 id="11">本文区間 11</h3>
+<p><span class="llmwiki-source-meta">本文区間 11 ・ 文字位置: 22000-24400</span></p>
+<div class="llmwiki-source-text">のです。」<span id="evidence-22005-22010"></span><mark class="llmwiki-source-evidence">黒服の青年</mark>はよろこびにかがやいてその<span id="evidence-22023-22026"></span><mark class="llmwiki-source-evidence">女の子</mark>に云いました。けれどもなぜかまた額に深く皺を刻んで、それに大へんつかれているらしく、無理に笑いながら<span id="evidence-22076-22079"></span><mark class="llmwiki-source-evidence">男の子</mark>を<span id="evidence-22080-22085"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>のとなりに座らせました。<br>
+　それから女の子にやさしく<span id="evidence-22111-22117"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>のとなりの席を指さしました。女の子はすなおにそこへ座って、きちんと両手を組み合せました。<br>
+「ぼくおおねえさんのとこへ行くんだよう。」腰掛けたばかりの男の子は顔を変にして燈台看守の向うの席に座ったばかりの青年に云いました。青年は何とも云えず悲しそうな顔をして、じっとその子の、ちぢれてぬれた頭を見ました。女の子は、いきなり両手を顔にあててしくしく泣いてしまいました。<br>
+「お父さんやきくよねえさんはまだいろいろお仕事があるのです。けれどももうすぐあとからいらっしゃいます。それよりも、おっかさんはどんなに永く待っていらっしゃったでしょう。わたしの大事なタダシはいまどんな歌をうたっているだろう、雪の降る朝にみんなと手をつないでぐるぐるにわとこのやぶをまわってあそんでいるだろうかと考えたりほんとうに待って心配していらっしゃるんですから、早く行っておっかさんにお目にかかりましょうね。」<br>
+「うん、だけど僕、船に乗らなけぁよかったなあ。」<br>
+「ええ、けれど、ごらんなさい、そら、どうです、あの立派な川、ね、あすこはあの夏中、ツインクル、ツインクル、リトル、スター　をうたってやすむとき、いつも窓からぼんやり白く見えていたでしょう。あすこですよ。ね、きれいでしょう、あんなに光っています。」<br>
+　泣いていた姉もハンケチで眼をふいて外を見ました。青年は教えるようにそっと姉弟にまた云いました。<br>
+「わたしたちはもうなんにもかなしいことないのです。わたしたちはこんないいとこを旅して、じき神さまのとこへ行きます。そこならもうほんとうに明るくて匂がよくて立派な人たちでいっぱいです。そしてわたしたちの代りにボートへ乗れた人たちは、きっとみんな助けられて、心配して待っているめいめいのお父さんやお母さんや自分のお家へやら行くのです。さあ、もうじきですから元気を出しておもしろくうたって行きましょう。」青年は男の子のぬれたような黒い髪をなで、みんなを慰めながら、自分もだんだん顔いろがかがやいて来ました。<br>
+「あなた方はどちらからいらっしゃったのですか。どうなすったのですか。」さっきの燈台看守がやっと少しわかったように青年にたずねました。青年はかすかにわらいました。<br>
+「いえ、氷山にぶっつかって船が沈みましてね、わたしたちはこちらのお父さんが急な用で二ヶ月前一足さきに本国へお帰りになったのであとから発ったのです。私は大学へはいっていて、家庭教師にやとわれていたのです。ところがちょうど十二日目、今日か昨日のあたりです、船が氷山にぶっつかって一ぺんに傾きもう沈みかけました。月のあかりはどこかぼんやりありましたが、霧が非常に深かったのです。ところがボートは左舷の方半分はもうだめになっていましたから、とてもみんなは乗り切らないのです。もうそのうちにも船は沈みますし、私は必死となって、どうか小さな人たちを乗せて下さいと叫びました。近くの人たちはすぐみちを開いてそして子供たちのために祈って呉れました。けれどもそこからボートまでのところにはまだまだ小さな子どもたちや親たちやなんか居て、とても押しのける勇気がなかったのです。それでもわたくしはどうしてもこの方たちをお助けするのが私の義務だと思いましたから前にいる子供らを押しのけようとしました。けれどもまたそんなにして助けてあげるよりはこのまま神のお前にみんなで行く方がほんとうにこの方たちの幸福だとも思いました。それからまたその神にそむく罪はわたくしひとりでしょってぜひとも助けてあげようと思いました。けれどもどうして見ているとそれができないのでした。子どもらばかりボートの中へはなしてやってお母さんが狂気のようにキスを送りお父さんがかなしいのをじっとこらえてまっすぐに立っているなどとてももう腸もちぎれるようでした。そのうち船はもうずんずん沈みますから、私はもうすっかり覚悟してこの人たち二人を抱いて、浮べるだけは浮ぼうとかたまって船の沈むのを待っていました。誰が投げたかライフブイが一つ飛んで来ましたけれども滑ってずうっと向うへ行ってしまいました。私は一生けん命で甲板の格子になったとこをはなして、三人それにしっかりとりつきました。どこからともなく〔約二字分空白〕番の声があがりました。たちまちみんなはいろいろな国語で一ぺんにそれをうたいました。そのとき俄かに大きな音がして私たちは水に落ちもう渦に入ったと思いながらしっかりこの人たちをだいてそれからぼうっとしたと思ったらもうここへ来ていたのです。この方たちのお母さんは一昨年没くなられました。ええボートはきっと助かったにちがいありません、何せよほど熟練な水夫たちが漕いですばやく船からはなれていましたから。」<br>
+　そこらから小さないのりの声が聞えジョバンニもカムパネルラもいままで忘れていたいろいろのことをぼんやり思い出して眼が熱くなりました。<br>
+（ああ、その大きな海はパシフィックというのではなかったろうか。その氷山の流れる北のはての海で、小さな船に乗って、風や凍りつく潮水や、烈しい寒さとたたかって、たれかが一生けんめいはたらいている。ぼくはそのひとにほんとうに気の毒でそしてすまないような気がする。ぼくはそのひとのさいわいのためにいったいどうしたらいいのだろう。）ジョバンニは首を垂れて、すっかりふさぎ込んでしまいました。<br>
+「なにがしあわせかわからないです。ほんとうにどんなつらいことでもそれがただしいみちを進む中でのできごとなら峠の上りも下りもみんなほんとうの幸福に近づく一あしずつ</div>
+
+<p><a id="excerpt-12"></a></p>
+<h3 id="12_1">本文区間 12</h3>
+<p><span class="llmwiki-source-meta">本文区間 12 ・ 文字位置: 24200-26600</span></p>
+<div class="llmwiki-source-text">とたたかって、たれかが一生けんめいはたらいている。ぼくはそのひとにほんとうに気の毒でそしてすまないような気がする。ぼくはそのひとのさいわいのためにいったいどうしたらいいのだろう。）<span id="evidence-24290-24295"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>は首を垂れて、すっかりふさぎ込んでしまいました。<br>
+「なにがしあわせかわからないです。ほんとうにどんなつらいことでもそれがただしいみちを進む中でのできごとなら峠の上りも下りもみんなほんとうの幸福に近づく一あしずつですから。」<br>
+　<span id="evidence-24408-24411"></span><mark class="llmwiki-source-evidence">燈台守</mark>がなぐさめていました。<br>
+「ああそうです。ただいちばんのさいわいに至るためにいろいろのかなしみもみんなおぼしめしです。」<br>
+　<span id="evidence-24472-24474"></span><mark class="llmwiki-source-evidence">青年</mark>が祈るようにそう答えました。<br>
+　そしてあの姉弟はもうつかれてめいめいぐったり席によりかかって睡っていました。さっきのあのはだしだった足にはいつか白い柔らかな靴をはいていたのです。<br>
+　ごとごとごとごと汽車はきらびやかな燐光の川の岸を進みました。向うの方の窓を見ると、野原はまるで幻燈のようでした。百も千もの大小さまざまの三角標、その大きなものの上には赤い点点をうった測量旗も見え、野原のはてはそれらがいちめん、たくさんたくさん集ってぼおっと青白い霧のよう、そこからかまたはもっと向うからかときどきさまざまの形のぼんやりした狼煙のようなものが、かわるがわるきれいな桔梗いろのそらにうちあげられるのでした。じつにそのすきとおった奇麗な風は、ばらの匂でいっぱいでした。<br>
+「いかがですか。こういう苹果はおはじめてでしょう。」向うの席の燈台看守がいつか黄金と紅でうつくしくいろどられた大きな苹果を落さないように両手で膝の上にかかえていました。<br>
+「おや、どっから来たのですか。立派ですねえ。ここらではこんな苹果ができるのですか。」青年はほんとうにびっくりしたらしく燈台看守の両手にかかえられた一もりの苹果を眼を細くしたり首をまげたりしながらわれを忘れてながめていました。<br>
+「いや、まあおとり下さい。どうか、まあおとり下さい。」<br>
+　青年は一つとってジョバンニたちの方をちょっと見ました。<br>
+「さあ、向うの坊ちゃんがた。いかがですか。おとり下さい。」<br>
+　ジョバンニは坊ちゃんといわれたのですこししゃくにさわってだまっていましたが<span id="evidence-25128-25134"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>は<br>
+「ありがとう、」と云いました。すると青年は自分でとって一つずつ二人に送ってよこしましたのでジョバンニも立ってありがとうと云いました。<br>
+　燈台看守はやっと両腕があいたのでこんどは自分で一つずつ睡っている姉弟の膝にそっと置きました。<br>
+「どうもありがとう。どこでできるのですか。こんな立派な苹果は。」<br>
+　青年はつくづく見ながら云いました。<br>
+「<span id="evidence-25304-25354"></span><mark class="llmwiki-source-evidence">この辺ではもちろん農業はいたしますけれども大ていひとりでにいいものができるような約束になって居ります</mark>。農業だってそんなに骨は折れはしません。たいてい自分の望む種子さえ播けばひとりでにどんどんできます。<span id="evidence-25404-25438"></span><mark class="llmwiki-source-evidence">米だってパシフィック辺のように殻もないし十倍も大きくて匂もいいのです</mark>。けれどもあなたがたのいらっしゃる方なら農業はもうありません。苹果だってお菓子だってかすが少しもありませんからみんなそのひとそのひとによってちがったわずかのいいかおりになって毛あなからちらけてしまうのです。」<br>
+　にわかに男の子がぱっちり眼をあいて云いました。<br>
+「ああぼくいまお母さんの夢をみていたよ。お母さんがね立派な戸棚や本のあるとこに居てね、ぼくの方を見て手をだしてにこにこにこにこわらったよ。ぼくおっかさん。りんごをひろってきてあげましょうか云ったら眼がさめちゃった。ああここさっきの汽車のなかだねえ。」<br>
+「その苹果がそこにあります。このおじさんにいただいたのですよ。」青年が云いました。<br>
+「ありがとうおじさん。おや、<span id="evidence-25750-25753"></span><mark class="llmwiki-source-evidence">かおる</mark>ねえさんまだねてるねえ、ぼくおこしてやろう。ねえさん。ごらん、りんごをもらったよ。おきてごらん。」<br>
+　姉はわらって眼をさましまぶしそうに両手を眼にあててそれから苹果を見ました。男の子はまるでパイを喰べるようにもうそれを喰べていました、また折角剥いたそのきれいな皮も、くるくるコルク抜きのような形になって床へ落ちるまでの間にはすうっと、灰いろに光って蒸発してしまうのでした。<br>
+　二人はりんごを大切にポケットにしまいました。<br>
+　川下の向う岸に青く茂った大きな林が見え、その枝には熟してまっ赤に光る円い実がいっぱい、その林のまん中に高い高い三角標が立って、森の中からはオーケストラベルやジロフォンにまじって何とも云えずきれいな音いろが、とけるように浸みるように風につれて流れて来るのでした。<br>
+　青年はぞくっとしてからだをふるうようにしました。<br>
+　だまってその譜を聞いていると、そこらにいちめん黄いろやうすい緑の明るい野原か敷物かがひろがり、またまっ白な蝋のような露が太陽の面を擦めて行くように思われました。<br>
+「まあ、あの烏。」カムパネルラのとなりのかおると呼ばれた女の子が叫びました。<br>
+「からすでない。みんなかささぎだ。」カムパネルラがまた何気なく叱るように叫びましたので、ジョバンニはまた思わず笑い、女の子はきまり悪そうにしました。まったく河原の青じろいあかりの上に、黒い鳥がたくさんたくさんいっぱいに列になってとまってじっと川の微光を受けているのでした。<br>
+「かささぎですねえ、頭のうしろのとこに毛がぴんと延びてますから。」青年はとりなすように云いました。<br>
+　向うの青い森の中の三角標はすっかり汽車の正面に来ました。そのとき汽車のずうっとうしろの方からあの聞きなれた〔約二字分空白〕番の讃美歌のふしが聞えてきました。よほどの人数で合唱しているらしいのでした。青年はさっと顔いろが青ざめ、たって一ぺんそっちへ行きそうにしましたが思いかえしてまた座りました。かおる子はハンケチを顔にあててしまいました。</div>
+
+<p><a id="excerpt-13"></a></p>
+<h3 id="13">本文区間 13</h3>
+<p><span class="llmwiki-source-meta">本文区間 13 ・ 文字位置: 26400-28800</span></p>
+<div class="llmwiki-source-text">がぴんと延びてますから。」青年はとりなすように云いました。<br>
+　向うの青い森の中の三角標はすっかり汽車の正面に来ました。そのとき汽車のずうっとうしろの方からあの聞きなれた〔約二字分空白〕番の讃美歌のふしが聞えてきました。よほどの人数で合唱しているらしいのでした。青年はさっと顔いろが青ざめ、たって一ぺんそっちへ行きそうにしましたが思いかえしてまた座りました。<span id="evidence-26578-26582"></span><mark class="llmwiki-source-evidence">かおる子</mark>はハンケチを顔にあててしまいました。<span id="evidence-26600-26605"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>まで何だか鼻が変になりました。けれどもいつともなく誰ともなくその歌は歌い出されだんだんはっきり強くなりました。思わずジョバンニも<span id="evidence-26669-26675"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>も一緒にうたい出したのです。<br>
+　そして青い橄欖の森が見えない天の川の向うにさめざめと光りながらだんだんうしろの方へ行ってしまいそこから流れて来るあやしい楽器の音ももう汽車のひびきや風の音にすり耗らされてずうっとかすかになりました。<br>
+「あ孔雀が居るよ。」<br>
+「ええたくさん居たわ。」<span id="evidence-26814-26817"></span><mark class="llmwiki-source-evidence">女の子</mark>がこたえました。<br>
+　ジョバンニはその小さく小さくなっていまはもう一つの緑いろの貝ぼたんのように見える森の上にさっさっと青じろく時々光ってその孔雀がはねをひろげたりとじたりする光の反射を見ました。<br>
+「そうだ、孔雀の声だってさっき聞えた。」カムパネルラがかおる子に云いました。<br>
+「ええ、三十疋ぐらいはたしかに居たわ。ハープのように聞えたのはみんな孔雀よ。」女の子が答えました。ジョバンニは俄かに何とも云えずかなしい気がして思わず<br>
+「<span id="evidence-27031-27055"></span><mark class="llmwiki-source-evidence">カムパネルラ、ここからはねおりて遊んで行こうよ。</mark>」とこわい顔をして云おうとしたくらいでした。<br>
+　川は二つにわかれました。そのまっくらな島のまん中に高い高いやぐらが一つ組まれてその上に一人の寛い服を着て赤い帽子をかぶった男が立っていました。そして両手に赤と青の旗をもってそらを見上げて信号しているのでした。ジョバンニが見ている間その人はしきりに赤い旗をふっていましたが俄かに赤旗をおろしてうしろにかくすようにし青い旗を高く高くあげてまるでオーケストラの指揮者のように烈しく振りました。すると空中にざあっと雨のような音がして何かまっくらなものがいくかたまりもいくかたまりも鉄砲丸のように川の向うの方へ飛んで行くのでした。ジョバンニは思わず窓からからだを半分出してそっちを見あげました。美しい美しい桔梗いろのがらんとした空の下を実に何万という小さな鳥どもが幾組も幾組もめいめいせわしくせわしく鳴いて通って行くのでした。<br>
+「鳥が飛んで行くな。」ジョバンニが窓の外で云いました。<br>
+「どら、」カムパネルラもそらを見ました。そのときあのやぐらの上のゆるい服の男は俄かに赤い旗をあげて狂気のようにふりうごかしました。するとぴたっと鳥の群は通らなくなりそれと同時にぴしゃぁんという潰れたような音が川下の方で起ってそれからしばらくしいんとしました。と思ったらあの赤帽の信号手がまた青い旗をふって叫んでいたのです。<br>
+「いまこそわたれわたり鳥、いまこそわたれわたり鳥。」その声もはっきり聞えました。それといっしょにまた幾万という鳥の群がそらをまっすぐにかけたのです。二人の顔を出しているまん中の窓からあの女の子が顔を出して美しい頬をかがやかせながらそらを仰ぎました。<br>
+「まあ、この鳥、たくさんですわねえ、あらまあそらのきれいなこと。」女の子はジョバンニにはなしかけましたけれどもジョバンニは生意気ないやだいと思いながらだまって口をむすんでそらを見あげていました。女の子は小さくほっと息をしてだまって席へ戻りました。カムパネルラが気の毒そうに窓から顔を引っ込めて地図を見ていました。<br>
+「あの人鳥へ教えてるんでしょうか。」女の子がそっとカムパネルラにたずねました。<br>
+「わたり鳥へ信号してるんです。きっとどこからかのろしがあがるためでしょう。」カムパネルラが少しおぼつかなそうに答えました。そして車の中はしぃんとなりました。ジョバンニはもう頭を引っ込めたかったのですけれども明るいとこへ顔を出すのがつらかったのでだまってこらえてそのまま立って口笛を吹いていました。<br>
+（どうして僕はこんなにかなしいのだろう。僕はもっとこころもちをきれいに大きくもたなければいけない。あすこの岸のずうっと向うにまるでけむりのような小さな青い火が見える。あれはほんとうにしずかでつめたい。僕はあれをよく見てこころもちをしずめるんだ。）ジョバンニは熱って痛いあたまを両手で押えるようにしてそっちの方を見ました。（ああほんとうにどこまでもどこまでも僕といっしょに行くひとはないだろうか。カムパネルラだってあんな女の子とおもしろそうに談しているし僕はほんとうにつらいなあ。）ジョバンニの眼はまた泪でいっぱいになり天の川もまるで遠くへ行ったようにぼんやり白く見えるだけでした。<br>
+　そのとき汽車はだんだん川からはなれて崖の上を通るようになりました。向う岸もまた黒いいろの崖が川の岸を下流に下るにしたがってだんだん高くなって行くのでした。そしてちらっと大きなとうもろこしの木を見ました。その葉はぐるぐるに縮れ葉の下にはもう美しい緑いろの大きな苞が赤い毛を吐いて真珠のような実もちらっと見えたのでした。それはだんだん数を増して来てもういまは列のように崖と線路との間にならび思わずジョバンニが窓から顔を引っ込めて向う側の窓を見ましたときは美しいそらの野原の地平線のはてまでその大きなとうもろこしの木がほとんどいちめんに植えられてさやさや風にゆらぎその立派なちぢれた葉のさきからはまるでひるの間にいっぱい日光を吸った金剛石のように露がいっぱいについて赤や緑やきらきら燃えて光っているのでした。カムパネルラが「あれとうもろこしだねえ」とジョバンニに云いましたけれどもジョバンニはどうしても気持がなおりませんでし</div>
+
+<p><a id="excerpt-14"></a></p>
+<h3 id="14">本文区間 14</h3>
+<p><span class="llmwiki-source-meta">本文区間 14 ・ 文字位置: 28600-31000</span></p>
+<div class="llmwiki-source-text">込めて向う側の窓を見ましたときは美しいそらの野原の地平線のはてまでその大きなとうもろこしの木がほとんどいちめんに植えられてさやさや風にゆらぎその立派なちぢれた葉のさきからはまるでひるの間にいっぱい日光を吸った金剛石のように露がいっぱいについて赤や緑やきらきら燃えて光っているのでした。<span id="evidence-28742-28748"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>が「あれとうもろこしだねえ」と<span id="evidence-28763-28768"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>に云いましたけれどもジョバンニはどうしても気持がなおりませんでしたからただぶっきり棒に野原を見たまま「そうだろう。」と答えました。そのとき汽車はだんだんしずかになっていくつかのシグナルとてんてつ器の灯を過ぎ小さな停車場にとまりました。<br>
+　その正面の青じろい時計はかっきり第二時を示しその振子は風もなくなり汽車もうごかずしずかなしずかな野原のなかにカチッカチッと正しく時を刻んで行くのでした。<br>
+　そしてまったくその振子の音のたえまを遠くの遠くの野原のはてから、かすかなかすかな旋律が糸のように流れて来るのでした。「新世界交響楽だわ。」<span id="evidence-29034-29035"></span><mark class="llmwiki-source-evidence">姉</mark>がひとりごとのようにこっちを見ながらそっと云いました。全くもう車の中ではあの黒服の丈高い青年も誰もみんなやさしい夢を見ているのでした。<br>
+（こんなしずかないいとこで僕はどうしてもっと愉快になれないだろう。どうしてこんなにひとりさびしいのだろう。けれどもカムパネルラなんかあんまりひどい、僕といっしょに汽車に乗っていながらまるであんな<span id="evidence-29200-29203"></span><mark class="llmwiki-source-evidence">女の子</mark>とばかり談しているんだもの。僕はほんとうにつらい。）ジョバンニはまた両手で顔を半分かくすようにして向うの窓のそとを見つめていました。すきとおった硝子のような笛が鳴って汽車はしずかに動き出し、カムパネルラもさびしそうに星めぐりの口笛を吹きました。<br>
+「ええ、ええ、もうこの辺はひどい高原ですから。」うしろの方で誰かとしよりらしい人のいま眼がさめたという風ではきはき談している声がしました。<br>
+「とうもろこしだって棒で二尺も孔をあけておいてそこへ播かないと生えないんです。」<br>
+「そうですか。川まではよほどありましょうかねえ、」<br>
+「ええええ河までは二千尺から六千尺あります。もうまるでひどい峡谷になっているんです。」<br>
+　そうそうここはコロラドの高原じゃなかったろうか、ジョバンニは思わずそう思いました。カムパネルラはまださびしそうにひとり口笛を吹き、女の子はまるで絹で包んだ苹果のような顔いろをしてジョバンニの見る方を見ているのでした。突然とうもろこしがなくなって巨きな黒い野原がいっぱいにひらけました。新世界交響楽はいよいよはっきり地平線のはてから湧きそのまっ黒な野原のなかを一人のインデアンが白い鳥の羽根を頭につけたくさんの石を腕と胸にかざり小さな弓に矢を番えて一目散に汽車を追って来るのでした。<br>
+「あら、インデアンですよ。インデアンですよ。ごらんなさい。」<br>
+　<span id="evidence-29781-29786"></span><mark class="llmwiki-source-evidence">黒服の青年</mark>も眼をさましました。ジョバンニもカムパネルラも立ちあがりました。<br>
+「走って来るわ、あら、走って来るわ。追いかけているんでしょう。」<br>
+「いいえ、汽車を追ってるんじゃないんですよ。猟をするか踊るかしてるんですよ。」青年はいまどこに居るか忘れたという風にポケットに手を入れて立ちながら云いました。<br>
+　まったくインデアンは半分は踊っているようでした。第一かけるにしても足のふみようがもっと経済もとれ本気にもなれそうでした。にわかにくっきり白いその羽根は前の方へ倒れるようになりインデアンはぴたっと立ちどまってすばやく弓を空にひきました。そこから一羽の鶴がふらふらと落ちて来てまた走り出したインデアンの大きくひろげた両手に落ちこみました。インデアンはうれしそうに立ってわらいました。そしてその鶴をもってこっちを見ている影ももうどんどん小さく遠くなり電しんばしらの碍子がきらっきらっと続いて二つばかり光ってまたとうもろこしの林になってしまいました。こっち側の窓を見ますと汽車はほんとうに高い高い崖の上を走っていてその谷の底には川がやっぱり幅ひろく明るく流れていたのです。<br>
+「ええ、もうこの辺から下りです。何せこんどは一ぺんにあの水面までおりて行くんですから容易じゃありません。この傾斜があるもんですから汽車は決して向うからこっちへは来ないんです。そら、もうだんだん早くなったでしょう。」さっきの<span id="evidence-30377-30379"></span><mark class="llmwiki-source-evidence">老人</mark>らしい声が云いました。<br>
+　どんどんどんどん汽車は降りて行きました。崖のはじに鉄道がかかるときは川が明るく下にのぞけたのです。ジョバンニはだんだんこころもちが明るくなって来ました。汽車が小さな小屋の前を通ってその前にしょんぼりひとりの子供が立ってこっちを見ているときなどは思わずほうと叫びました。<br>
+　どんどんどんどん汽車は走って行きました。室中のひとたちは半分うしろの方へ倒れるようになりながら腰掛にしっかりしがみついていました。ジョバンニは思わずカムパネルラとわらいました。もうそして天の川は汽車のすぐ横手をいままでよほど激しく流れて来たらしくときどきちらちら光ってながれているのでした。うすあかい河原なでしこの花があちこち咲いていました。汽車はようやく落ち着いたようにゆっくりと走っていました。<br>
+　向うとこっちの岸に星のかたちとつるはしを書いた旗がたっていました。<br>
+「あれ何の旗だろうね。」ジョバンニがやっとものを云いました。<br>
+「さあ、わからないねえ、地図にもないんだもの。鉄の舟がおいてあるねえ。」<br>
+「ああ。」<br>
+「橋を架けるとこじゃないんでしょうか。」女の子が云いました。<br>
+「あああれ工兵の旗だねえ。架橋演習をしてるんだ。けれど兵隊のかたちが見えないねえ。」<br>
+　その時向う岸ちかくの少し下流の方で見えない天の川の水がぎらっと光って柱のように高くはねあがりどぉと烈しい音がしました。<br>
+「発破だよ、発破だよ。」カムパネルラはこおどりしました。</div>
+
+<p><a id="excerpt-15"></a></p>
+<h3 id="15">本文区間 15</h3>
+<p><span class="llmwiki-source-meta">本文区間 15 ・ 文字位置: 30800-33200</span></p>
+<div class="llmwiki-source-text">らないねえ、地図にもないんだもの。鉄の舟がおいてあるねえ。」<br>
+「ああ。」<br>
+「橋を架けるとこじゃないんでしょうか。」<span id="evidence-30857-30860"></span><mark class="llmwiki-source-evidence">女の子</mark>が云いました。<br>
+「あああれ工兵の旗だねえ。架橋演習をしてるんだ。けれど兵隊のかたちが見えないねえ。」<br>
+　その時向う岸ちかくの少し下流の方で見えない天の川の水がぎらっと光って柱のように高くはねあがりどぉと烈しい音がしました。<br>
+「<span id="evidence-30973-30982"></span><mark class="llmwiki-source-evidence">発破だよ、発破だよ</mark>。」<span id="evidence-30984-30990"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>はこおどりしました。<br>
+　その柱のようになった水は見えなくなり大きな鮭や鱒がきらっきらっと白く腹を光らせて空中に抛り出されて円い輪を描いてまた水に落ちました。<span id="evidence-31068-31073"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>はもうはねあがりたいくらい気持が軽くなって云いました。<br>
+「空の工兵大隊だ。どうだ、鱒やなんかがまるでこんなになってはねあげられたねえ。僕こんな愉快な旅はしたことない。いいねえ。」<br>
+「あの鱒なら近くで見たらこれくらいあるねえ、たくさんさかな居るんだな、この水の中に。」<br>
+「小さなお魚もいるんでしょうか。」女の子が談につり込まれて云いました。<br>
+「居るんでしょう。大きなのが居るんだから小さいのもいるんでしょう。けれど遠くだからいま小さいの見えなかったねえ。」ジョバンニはもうすっかり機嫌が直って面白そうにわらって女の子に答えました。<br>
+「あれきっと<span id="evidence-31344-31356"></span><mark class="llmwiki-source-evidence">双子のお星さまのお宮だよ</mark>。」<span id="evidence-31358-31361"></span><mark class="llmwiki-source-evidence">男の子</mark>がいきなり窓の外をさして叫びました。<br>
+　右手の低い丘の上に小さな水晶ででもこさえたような二つのお宮がならんで立っていました。<br>
+「双子のお星さまのお宮って何だい。」<br>
+「あたし前になんべんもお母さんから聴いたわ。ちゃんと小さな水晶のお宮で二つならんでいるからきっとそうだわ。」<br>
+「はなしてごらん。双子のお星さまが何したっての。」<br>
+「ぼくも知ってらい。双子のお星さまが野原へ遊びにでてからすと喧嘩したんだろう。」<br>
+「そうじゃないわよ。あのね、天の川の岸にね、おっかさんお話なすったわ、……」<br>
+「それから彗星がギーギーフーギーギーフーて云って来たねえ。」<br>
+「いやだわたあちゃんそうじゃないわよ。それはべつの方だわ。」<br>
+「するとあすこにいま笛を吹いて居るんだろうか。」<br>
+「いま海へ行ってらあ。」<br>
+「いけないわよ。もう海からあがっていらっしゃったのよ。」<br>
+「そうそう。ぼく知ってらあ、ぼくおはなししよう。」<br>
+<br>
+　川の向う岸が俄かに赤くなりました。楊の木や何かもまっ黒にすかし出され見えない天の川の波もときどきちらちら針のように赤く光りました。まったく向う岸の野原に大きなまっ赤な火が燃されその黒いけむりは高く桔梗いろのつめたそうな天をも焦がしそうでした。ルビーよりも赤くすきとおりリチウムよりもうつくしく酔ったようになってその火は燃えているのでした。<br>
+「あれは何の火だろう。あんな赤く光る火は何を燃やせばできるんだろう。」ジョバンニが云いました。<br>
+「蝎の火だな。」カムパネルラが又地図と首っ引きして答えました。<br>
+「あら、蝎の火のことならあたし知ってるわ。」<br>
+「蝎の火ってなんだい。」ジョバンニがききました。<br>
+「蝎がやけて死んだのよ。その火がいまでも燃えてるってあたし何べんもお父さんから聴いたわ。」<br>
+「蝎って、虫だろう。」<br>
+「ええ、蝎は虫よ。だけどいい虫だわ。」<br>
+「蝎いい虫じゃないよ。僕博物館でアルコールにつけてあるの見た。尾にこんなかぎがあってそれで螫されると死ぬって先生が云ったよ。」<br>
+「そうよ。だけどいい虫だわ、お父さん斯う云ったのよ。むかしのバルドラの野原に一ぴきの蝎がいて小さな虫やなんか殺してたべて生きていたんですって。するとある日いたちに見附かって食べられそうになったんですって。さそりは一生けん命遁げて遁げたけどとうとういたちに押えられそうになったわ、そのときいきなり前に井戸があってその中に落ちてしまったわ、もうどうしてもあがられないでさそりは溺れはじめたのよ。そのときさそりは斯う云ってお祈りしたというの、<br>
+　ああ、わたしはいままでいくつのものの命をとったかわからない、そしてその私がこんどいたちにとられようとしたときはあんなに一生けん命にげた。それでもとうとうこんなになってしまった。ああなんにもあてにならない。どうしてわたしはわたしのからだをだまっていたちに呉れてやらなかったろう。そしたらいたちも一日生きのびたろうに。どうか神さま。私の心をごらん下さい。こんなにむなしく命をすてずどうかこの次にはまことのみんなの幸のために私のからだをおつかい下さい。って云ったというの。そしたらいつか蝎はじぶんのからだがまっ赤なうつくしい火になって燃えてよるのやみを照らしているのを見たって。いまでも燃えてるってお父さん仰ったわ。ほんとうにあの火それだわ。」<br>
+「そうだ。見たまえ。そこらの三角標はちょうどさそりの形にならんでいるよ。」<br>
+　ジョバンニはまったくその大きな火の向うに三つの三角標がちょうどさそりの腕のようにこっちに五つの三角標がさそりの尾やかぎのようにならんでいるのを見ました。そしてほんとうにそのまっ赤なうつくしいさそりの火は音なくあかるくあかるく燃えたのです。<br>
+　その火がだんだんうしろの方になるにつれてみんなは何とも云えずにぎやかなさまざまの楽の音や草花の匂のようなもの口笛や人々のざわざわ云う声やらを聞きました。それはもうじきちかくに町か何かがあってそこにお祭でもあるというような気がするのでした。<br>
+「ケンタウル露をふらせ。」いきなりいままで睡っていたジョバンニのとなりの男の子が向うの窓を見ながら叫んでいました。<br>
+　ああそこにはクリスマストリイのようにまっ青な唐檜かもみの木がたってその中にはたくさんのたくさんの豆電燈がまるで千の蛍でも集ったようについていました。<br>
+「ああ、そうだ、今夜ケンタウル祭だねえ。」<br>
+「ああ、ここはケンタウルの村だよ。」カムパネル</div>
+
+<p><a id="excerpt-16"></a></p>
+<h3 id="16">本文区間 16</h3>
+<p><span class="llmwiki-source-meta">本文区間 16 ・ 文字位置: 33000-35400</span></p>
+<div class="llmwiki-source-text">祭でもあるというような気がするのでした。<br>
+「ケンタウル露をふらせ。」いきなりいままで睡っていた<span id="evidence-33047-33052"></span><mark class="llmwiki-source-evidence">ジョバンニ</mark>のとなりの男の子が向うの窓を見ながら叫んでいました。<br>
+　ああそこにはクリスマストリイのようにまっ青な唐檜かもみの木がたってその中にはたくさんのたくさんの豆電燈がまるで千の蛍でも集ったようについていました。<br>
+「ああ、そうだ、今夜<span id="evidence-33165-33171"></span><mark class="llmwiki-source-evidence">ケンタウル祭</mark>だねえ。」<br>
+「ああ、ここは<span id="evidence-33184-33191"></span><mark class="llmwiki-source-evidence">ケンタウルの村</mark>だよ。」<span id="evidence-33195-33201"></span><mark class="llmwiki-source-evidence">カムパネルラ</mark>がすぐ云いました。〔以下原稿一枚？なし〕<br>
+<br>
+「ボール投げなら僕決してはずさない。」<br>
+　男の子が大威張りで云いました。<br>
+「もうじき<span id="evidence-33265-33272"></span><mark class="llmwiki-source-evidence">サウザンクロス</mark>です。おりる支度をして下さい。」青年がみんなに云いました。<br>
+「僕も少し汽車へ乗ってるんだよ。」男の子が云いました。カムパネルラのとなりの女の子はそわそわ立って支度をはじめましたけれどもやっぱりジョバンニたちとわかれたくないようなようすでした。<br>
+「ここでおりなけぁいけないのです。」青年はきちっと口を結んで男の子を見おろしながら云いました。<br>
+「厭だい。僕もう少し汽車へ乗ってから行くんだい。」<br>
+　ジョバンニがこらえ兼ねて云いました。<br>
+「僕たちと一緒に乗って行こう。僕たちどこまでだって行ける切符持ってるんだ。」<br>
+「だけどあたしたちもうここで降りなけぁいけないのよ。ここ天上へ行くとこなんだから。」女の子がさびしそうに云いました。<br>
+「天上へなんか行かなくたっていいじゃないか。ぼくたちここで天上よりももっといいとこをこさえなけぁいけないって僕の先生が云ったよ。」<br>
+「だっておっ母さんも行ってらっしゃるしそれに神さまが仰っしゃるんだわ。」<br>
+「そんな神さまうその神さまだい。」<br>
+「あなたの神さまうその神さまよ。」<br>
+「そうじゃないよ。」<br>
+「あなたの神さまってどんな神さまですか。」青年は笑いながら云いました。<br>
+「ぼくほんとうはよく知りません、けれどもそんなんでなしにほんとうのたった一人の神さまです。」<br>
+「ほんとうの神さまはもちろんたった一人です。」<br>
+「ああ、そんなんでなしにたったひとりのほんとうのほんとうの神さまです。」<br>
+「だからそうじゃありませんか。わたくしはあなた方がいまにそのほんとうの神さまの前にわたくしたちとお会いになることを祈ります。」青年はつつましく両手を組みました。女の子もちょうどその通りにしました。みんなほんとうに別れが惜しそうでその顔いろも少し青ざめて見えました。ジョバンニはあぶなく声をあげて泣き出そうとしました。<br>
+「さあもう支度はいいんですか。じきサウザンクロスですから。」<br>
+　ああそのときでした。見えない天の川のずうっと川下に青や橙やもうあらゆる光でちりばめられた十字架がまるで一本の木という風に川の中から立ってかがやきその上には青じろい雲がまるい環になって後光のようにかかっているのでした。汽車の中がまるでざわざわしました。みんなあの北の十字のときのようにまっすぐに立ってお祈りをはじめました。あっちにもこっちにも子供が瓜に飛びついたときのようなよろこびの声や何とも云いようない深いつつましいためいきの音ばかりきこえました。そしてだんだん十字架は窓の正面になりあの苹果の肉のような青じろい環の雲もゆるやかにゆるやかに繞っているのが見えました。<br>
+「ハルレヤハルレヤ。」明るくたのしくみんなの声はひびきみんなはそのそらの遠くからつめたいそらの遠くからすきとおった何とも云えずさわやかなラッパの声をききました。そしてたくさんのシグナルや電燈の灯のなかを汽車はだんだんゆるやかになりとうとう十字架のちょうどま向いに行ってすっかりとまりました。<br>
+「さあ、下りるんですよ。」青年は男の子の手をひきだんだん向うの出口の方へ歩き出しました。<br>
+「じゃさよなら。」女の子がふりかえって二人に云いました。<br>
+「さよなら。」ジョバンニはまるで泣き出したいのをこらえて怒ったようにぶっきり棒に云いました。女の子はいかにもつらそうに眼を大きくしても一度こっちをふりかえってそれからあとはもうだまって出て行ってしまいました。汽車の中はもう半分以上も空いてしまい俄かにがらんとしてさびしくなり風がいっぱいに吹き込みました。<br>
+　そして見ているとみんなはつつましく列を組んであの十字架の前の天の川のなぎさにひざまずいていました。そしてその見えない天の川の水をわたってひとりの神々しい白いきものの人が手をのばしてこっちへ来るのを二人は見ました。けれどもそのときはもう硝子の呼子は鳴らされ汽車はうごき出しと思ううちに銀いろの霧が川下の方からすうっと流れて来てもうそっちは何も見えなくなりました。ただたくさんのくるみの木が葉をさんさんと光らしてその霧の中に立ち黄金の円光をもった電気栗鼠が可愛い顔をその中からちらちらのぞいているだけでした。<br>
+<br>
+　そのときすうっと霧がはれかかりました。どこかへ行く街道らしく小さな電燈の一列についた通りがありました。それはしばらく線路に沿って進んでいました。そして二人がそのあかしの前を通って行くときはその小さな豆いろの火はちょうど挨拶でもするようにぽかっと消え二人が過ぎて行くときまた点くのでした。<br>
+　ふりかえって見るとさっきの十字架はすっかり小さくなってしまいほんとうにもうそのまま胸にも吊されそうになり、さっきの女の子や青年たちがその前の白い渚にまだひざまずいているのかそれともどこか方角もわからないその天上へ行ったのかぼんやりして見分けられませんでした。<br>
+　ジョバンニはああと深く息しました。<br>
+「カムパネルラ、また僕たち二人きりになったねえ、どこまでもどこまでも一緒に行こう。<span id="evidence-35320-35370"></span><mark class="llmwiki-source-evidence">僕はもうあのさそりのようにほんとうにみんなの幸のためならば僕のからだなんか百ぺん灼いてもかまわない。</mark>」<br>
+「うん。僕だってそうだ。」<span id="evidence-35385-35400"></span><mark class="llmwiki-source-evidence">カムパネルラの眼にはきれいな涙</mark></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

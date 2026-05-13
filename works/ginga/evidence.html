@@ -1,0 +1,3008 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="coverage.html">
+      
+      
+        <link rel="next" href="source-preview.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>証拠 - LLMWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/llmwiki.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="index.html" title="LLMWiki" class="md-header__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLMWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              証拠
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="LLMWiki" class="md-nav__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLMWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作品総覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登場人物
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    登場人物
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-5520ea38445f.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ジョバンニ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-b9a96c47482a.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カムパネルラ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-72c402e803a2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ザネリ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-64c62dc21287.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    女の子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-b214cc8c9c0d.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カムパネルラのお父さん
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-a0c5fa2d9f7c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    青年
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/character-e175d0e007a1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鳥捕り
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/characters/others.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    その他の登場人物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="relations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相関関係
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="timeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出来事の流れ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="chapters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界設定
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    場所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="organizations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    組織
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="items.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アイテム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語・概念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="open-questions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    待確認情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coverage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抽出状況
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出典と原文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出典と原文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="evidence.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="項目の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        お母さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かおる (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かおる子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カムパネルラ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カムパネルラのお父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ザネリ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マルソ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大学士 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女の子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        姉 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        燈台守 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        男の子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        赤ひげの人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        青年 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鳥捕り (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        観測所 (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        地図 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        緑いろの紙 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アルビレオの観測所 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ケンタウルの村 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サウザンクロス (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プリオシン海岸 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天の川 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天気輪の柱 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教室 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        汽車 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        活版処 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        牛乳屋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥の停車場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥停車場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥区 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        石炭袋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河の河床 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河ステーション (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理想的な農産物 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動生産の世界 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河の水の性質 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鷺の生成 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        出来事の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="出来事の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河のお祭
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニが天気輪の柱の下で草に身を投げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニが列車に乗っている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニとカムパネルラが汽車に間に合うように走る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発破により水が柱のように跳ね上がり、魚が空中に飛ばされる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        双子の星の宮殿が水晶でできた二つの宮として現れる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ケンタウル祭が行われている
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        章の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="章の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、ジョバンニの切符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、午后の授業
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、活版所
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、家
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、ケンタウル祭の夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、天気輪の柱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、銀河ステーション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、北十字とプリオシン海岸
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、鳥を捕る人
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="source-preview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="項目の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        お母さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かおる (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かおる子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カムパネルラ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カムパネルラのお父さん (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ザネリ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マルソ (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先生 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大学士 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        女の子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        姉 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        燈台守 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        男の子 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        老人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        赤ひげの人 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        青年 (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鳥捕り (登場人物)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        観測所 (用語)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        地図 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        緑いろの紙 (アイテム)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アルビレオの観測所 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ケンタウルの村 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サウザンクロス (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プリオシン海岸 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天の川 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        天気輪の柱 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教室 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        汽車 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        活版処 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        牛乳屋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥の停車場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥停車場 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白鳥区 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        石炭袋 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河の河床 (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河ステーション (場所)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理想的な農産物 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動生産の世界 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河の水の性質 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鷺の生成 (世界ルール)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        出来事の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="出来事の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        銀河のお祭
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニが天気輪の柱の下で草に身を投げる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニが列車に乗っている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ジョバンニとカムパネルラが汽車に間に合うように走る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発破により水が柱のように跳ね上がり、魚が空中に飛ばされる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        双子の星の宮殿が水晶でできた二つの宮として現れる
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ケンタウル祭が行われている
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        章の証拠
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="章の証拠">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、ジョバンニの切符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、午后の授業
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、活版所
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、家
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、ケンタウル祭の夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、天気輪の柱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、銀河ステーション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、北十字とプリオシン海岸
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、鳥を捕る人
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">証拠</h1>
+<h2 id="_2">項目の証拠</h2>
+<h3 id="_3">お母さん (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-3145-3149">原文抜粋</a><blockquote>
+<p>...が植えてあって小さな二つの窓には日覆いが下りたままになっていました。 「<strong>お母さん</strong>。いま帰ったよ。工合悪くなかったの。」ジョバンニは靴をぬぎながら云いまし...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_4">かおる (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-25750-25753">原文抜粋</a><blockquote>
+<p>...にいただいたのですよ。」青年が云いました。 「ありがとうおじさん。おや、<strong>かおる</strong>ねえさんまだねてるねえ、ぼくおこしてやろう。ねえさん。ごらん、りんごをも...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_5">かおる子 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-26578-26582">原文抜粋</a><blockquote>
+<p>...め、たって一ぺんそっちへ行きそうにしましたが思いかえしてまた座りました。<strong>かおる子</strong>はハンケチを顔にあててしまいました。ジョバンニまで何だか鼻が変になりまし...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_6">カムパネルラ (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-142-148">原文抜粋</a><blockquote>
+<p>...くけぶった銀河帯のようなところを指しながら、みんなに問をかけました。 　<strong>カムパネルラ</strong>が手をあげました。それから四五人手をあげました。ジョバンニも手をあげよう...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（4件 / 残り22件）</summary>
+<ul>
+<li><a href="sources/text-1.html#evidence-3953-3959">原文抜粋</a><blockquote>
+<p>...ひやかすように云うんだ。」 「おまえに悪口を云うの。」 「うん、けれども<strong>カムパネルラ</strong>なんか決して云わない。カムパネルラはみんながそんなことを云うときは気の毒...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-4547-4553">原文抜粋</a><blockquote>
+<p>...く岸から見るだけなんだ。一時間で行ってくるよ。」 「もっと遊んでおいで。<strong>カムパネルラ</strong>さんと一緒なら心配はないから。」 「ああきっと一緒だよ。お母さん、窓をし...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-7120-7126">原文抜粋</a><blockquote>
+<p>...、もう歩いているかもわからず、急いで行きすぎようとしましたら、そのなかに<strong>カムパネルラ</strong>が居たのです。カムパネルラは気の毒そうに、だまって少しわらって、怒らない...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-9209-9215">原文抜粋</a><blockquote>
+<p>...としたとき、俄かにその子供が頭を引っ込めて、こっちを見ました。 　それは<strong>カムパネルラ</strong>だったのです。 　ジョバンニが、カムパネルラ、きみは前からここに居たのと...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<p>_ 残り18件は証拠一覧で確認できます。_</p>
+<h3 id="_7">カムパネルラのお父さん (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-3.html#evidence-37848-37859">原文抜粋</a><blockquote>
+<p>...が見えないんだ。」 「みんな探してるんだろう。」 「ああすぐみんな来た。<strong>カムパネルラのお父さん</strong>も来た。けれども見附からないんだ。ザネリはうちへ連れられてった。」 　ジ...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（2件 / 残り2件）</summary>
+<ul>
+<li><a href="sources/text-1-part-3.html#evidence-37947-37991">原文抜粋</a><blockquote>
+<p>...へ行きました。そこに学生たち町の人たちに囲まれて青じろい尖ったあごをした<strong>カムパネルラのお父さんが黒い服を着てまっすぐに立って右手に持った時計をじっと見つめていた</strong>のです。 　みんなもじっと河を見ていました。誰も一言も物を云う人もありま...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1-part-3.html#evidence-38375-38399">原文抜粋</a><blockquote>
+<p>...のでした。けれども俄かにカムパネルラのお父さんがきっぱり云いました。 「<strong>もう駄目です。落ちてから四十五分たちましたから。</strong>」 　ジョバンニは思わずかけよって博士の前に立って、ぼくはカムパネルラの...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_8">ザネリ (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-404-407">原文抜粋</a><blockquote>
+<p>...ましたが、立って見るともうはっきりとそれを答えることができないのでした。<strong>ザネリ</strong>が前の席からふりかえって、ジョバンニを見てくすっとわらいました。ジョバン...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（4件 / 残り5件）</summary>
+<ul>
+<li><a href="sources/text-1.html#evidence-5021-5024">原文抜粋</a><blockquote>
+<p>...バンニが思いながら、大股にその街燈の下を通り過ぎたとき、いきなりひるまの<strong>ザネリ</strong>が、新らしいえりの尖ったシャツを着て電燈の向う側の暗い小路から出て来て、...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-5120-5144">原文抜粋</a><blockquote>
+<p>...、烏瓜ながしに行くの。」ジョバンニがまだそう云ってしまわないうちに、 「<strong>ジョバンニ、お父さんから、らっこの上着が来るよ。</strong>」その子が投げつけるようにうしろから叫びました。 　ジョバンニは、ばっと...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-7023-7026">原文抜粋</a><blockquote>
+<p>...まったように思ったとき、 「ジョバンニ、らっこの上着が来るよ。」さっきの<strong>ザネリ</strong>がまた叫びました。 「ジョバンニ、らっこの上着が来るよ。」すぐみんなが、...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-9295-9298">原文抜粋</a><blockquote>
+<p>...き、カムパネルラが 「みんなはねずいぶん走ったけれども遅れてしまったよ。<strong>ザネリ</strong>もね、ずいぶん走ったけれども追いつかなかった。」と云いました。 　ジョバ...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<p>_ 残り1件は証拠一覧で確認できます。_</p>
+<h3 id="_9">ジョバンニ (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-172-177">原文抜粋</a><blockquote>
+<p>...ました。 　カムパネルラが手をあげました。それから四五人手をあげました。<strong>ジョバンニ</strong>も手をあげようとして、急いでそのままやめました。たしかにあれがみんな星だ...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（4件 / 残り24件）</summary>
+<ul>
+<li><a href="sources/text-1.html#evidence-2243-2248">原文抜粋</a><blockquote>
+<p>...きの枝にあかりをつけたりいろいろ仕度をしているのでした。 　家へは帰らず<strong>ジョバンニ</strong>が町を三つ曲ってある大きな活版処にはいってすぐ入口の計算台に居ただぶだぶ...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-4617-4622">原文抜粋</a><blockquote>
+<p>...お母さん、窓をしめて置こうか。」 「ああ、どうか。もう涼しいからね」 　<strong>ジョバンニ</strong>は立って窓をしめお皿やパンの袋を片附けると勢よく靴をはいて 「では一時間...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-4717-4724">原文抜粋</a><blockquote>
+<p>...した。  四、ケンタウル祭の夜  　ジョバンニは、口笛を吹いているような<strong>さびしい口付き</strong>で、檜のまっ黒にならんだ町の坂を下りて来たのでした。 　坂の下に大きな一...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1.html#evidence-6630-6635">原文抜粋</a><blockquote>
+<p>にして下さい。」 　その人は、赤い眼の下のとこを擦りながら、<strong>ジョバンニ</strong>を見おろして云いました。 「おっかさんが病気なんですから今晩でないと困る...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<p>_ 残り20件は証拠一覧で確認できます。_</p>
+<h3 id="_10">マルソ (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-3.html#evidence-37618-37621">原文抜粋</a><blockquote>
+<p>...走りました。するとジョバンニはいきなりさっきカムパネルラといっしょだった<strong>マルソ</strong>に会いました。マルソがジョバンニに走り寄ってきました。 「ジョバンニ、カ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_11">先生 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-79-81">原文抜粋</a><blockquote>
+<p>...云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」<strong>先生</strong>は、黒板に吊した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のよう...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_12">大学士 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-14394-14397">原文抜粋</a><blockquote>
+<p>...いに切り取られて番号がつけられてありました。 「君たちは参観かね。」その<strong>大学士</strong>らしい人が、眼鏡をきらっとさせて、こっちを見て話しかけました。 「くるみ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_13">女の子 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-22023-22026">原文抜粋</a><blockquote>
+<p>のです。」黒服の青年はよろこびにかがやいてその<strong>女の子</strong>に云いました。けれどもなぜかまた額に深く皺を刻んで、それに大へんつかれて...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（3件 / 残り3件）</summary>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-26814-26817">原文抜粋</a><blockquote>
+<p>...っとかすかになりました。 「あ孔雀が居るよ。」 「ええたくさん居たわ。」<strong>女の子</strong>がこたえました。 　ジョバンニはその小さく小さくなっていまはもう一つの緑...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1-part-2.html#evidence-29200-29203">原文抜粋</a><blockquote>
+<p>...ルラなんかあんまりひどい、僕といっしょに汽車に乗っていながらまるであんな<strong>女の子</strong>とばかり談しているんだもの。僕はほんとうにつらい。）ジョバンニはまた両手...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1-part-2.html#evidence-30857-30860">原文抜粋</a><blockquote>
+<p>...おいてあるねえ。」 「ああ。」 「橋を架けるとこじゃないんでしょうか。」<strong>女の子</strong>が云いました。 「あああれ工兵の旗だねえ。架橋演習をしてるんだ。けれど兵...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_14">姉 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-29034-29035">原文抜粋</a><blockquote>
+<p>...すかなかすかな旋律が糸のように流れて来るのでした。「新世界交響楽だわ。」<strong>姉</strong>がひとりごとのようにこっちを見ながらそっと云いました。全くもう車の中では...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（1件 / 残り1件）</summary>
+<ul>
+<li><a href="sources/text-1.html#evidence-3379-3382">原文抜粋</a><blockquote>
+<p>...あ、お前さきにおあがり。あたしはまだほしくないんだから。」 「お母さん。<strong>姉さん</strong>はいつ帰ったの。」 「ああ三時ころ帰ったよ。みんなそこらをしてくれてね。...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_15">燈台守 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-24408-24411">原文抜粋</a><blockquote>
+<p>...ら峠の上りも下りもみんなほんとうの幸福に近づく一あしずつですから。」 　<strong>燈台守</strong>がなぐさめていました。 「ああそうです。ただいちばんのさいわいに至るため...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_16">男の子 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-22076-22079">原文抜粋</a><blockquote>
+<p>...また額に深く皺を刻んで、それに大へんつかれているらしく、無理に笑いながら<strong>男の子</strong>をジョバンニのとなりに座らせました。 　それから女の子にやさしくカムパネ...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（1件 / 残り1件）</summary>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-31358-31361">原文抜粋</a><blockquote>
+<p>...にわらって女の子に答えました。 「あれきっと双子のお星さまのお宮だよ。」<strong>男の子</strong>がいきなり窓の外をさして叫びました。 　右手の低い丘の上に小さな水晶でで...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_17">老人 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-30377-30379">原文抜粋</a><blockquote>
+<p>...こっちへは来ないんです。そら、もうだんだん早くなったでしょう。」さっきの<strong>老人</strong>らしい声が云いました。 　どんどんどんどん汽車は降りて行きました。崖のは...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_18">赤ひげの人 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-15538-15543">原文抜粋</a><blockquote>
+<p>...一つのあかりに黒い甲虫がとまってその影が大きく天井にうつっていたのです。<strong>赤ひげの人</strong>は、なにかなつかしそうにわらいながら、ジョバンニやカムパネルラのようすを...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_19">青年 (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-24472-24474">原文抜粋</a><blockquote>
+<p>...んのさいわいに至るためにいろいろのかなしみもみんなおぼしめしです。」 　<strong>青年</strong>が祈るようにそう答えました。 　そしてあの姉弟はもうつかれてめいめいぐっ...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（2件 / 残り2件）</summary>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-22005-22010">原文抜粋</a><blockquote>
+<p>のです。」<strong>黒服の青年</strong>はよろこびにかがやいてその女の子に云いました。けれどもなぜかまた額に深く...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1-part-2.html#evidence-29781-29786">原文抜粋</a><blockquote>
+<p>...した。 「あら、インデアンですよ。インデアンですよ。ごらんなさい。」 　<strong>黒服の青年</strong>も眼をさましました。ジョバンニもカムパネルラも立ちあがりました。 「走っ...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_20">鳥捕り (<code>登場人物</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-16736-16739">原文抜粋</a><blockquote>
+<p>...の上の槍のような白い毛もちゃんとついていました。 「ね、そうでしょう。」<strong>鳥捕り</strong>は風呂敷を重ねて、またくるくると包んで紐でくくりました。誰がいったいここ...</p>
+</blockquote>
+</li>
+</ul>
+<details class="quote">
+<summary>追加の証拠（2件 / 残り2件）</summary>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-17774-17777">原文抜粋</a><blockquote>
+<p>...、さっきから、訊こうと思っていたのです。 「それはね、鷺を喰べるには、」<strong>鳥捕り</strong>は、こっちに向き直りました。 「天の川の水あかりに、十日もつるして置くか...</p>
+</blockquote>
+</li>
+<li><a href="sources/text-1-part-2.html#evidence-20460-20463">原文抜粋</a><blockquote>
+<p>...見ていると何だかその中へ吸い込まれてしまうような気がするのでした。すると<strong>鳥捕り</strong>が横からちらっとそれを見てあわてたように云いました。 「おや、こいつは大...</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<h3 id="_21">観測所 (<code>用語</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-19190-19199">原文抜粋</a><blockquote>
+<p>...の切符  「もうここらは白鳥区のおしまいです。ごらんなさい。あれが名高い<strong>アルビレオの観測所</strong>です。」 　窓の外の、まるで花火でいっぱいのような、あまの川のまん中に、...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_22">地図 (<code>アイテム</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-9707-9709">原文抜粋</a><blockquote>
+<p>...って、ぼくはきっと見える。」そして、カムパネルラは、円い板のようになった<strong>地図</strong>を、しきりにぐるぐるまわして見ていました。まったくその中に、白くあらわさ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_23">緑いろの紙 (<code>アイテム</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-19987-19992">原文抜粋</a><blockquote>
+<p>...思って、急いで出してみましたら、それは四つに折ったはがきぐらいの大きさの<strong>緑いろの紙</strong>でした。車掌が手を出しているもんですから何でも構わない、やっちまえと思っ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_24">アルビレオの観測所 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-19190-19199">原文抜粋</a><blockquote>
+<p>...の切符  「もうここらは白鳥区のおしまいです。ごらんなさい。あれが名高い<strong>アルビレオの観測所</strong>です。」 　窓の外の、まるで花火でいっぱいのような、あまの川のまん中に、...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_25">ケンタウルの村 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-33184-33191">原文抜粋</a><blockquote>
+<p>...ていました。 「ああ、そうだ、今夜ケンタウル祭だねえ。」 「ああ、ここは<strong>ケンタウルの村</strong>だよ。」カムパネルラがすぐ云いました。〔以下原稿一枚？なし〕  「ボール...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_26">サウザンクロス (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-33265-33272">原文抜粋</a><blockquote>
+<p>...なら僕決してはずさない。」 　男の子が大威張りで云いました。 「もうじき<strong>サウザンクロス</strong>です。おりる支度をして下さい。」青年がみんなに云いました。 「僕も少し汽...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_27">プリオシン海岸 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-13703-13710">原文抜粋</a><blockquote>
+<p>...一度に叫んで、そっちの方へ走りました。その白い岩になった処の入口に、 〔<strong>プリオシン海岸</strong>〕という、瀬戸物のつるつるした標札が立って、向うの渚には、ところどころ、...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_28">天の川 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-3.html#evidence-35570-35573">原文抜粋</a><blockquote>
+<p>...炭袋だよ。そらの孔だよ。」カムパネルラが少しそっちを避けるようにしながら<strong>天の川</strong>のひととこを指さしました。ジョバンニはそっちを見てまるでぎくっとしてしま...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_29">天気輪の柱 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-7478-7483">原文抜粋</a><blockquote>
+<p>...わあいと叫びました。まもなくジョバンニは黒い丘の方へ急ぎました。  五、<strong>天気輪の柱</strong>  　牧場のうしろはゆるい丘になって、その黒い平らな頂上は、北の大熊星の...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_30">教室 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-246-248">原文抜粋</a><blockquote>
+<p>...な星だと、いつか雑誌で読んだのでしたが、このごろはジョバンニはまるで毎日<strong>教室</strong>でもねむく、本を読むひまも読む本もないので、なんだかどんなこともよくわか...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_31">汽車 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-15454-15456">原文抜粋</a><blockquote>
+<p>...計を見ていましたら、ずうっと前の方で、硝子の笛のようなものが鳴りました。<strong>汽車</strong>はもう、しずかにうごいていたのです。カムパネルラは、車室の天井を、あちこ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_32">活版処 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-2261-2264">原文抜粋</a><blockquote>
+<p>...をしているのでした。 　家へは帰らずジョバンニが町を三つ曲ってある大きな<strong>活版処</strong>にはいってすぐ入口の計算台に居ただぶだぶの白いシャツを着た人におじぎをし...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_33">牛乳屋 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-6280-6283">原文抜粋</a><blockquote>
+<p>...た深く首を垂れて、そこらのにぎやかさとはまるでちがったことを考えながら、<strong>牛乳屋</strong>の方へ急ぐのでした。 　ジョバンニは、いつか町はずれのポプラの木が幾本も...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_34">白鳥の停車場 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-9631-9637">原文抜粋</a><blockquote>
+<p>...ぼく、水筒を忘れてきた。スケッチ帳も忘れてきた。けれど構わない。もうじき<strong>白鳥の停車場</strong>だから。ぼく、白鳥を見るなら、ほんとうにすきだ。川の遠くを飛んでいたって...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_35">白鳥停車場 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-12653-12658">原文抜粋</a><blockquote>
+<p>...しく規則正しくあらわれ、それがだんだん大きくなってひろがって、二人は丁度<strong>白鳥停車場</strong>の、大きな時計の前に来てとまりました。 　さわやかな秋の時計の盤面には、...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_36">白鳥区 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-19166-19169">原文抜粋</a><blockquote>
+<p>...ように雑作なくうなずきました。  九、ジョバンニの切符  「もうここらは<strong>白鳥区</strong>のおしまいです。ごらんなさい。あれが名高いアルビレオの観測所です。」 　...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_37">石炭袋 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-3.html#evidence-35533-35536">原文抜粋</a><blockquote>
+<p>...っぱい新らしい力が湧くようにふうと息をしながら云いました。 「あ、あすこ<strong>石炭袋</strong>だよ。そらの孔だよ。」カムパネルラが少しそっちを避けるようにしながら天の...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_38">銀河の河床 (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-11668-11673">原文抜粋</a><blockquote>
+<p>...もうじつに、金剛石や草の露やあらゆる立派さをあつめたような、きらびやかな<strong>銀河の河床</strong>の上を水は声もなくかたちもなく流れ、その流れのまん中に、ぼうっと青白く後...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_39">銀河ステーション (<code>場所</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-9930-9938">原文抜粋</a><blockquote>
+<p>...どこで買ったの。黒曜石でできてるねえ。」 　ジョバンニが云いました。 「<strong>銀河ステーション</strong>で、もらったんだ。君もらわなかったの。」 「ああ、ぼく銀河ステーションを...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_40">理想的な農産物 (<code>世界ルール</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-25404-25438">原文抜粋</a><blockquote>
+<p>...はしません。たいてい自分の望む種子さえ播けばひとりでにどんどんできます。<strong>米だってパシフィック辺のように殻もないし十倍も大きくて匂もいいのです</strong>。けれどもあなたがたのいらっしゃる方なら農業はもうありません。苹果だって...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_41">自動生産の世界 (<code>世界ルール</code>)</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-25304-25354">原文抜粋</a><blockquote>
+<p>...ですか。こんな立派な苹果は。」 　青年はつくづく見ながら云いました。 「<strong>この辺ではもちろん農業はいたしますけれども大ていひとりでにいいものができるような約束になって居ります</strong>。農業だってそんなに骨は折れはしません。たいてい自分の望む種子さえ播けば...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_42">銀河の水の性質 (<code>世界ルール</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-13393-13415">原文抜粋</a><blockquote>
+<p>...ンニは、走ってその渚に行って、水に手をひたしました。けれどもあやしいその<strong>銀河の水は、水素よりももっとすきとおっていた</strong>のです。それでもたしかに流れていたことは、二人の手首の、水にひたったとこ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_43">鷺の生成 (<code>世界ルール</code>)</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-16226-16255">原文抜粋</a><blockquote>
+<p>...ンニは、どっちでもいいと思いながら答えました。 「そいつはな、雑作ない。<strong>さぎというものは、みんな天の川の砂が凝って、ぼおっとできる</strong>もんですからね、そして始終川へ帰りますからね、川原で待っていて、鷺がみん...</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="_44">出来事の証拠</h2>
+<h3 id="_45">銀河のお祭</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-4448-4459">原文抜粋</a><blockquote>
+<p>...あかりを川へながしに行くんだって。きっと犬もついて行くよ。」 「そうだ。<strong>今晩は銀河のお祭だねえ</strong>。」 「うん。ぼく牛乳をとりながら見てくるよ。」 「ああ行っておいで。川...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_46">ジョバンニが天気輪の柱の下で草に身を投げる</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-7875-7918">原文抜粋</a><blockquote>
+<p>...というように咲き、鳥が一疋、丘の上を鳴き続けながら通って行きました。 　<strong>ジョバンニは、頂の天気輪の柱の下に来て、どかどかするからだを、つめたい草に投げました。</strong> 　町の灯は、暗の中をまるで海の底のお宮のけしきのようにともり、子供らの...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_47">ジョバンニが列車に乗っている</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-8911-8962">原文抜粋</a><blockquote>
+<p>...、ジョバンニの乗っている小さな列車が走りつづけていたのでした。ほんとうに<strong>ジョバンニは、夜の軽便鉄道の、小さな黄いろの電燈のならんだ車室に、窓から外を見ながら座っていたのです。</strong>車室の中は、青い天蚕絨を張った腰掛けが、まるでがら明きで、向うの鼠いろの...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_48">ジョバンニとカムパネルラが汽車に間に合うように走る</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-14986-15021">原文抜粋</a><blockquote>
+<p>...。」大学士は、また忙がしそうに、あちこち歩きまわって監督をはじめました。<strong>二人は、その白い岩の上を、一生けん命汽車におくれないように走りました。</strong>そしてほんとうに、風のように走れたのです。息も切れず膝もあつくなりません...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_49">発破により水が柱のように跳ね上がり、魚が空中に飛ばされる</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-30973-30982">原文抜粋</a><blockquote>
+<p>...水がぎらっと光って柱のように高くはねあがりどぉと烈しい音がしました。 「<strong>発破だよ、発破だよ</strong>。」カムパネルラはこおどりしました。 　その柱のようになった水は見えなく...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_50">双子の星の宮殿が水晶でできた二つの宮として現れる</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-31344-31356">原文抜粋</a><blockquote>
+<p>...すっかり機嫌が直って面白そうにわらって女の子に答えました。 「あれきっと<strong>双子のお星さまのお宮だよ</strong>。」男の子がいきなり窓の外をさして叫びました。 　右手の低い丘の上に小さ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_51">ケンタウル祭が行われている</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-33165-33171">原文抜粋</a><blockquote>
+<p>...電燈がまるで千の蛍でも集ったようについていました。 「ああ、そうだ、今夜<strong>ケンタウル祭</strong>だねえ。」 「ああ、ここはケンタウルの村だよ。」カムパネルラがすぐ云いま...</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="_52">章の証拠</h2>
+<h3 id="_53">九、ジョバンニの切符</h3>
+<ul>
+<li><a href="sources/text-1-part-2.html#evidence-19147-19157">原文抜粋</a><blockquote>
+<p>...からですね。」鳥捕りは、わかったというように雑作なくうなずきました。  <strong>九、ジョバンニの切符</strong>  「もうここらは白鳥区のおしまいです。ごらんなさい。あれが名高いアルビ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_54">一、午后の授業</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-0-7">原文抜粋</a><blockquote>
+<p><strong>一、午后の授業</strong>  「ではみなさんは、そういうふうに川だと云われたり、乳の流れたあとだと...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_55">二、活版所</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-2021-2026">原文抜粋</a><blockquote>
+<p>...ぱいでしたがまもなくみんなはきちんと立って礼をすると教室を出ました。  <strong>二、活版所</strong>  　ジョバンニが学校の門を出るとき、同じ組の七八人は家へ帰らずカムパネ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_56">三、家</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-3039-3042">原文抜粋</a><blockquote>
+<p>...寄ってパンの塊を一つと角砂糖を一袋買いますと一目散に走りだしました。  <strong>三、家</strong>  　ジョバンニが勢よく帰って来たのは、ある裏町の小さな家でした。その三...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_57">四、ケンタウル祭の夜</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-4686-4696">原文抜粋</a><blockquote>
+<p>...て 「では一時間半で帰ってくるよ。」と云いながら暗い戸口を出ました。  <strong>四、ケンタウル祭の夜</strong>  　ジョバンニは、口笛を吹いているようなさびしい口付きで、檜のまっ黒に...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_58">五、天気輪の柱</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-7476-7483">原文抜粋</a><blockquote>
+<p>...ってわあいと叫びました。まもなくジョバンニは黒い丘の方へ急ぎました。  <strong>五、天気輪の柱</strong>  　牧場のうしろはゆるい丘になって、その黒い平らな頂上は、北の大熊星の...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_59">六、銀河ステーション</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-8449-8459">原文抜粋</a><blockquote>
+<p>...さんの星の集りか一つの大きなけむりかのように見えるように思いました。  <strong>六、銀河ステーション</strong>  　そしてジョバンニはすぐうしろの天気輪の柱がいつかぼんやりした三角標...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_60">七、北十字とプリオシン海岸</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-11153-11166">原文抜粋</a><blockquote>
+<p>...三角標の列は、けむるように燃えるように、いよいよ光って立ったのです。  <strong>七、北十字とプリオシン海岸</strong>  「おっかさんは、ぼくをゆるして下さるだろうか。」 　いきなり、カムパ...</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_61">八、鳥を捕る人</h3>
+<ul>
+<li><a href="sources/text-1.html#evidence-15180-15187">原文抜粋</a><blockquote>
+<p>...は、もとの車室の席に座って、いま行って来た方を、窓から見ていました。  <strong>八、鳥を捕る人</strong>  「ここへかけてもようございますか。」 　がさがさした、けれども親切そ...</p>
+</blockquote>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
