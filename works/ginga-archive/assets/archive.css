@@ -1,0 +1,9 @@
+.md-content details {
+  border-radius: 6px;
+}
+.md-content table {
+  font-size: 0.92rem;
+}
+.md-content code {
+  white-space: normal;
+}
