@@ -6,263 +6,878 @@
   <title>LLMWiki 作品アーカイブデモ</title>
   <style>
     :root {
+      --bg: #f7f9f5;
+      --paper: #fffefa;
+      --paper-soft: #f0f5ee;
+      --ink: #1d2520;
+      --muted: #637066;
+      --line: #d8ded6;
+      --line-strong: #b9c5b7;
+      --forest: #0d4d3a;
+      --forest-2: #1f6f54;
+      --navy: #223f82;
+      --amber: #a46212;
+      --amber-bg: #fff5df;
+      --shadow: 0 18px 50px rgba(34, 63, 130, 0.12);
       color-scheme: light;
-      --bg: #f7f5ef;
-      --panel: #ffffff;
-      --ink: #22252a;
-      --muted: #667085;
-      --line: #d8d2c3;
-      --accent: #1b6f5b;
-      --accent-2: #345f9f;
-      --warn: #9a5b16;
-      --shadow: 0 18px 42px rgba(46, 43, 36, 0.12);
     }
+
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
-      min-height: 100vh;
-      background: var(--bg);
+      background:
+        linear-gradient(180deg, rgba(255, 254, 250, 0.96), rgba(247, 249, 245, 0.98) 340px),
+        radial-gradient(circle at top left, rgba(31, 111, 84, 0.10), transparent 360px);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
-      line-height: 1.65;
+      font-family: "Inter", "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.7;
     }
-    main {
-      width: min(1080px, calc(100% - 32px));
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 44px 0 56px;
+      padding: 24px 0 44px;
     }
-    header {
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 10px 0 22px;
+      border-bottom: 1px solid rgba(216, 222, 214, 0.85);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
       display: grid;
+      place-items: center;
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--forest);
+      box-shadow: 0 8px 22px rgba(13, 77, 58, 0.08);
+    }
+
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.2;
+      font-weight: 760;
+      overflow-wrap: anywhere;
+    }
+
+    .brand-subtitle {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+
+    .status-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
       gap: 14px;
-      padding: 0 0 28px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .status-list li {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .status-list li + li::before {
+      content: "";
+      width: 1px;
+      height: 18px;
+      margin-right: 7px;
+      background: var(--line);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--forest-2);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      align-items: end;
+      gap: 44px;
+      padding: 54px 0 34px;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 14px;
+      color: var(--forest);
+      font-size: 0.82rem;
+      font-weight: 760;
+    }
+
+    .eyebrow svg {
+      flex: 0 0 auto;
+    }
+
+    .hero h1 {
+      margin: 0;
+      max-width: 680px;
+      font-size: 2.45rem;
+      line-height: 1.18;
+      font-weight: 820;
+      overflow-wrap: anywhere;
+      word-break: keep-all;
+    }
+
+    .hero-lede {
+      margin: 18px 0 0;
+      max-width: 660px;
+      color: #34423a;
+      font-size: 1.03rem;
+    }
+
+    .capability-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+      max-width: 680px;
+    }
+
+    .capability-list li {
+      display: flex;
+      align-items: center;
+      min-height: 38px;
+      gap: 8px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 254, 250, 0.72);
+      color: #2e3b34;
+      font-size: 0.86rem;
+      font-weight: 650;
+      min-width: 0;
+    }
+
+    .capability-list svg {
+      flex: 0 0 auto;
+      color: var(--forest);
+    }
+
+    .hero-panel {
+      align-self: stretch;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(135deg, rgba(255, 254, 250, 0.96), rgba(240, 245, 238, 0.94));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 12px;
       border-bottom: 1px solid var(--line);
     }
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.75rem);
-      line-height: 1.05;
-      letter-spacing: 0;
+
+    .panel-preview img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper-soft);
     }
-    .lede {
-      max-width: 760px;
+
+    .panel-body {
+      padding: 16px 18px 18px;
+    }
+
+    .panel-label {
       margin: 0;
+      color: var(--forest);
+      font-size: 0.78rem;
+      font-weight: 760;
+    }
+
+    .panel-body p:last-child {
+      margin: 7px 0 0;
+      color: #46534b;
+      font-size: 0.91rem;
+    }
+
+    .section {
+      margin-top: 22px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 16px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.28rem;
+      line-height: 1.3;
+      font-weight: 780;
+    }
+
+    .section-heading p {
+      margin: 0;
+      max-width: 620px;
       color: var(--muted);
-      font-size: 1.02rem;
+      font-size: 0.9rem;
+      text-align: right;
     }
-    .grid {
+
+    .featured-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
-      margin-top: 28px;
     }
-    article {
-      display: grid;
-      gap: 16px;
-      min-height: 310px;
-      padding: 22px;
-      background: var(--panel);
+
+    .feature-card,
+    .archive-row {
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: var(--shadow);
+      background: var(--paper);
+      box-shadow: 0 10px 26px rgba(29, 37, 32, 0.06);
     }
-    .meta {
+
+    .feature-card {
+      overflow: hidden;
+    }
+
+    .feature-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: top;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper-soft);
+    }
+
+    .feature-content {
+      padding: 18px;
+    }
+
+    .feature-content h3,
+    .archive-content h3 {
+      margin: 0;
+      line-height: 1.35;
+      font-weight: 780;
+      overflow-wrap: anywhere;
+    }
+
+    .feature-content h3 {
+      font-size: 1.1rem;
+    }
+
+    .archive-content h3 {
+      font-size: 1rem;
+    }
+
+    .archive-content h3 a:hover,
+    .archive-content h3 a:focus-visible {
+      color: var(--forest);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .summary {
+      margin: 10px 0 0;
+      color: #435047;
+      font-size: 0.93rem;
+    }
+
+    .chip-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 0.88rem;
+      gap: 6px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
     }
-    .tag {
-      padding: 2px 8px;
-      border: 1px solid var(--line);
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 9px;
+      border: 1px solid rgba(13, 77, 58, 0.22);
       border-radius: 999px;
-      background: #faf9f5;
+      background: #eef6f1;
+      color: var(--forest);
+      font-size: 0.75rem;
+      font-weight: 720;
+      line-height: 1.3;
     }
-    h2 {
-      margin: 0;
-      font-size: 1.55rem;
-      line-height: 1.25;
-      letter-spacing: 0;
+
+    .chip.alt {
+      border-color: rgba(34, 63, 130, 0.22);
+      background: #eef2fb;
+      color: var(--navy);
     }
-    p {
-      margin: 0;
-    }
-    .links {
+
+    .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      align-self: end;
+      margin-top: 16px;
     }
-    a {
-      color: var(--accent-2);
-      text-underline-offset: 0.2em;
-    }
+
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 42px;
-      padding: 8px 13px;
-      border-radius: 6px;
-      border: 1px solid var(--accent);
+      gap: 8px;
+      min-height: 39px;
+      padding: 8px 12px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 750;
+      line-height: 1.2;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .button svg {
+      flex: 0 0 auto;
+    }
+
+    .button.primary {
+      background: var(--forest);
       color: #fff;
-      background: var(--accent);
-      text-decoration: none;
-      font-weight: 650;
     }
+
     .button.secondary {
-      border-color: var(--accent-2);
-      background: #fff;
-      color: var(--accent-2);
+      border-color: var(--line-strong);
+      background: transparent;
+      color: var(--forest);
     }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-1px);
+      border-color: var(--forest-2);
+    }
+
+    .archive-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .archive-row {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 16px;
+      min-height: 124px;
+      padding: 10px 12px 10px 10px;
+    }
+
+    .archive-thumb {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper-soft);
+    }
+
+    .archive-thumb img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .archive-content {
+      min-width: 0;
+    }
+
+    .archive-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      min-width: 190px;
+    }
+
+    .archive-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 34px;
+      padding: 7px 10px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 730;
+      line-height: 1.2;
+    }
+
+    .archive-links a:hover,
+    .archive-links a:focus-visible {
+      border-color: var(--navy);
+      background: #f2f5fb;
+    }
+
     .note {
-      margin-top: 20px;
-      padding: 14px 16px;
-      border-left: 4px solid var(--warn);
-      background: #fffaf2;
-      color: #4f3b22;
+      margin-top: 24px;
+      padding: 16px 18px;
+      border: 1px solid #ebc987;
+      border-radius: 8px;
+      background: var(--amber-bg);
+      color: #5b3b12;
     }
-    footer {
+
+    .note h2 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.4;
+    }
+
+    .note p {
+      margin: 8px 0 0;
+      max-width: 900px;
+      font-size: 0.9rem;
+    }
+
+    .site-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
       margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.82rem;
     }
-    @media (max-width: 760px) {
-      main {
-        width: min(100% - 24px, 1080px);
-        padding-top: 28px;
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    @media (max-width: 940px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
       }
-      .grid {
+
+      .status-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        white-space: normal;
+      }
+
+      .status-list li + li::before {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 38px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .capability-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .section-heading p {
+        text-align: left;
+      }
+
+      .featured-grid {
         grid-template-columns: 1fr;
       }
-      article {
-        min-height: 0;
-        padding: 18px;
+
+      .archive-row {
+        grid-template-columns: 126px minmax(0, 1fr);
       }
+
+      .archive-links {
+        grid-column: 2;
+        justify-content: flex-start;
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 24px, 1180px);
+        padding-top: 14px;
+      }
+
+      .hero {
+        padding: 30px 0 22px;
+      }
+
+      .hero h1 {
+        font-size: 1.62rem;
+      }
+
+      .hero-lede {
+        font-size: 0.95rem;
+      }
+
+      .capability-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .capability-list li {
+        font-size: 0.8rem;
+      }
+
+      .brand-subtitle {
+        display: none;
+      }
+
+      .hero-panel {
+        display: none;
+      }
+
+      .feature-content {
+        padding: 15px;
+      }
+
+      .archive-row {
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+
+      .archive-thumb img {
+        aspect-ratio: 16 / 9;
+      }
+
+      .archive-links {
+        grid-column: auto;
+      }
+
+      .archive-links a,
       .button {
         width: 100%;
+      }
+
+      .site-footer {
+        flex-direction: column;
+        gap: 6px;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>LLMWiki 作品アーカイブデモ</h1>
-      <p class="lede">
-        LLMWiki が公開ドメイン作品から生成した作品アーカイブの展示入口です。
-        各作品は GitHub Pages のサブパスに分離し、作品総覧、人物、世界設定、章整理、原文根拠を個別に確認できます。
-      </p>
+  <div class="page">
+    <header class="site-header" aria-label="サイト情報">
+      <a class="brand" href="./" aria-label="LLMWiki 作品アーカイブデモ ホーム">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none">
+            <path d="M5 5.4c0-1 0-1.5.3-1.8.3-.3.8-.3 1.8-.3H18c.6 0 1 .4 1 1v15.2c0 .6-.4 1-1 1H7.1c-1 0-1.5 0-1.8-.3-.3-.3-.3-.8-.3-1.8V5.4Z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8.4 7.4h7.2M8.4 11h7.2M8.4 14.6h4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong class="brand-title">LLMWiki 作品アーカイブデモ</strong>
+          <span class="brand-subtitle">生成AIによる文学作品の構造化ビュー</span>
+        </span>
+      </a>
+      <ul class="status-list" aria-label="公開状態">
+        <li><span class="status-dot" aria-hidden="true"></span>公開デモ</li>
+        <li>収録作品 6件</li>
+        <li>更新 2026-05-15</li>
+      </ul>
     </header>
 
-    <section class="grid" aria-label="作品アーカイブ">
-      <article>
-        <div class="meta">
-          <span class="tag">長編小説</span>
-          <span class="tag">人物・関係</span>
-          <span class="tag">日本語UI</span>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4.5 5.5h15M4.5 12h15M4.5 18.5h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            公開ドメイン作品から生成した検証用サイト
+          </p>
+          <h1 id="hero-title">文学作品の構造と根拠を紐解く<span class="nowrap">アーカイブ</span></h1>
+          <p class="hero-lede">
+            小説・戯曲の本文から、人物、世界設定、章や場面、根拠リンクを作品別にまとめたデモです。
+            品質校正版と旧出力を並べて、抽出精度と読みやすさの変化を確認できます。
+          </p>
+          <ul class="capability-list" aria-label="確認できる内容">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 18.5V6.2c0-.7.5-1.2 1.2-1.2h13.6c.7 0 1.2.5 1.2 1.2v12.3M3 19h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              世界設定
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 6h14M5 12h14M5 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              章整理
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20c1.3-3.1 4-4.8 7.5-4.8s6.2 1.7 7.5 4.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              人物事典
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 4.5h8.3L19 9.2v10.3H6V4.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M14 4.8V10h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+              原文根拠
+            </li>
+          </ul>
         </div>
-        <h2>吾輩は猫である</h2>
+        <aside class="hero-panel" aria-label="現在の推奨出力プレビュー">
+          <div class="panel-preview">
+            <img src="assets/thumbnails/ginga-quality.jpg" alt="銀河鉄道の夜の品質校正版プレビュー">
+            <img src="assets/thumbnails/yashagaike-quality.jpg" alt="夜叉ヶ池の新ワークフロープレビュー">
+          </div>
+          <div class="panel-body">
+            <p class="panel-label">推薦アーカイブ</p>
+            <p>二段階生成の校正版を上位に配置し、旧出力は比較用として下段に集約しています。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <h2 id="featured-title">推奨アーカイブ</h2>
+          <p>現行ワークフローの読み味と抽出カバレッジを確認する入口です。</p>
+        </div>
+        <div class="featured-grid">
+          <article class="feature-card">
+            <img src="assets/thumbnails/ginga-quality.jpg" alt="銀河鉄道の夜 品質校正版のページプレビュー">
+            <div class="feature-content">
+              <h3>銀河鉄道の夜（品質校正版）</h3>
+              <p class="summary">幻想的な世界設定、人物の役割、章別の物語整理を、根拠リンクを残したまま読み物として確認できます。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip">品質校正版</li>
+                <li class="chip alt">二段階生成</li>
+                <li class="chip">世界設定</li>
+              </ul>
+              <div class="actions">
+                <a class="button primary" href="works/ginga-archive-quality/">
+                  <span>校正版を開く</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a class="button secondary" href="works/ginga-archive-quality/world.html">
+                  <span>世界設定</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img src="assets/thumbnails/yashagaike-quality.jpg" alt="夜叉ヶ池 新ワークフローのページプレビュー">
+            <div class="feature-content">
+              <h3>夜叉ヶ池（新ワークフロー）</h3>
+              <p class="summary">戯曲形式の場面、登場人物、場所の情報を、作品アーカイブとして読みやすい構造に整理した出力です。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip">新ワークフロー</li>
+                <li class="chip alt">戯曲</li>
+                <li class="chip">場面整理</li>
+              </ul>
+              <div class="actions">
+                <a class="button primary" href="works/yashagaike-archive-quality/">
+                  <span>新ワークフローを開く</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a class="button secondary" href="works/yashagaike-archive-quality/chapters.html">
+                  <span>場面整理</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <h2 id="archive-title">過去の出力・比較用</h2>
+          <p>旧ワークフローや中間校正版を残し、作品ごとの差分をすばやく見比べられるようにしています。</p>
+        </div>
+        <div class="archive-list">
+          <article class="archive-row">
+            <a class="archive-thumb" href="works/wagahai/" aria-label="吾輩は猫であるを開く">
+              <img src="assets/thumbnails/wagahai.jpg" alt="吾輩は猫であるのページプレビュー">
+            </a>
+            <div class="archive-content">
+              <h3><a href="works/wagahai/">吾輩は猫である</a></h3>
+              <p class="summary">長編小説の人物・関係抽出を確認するための従来版サンプルです。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip alt">従来版</li>
+                <li class="chip">長編小説</li>
+              </ul>
+            </div>
+            <div class="archive-links" aria-label="吾輩は猫であるのリンク">
+              <a href="works/wagahai/">作品アーカイブ</a>
+              <a href="works/wagahai/entities/characters.html">人物ページ</a>
+            </div>
+          </article>
+
+          <article class="archive-row">
+            <a class="archive-thumb" href="works/ginga/" aria-label="銀河鉄道の夜を開く">
+              <img src="assets/thumbnails/ginga.jpg" alt="銀河鉄道の夜 従来版のページプレビュー">
+            </a>
+            <div class="archive-content">
+              <h3><a href="works/ginga/">銀河鉄道の夜</a></h3>
+              <p class="summary">旧レンダラーの幻想文学サンプルとして、現行校正版との表示差分を比較できます。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip alt">従来版</li>
+                <li class="chip">幻想文学</li>
+              </ul>
+            </div>
+            <div class="archive-links" aria-label="銀河鉄道の夜のリンク">
+              <a href="works/ginga/">作品アーカイブ</a>
+              <a href="works/ginga/world.html">世界設定</a>
+            </div>
+          </article>
+
+          <article class="archive-row">
+            <a class="archive-thumb" href="works/ginga-archive/" aria-label="銀河鉄道の夜 新ワークフローを開く">
+              <img src="assets/thumbnails/ginga-archive.jpg" alt="銀河鉄道の夜 新ワークフローのページプレビュー">
+            </a>
+            <div class="archive-content">
+              <h3><a href="works/ginga-archive/">銀河鉄道の夜（新ワークフロー）</a></h3>
+              <p class="summary">品質校正前の二段階生成版です。人物ページや章構成の差分確認に使えます。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip alt">旧校正版</li>
+                <li class="chip">二段階生成</li>
+              </ul>
+            </div>
+            <div class="archive-links" aria-label="銀河鉄道の夜 新ワークフローのリンク">
+              <a href="works/ginga-archive/">新ワークフロー</a>
+              <a href="works/ginga-archive/characters.html">人物事典</a>
+            </div>
+          </article>
+
+          <article class="archive-row">
+            <a class="archive-thumb" href="works/yashagaike/" aria-label="夜叉ヶ池を開く">
+              <img src="assets/thumbnails/yashagaike.jpg" alt="夜叉ヶ池 従来版のページプレビュー">
+            </a>
+            <div class="archive-content">
+              <h3><a href="works/yashagaike/">夜叉ヶ池</a></h3>
+              <p class="summary">戯曲の旧出力です。新ワークフローの場面整理と見比べるために残しています。</p>
+              <ul class="chip-list" aria-label="特徴">
+                <li class="chip alt">従来版</li>
+                <li class="chip">戯曲</li>
+              </ul>
+            </div>
+            <div class="archive-links" aria-label="夜叉ヶ池のリンク">
+              <a href="works/yashagaike/">作品アーカイブ</a>
+              <a href="works/yashagaike/script-scenes.html">脚本シーン</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="note" aria-labelledby="limitations-title">
+        <h2 id="limitations-title">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 4 3.5 19h17L12 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M12 9v4M12 16.8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          既知の制約
+        </h2>
         <p>
-          風刺的な近代小説を対象に、登場人物の独立ページ、人物一覧、章ごとの出来事、原文根拠の折りたたみ表示を確認するためのデモです。
+          暗黙の人物関係、モチーフ、プロット線は、原文の完全一致根拠だけで扱うため抽出が控えめです。
+          各作品の「抽出状況」と「待確認情報」でカバレッジと確認点を確認できます。
         </p>
-        <div class="links">
-          <a class="button" href="works/wagahai/">作品アーカイブを開く</a>
-          <a class="button secondary" href="works/wagahai/entities/characters.html">人物ページ</a>
-        </div>
-      </article>
+      </aside>
+    </main>
 
-      <article>
-        <div class="meta">
-          <span class="tag">幻想文学</span>
-          <span class="tag">世界設定</span>
-          <span class="tag">公開原文</span>
-        </div>
-        <h2>銀河鉄道の夜</h2>
-        <p>
-          非写実的な世界観を持つ作品で、銀河鉄道の旅、星座・停車場・異世界の性質などを原文根拠付きで抽出する評価用デモです。
-        </p>
-        <div class="links">
-          <a class="button" href="works/ginga/">作品アーカイブを開く</a>
-          <a class="button secondary" href="works/ginga/world.html">世界設定</a>
-        </div>
-      </article>
-
-      <article>
-        <div class="meta">
-          <span class="tag">二段階生成</span>
-          <span class="tag">作品アーカイブ</span>
-          <span class="tag">原文リンク</span>
-        </div>
-        <h2>銀河鉄道の夜（新ワークフロー）</h2>
-        <p>
-          抽出した証拠ライブラリから限定された執筆パケットを作り、別役割のPi Agentが人物・関係・用語ページを書いた新しい作品アーカイブです。
-        </p>
-        <div class="links">
-          <a class="button" href="works/ginga-archive/">新ワークフローを開く</a>
-          <a class="button secondary" href="works/ginga-archive/characters.html">人物事典</a>
-        </div>
-      </article>
-
-      <article>
-        <div class="meta">
-          <span class="tag">二段階生成</span>
-          <span class="tag">品質校正版</span>
-          <span class="tag">世界設定</span>
-        </div>
-        <h2>銀河鉄道の夜（品質校正版）</h2>
-        <p>
-          世界設定、章整理、プロット、出典リンクの読みやすさを調整した新しい校正版です。旧版と並べて、用語の重複や章概要の改善を確認できます。
-        </p>
-        <div class="links">
-          <a class="button" href="works/ginga-archive-quality/">校正版を開く</a>
-          <a class="button secondary" href="works/ginga-archive-quality/world.html">世界設定</a>
-        </div>
-      </article>
-
-      <article>
-        <div class="meta">
-          <span class="tag">戯曲</span>
-          <span class="tag">二段階生成</span>
-          <span class="tag">場面整理</span>
-        </div>
-        <h2>夜叉ヶ池（新ワークフロー）</h2>
-        <p>
-          戯曲形式の公開原文から、人物、世界設定、プロット、場面整理を生成した二段階ワークフロー版です。長い舞台指示は場面番号に整理しています。
-        </p>
-        <div class="links">
-          <a class="button" href="works/yashagaike-archive-quality/">新ワークフローを開く</a>
-          <a class="button secondary" href="works/yashagaike-archive-quality/chapters.html">場面整理</a>
-        </div>
-      </article>
-
-      <article>
-        <div class="meta">
-          <span class="tag">戯曲</span>
-          <span class="tag">脚本シーン</span>
-          <span class="tag">公開原文</span>
-        </div>
-        <h2>夜叉ヶ池</h2>
-        <p>
-          泉鏡花の戯曲を対象に、人物の短呼称、舞台設定、脚本シーン、夜叉ヶ池と鐘の掟を原文根拠付きで確認するためのデモです。
-        </p>
-        <div class="links">
-          <a class="button" href="works/yashagaike/">作品アーカイブを開く</a>
-          <a class="button secondary" href="works/yashagaike/script-scenes.html">脚本シーン</a>
-        </div>
-      </article>
-    </section>
-
-    <section class="note" aria-label="既知の制約">
-      暗黙の人物関係、モチーフ、プロット線は、原文の完全一致根拠だけで扱うため抽出が控えめです。
-      各作品の「抽出状況」と「待確認情報」で、現在のカバレッジと確認点を確認できます。
-    </section>
-
-    <footer>
-      原文は青空文庫で公開されているパブリックドメイン作品です。生成アーカイブは検証用に原文根拠を表示しています。
+    <footer class="site-footer">
+      <p>LLMWiki デモアーカイブ</p>
+      <p>公開ドメイン本文、生成された作品アーカイブ、品質比較用の出力を掲載しています。</p>
     </footer>
-  </main>
+  </div>
 </body>
 </html>
