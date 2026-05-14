@@ -1,0 +1,1790 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>原文 - LLMWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/llmwiki.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../index.html" title="LLMWiki" class="md-header__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLMWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              原文
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="LLMWiki" class="md-nav__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLMWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作品総覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登場人物
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    登場人物
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-636e7702bc4b.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-6d13c46d1713.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    吾輩
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-329ba6e19a81.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    迷亭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-b8a027dc606a.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    寒月
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-4a0f0bb2d256.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    細君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-7fea9196da35.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    東風子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-309784734428.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    独仙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-a35e53bebdb7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    金田
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-39c771f004e2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鈴木
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-289975567886.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    武右衛門君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-8c23b5660884.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    御三
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-d4205aea07c4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    車屋の黒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-43a9411b8d4d.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三毛子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-f870e90b2eed.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雪江
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-4aac88471a3b.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鼻子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-a188b52afee7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三平君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-179c403c8cce.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    老梅君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-090dcbf52bbf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    すん子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-de6ceb8caaa5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    とん子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-69c16131ba60.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    令嬢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-1805a9157818.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    伯父
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-ad19605bfb65.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    坊ば
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-249a9f7d79c7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多々良君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-5a7daafe9c0f.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    御師匠さん
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/others.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    その他の登場人物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相関関係
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出来事の流れ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界設定
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../locations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    場所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    組織
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アイテム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語・概念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-questions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    待確認情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coverage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抽出状況
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出典と原文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出典と原文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evidence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../source-preview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文 1（第14部）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本文 1（第14部）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 105
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 106
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 107
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#108" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 108
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 109
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 110
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 111
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 112
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">原文</h1>
+<h2 id="114">本文 1（第14部）</h2>
+<p>第14部 / 全21部</p>
+<p><span class="llmwiki-source-meta">本文区間数: 8</span></p>
+<p><a id="excerpt-105"></a></p>
+<h3 id="105">本文区間 105</h3>
+<p><span class="llmwiki-source-meta">本文区間 105 ・ 文字位置: 208000-210400</span></p>
+<div class="llmwiki-source-text">うと云う量見を起したのである。賢か愚か、その辺は別問題として、とにかく自分の逆上に気が付いただけは殊勝の志、奇特の心得と云わなければならん。<span id="evidence-208070-208074"></span><mark class="llmwiki-source-evidence">甘木先生</mark>は例のごとくにこにこと落ちつき払って、「どうです」と云う。医者は大抵どうですと云うに極まってる。吾輩は「どうです」と云わない医者はどうも信用をおく気にならん。<br>
+「先生どうも駄目ですよ」<br>
+「え、何そんな事があるものですか」<br>
+「一体医者の薬は利くものでしょうか」<br>
+　甘木先生も驚ろいたが、そこは温厚の長者だから、別段激した様子もなく、<br>
+「利かん事もないです」と穏かに答えた。<br>
+「私の胃病なんか、いくら薬を飲んでも同じ事ですぜ」<br>
+「決して、そんな事はない」<br>
+「ないですかな。少しは善くなりますかな」と自分の胃の事を人に聞いて見る。<br>
+「そう急には、癒りません、だんだん利きます。今でももとより大分よくなっています」<br>
+「そうですかな」<br>
+「やはり肝癪が起りますか」<br>
+「起りますとも、夢にまで肝癪を起します」<br>
+「運動でも、少しなさったらいいでしょう」<br>
+「運動すると、なお肝癪が起ります」<br>
+　甘木先生もあきれ返ったものと見えて、<br>
+「どれ一つ拝見しましょうか」と診察を始める。診察を終るのを待ちかねた<span id="evidence-208515-208517"></span><mark class="llmwiki-source-evidence">主人</mark>は、突然大きな声を出して、<br>
+「先生、せんだって催眠術のかいてある本を読んだら、催眠術を応用して手癖のわるいんだの、いろいろな病気だのを直す事が出来ると書いてあったですが、本当でしょうか」と聞く。<br>
+「ええ、そう云う療法もあります」<br>
+「今でもやるんですか」<br>
+「ええ」<br>
+「催眠術をかけるのはむずかしいものでしょうか」<br>
+「なに訳はありません、私などもよく懸けます」<br>
+「先生もやるんですか」<br>
+「ええ、一つやって見ましょうか。誰でも懸らなければならん理窟のものです。あなたさえ善ければ懸けて見ましょう」<br>
+「そいつは面白い、一つ懸けて下さい。私もとうから懸かって見たいと思ったんです。しかし懸かりきりで眼が覚めないと困るな」<br>
+「なに大丈夫です。それじゃやりましょう」<br>
+　相談はたちまち一決して、主人はいよいよ催眠術を懸けらるる事となった。吾輩は今までこんな事を見た事がないから心ひそかに喜んでその結果を座敷の隅から拝見する。先生はまず、主人の眼からかけ始めた。その方法を見ていると、両眼の上瞼を上から下へと撫でて、主人がすでに眼を眠っているにも係らず、しきりに同じ方向へくせを付けたがっている。しばらくすると先生は主人に向って「こうやって、瞼を撫でていると、だんだん眼が重たくなるでしょう」と聞いた。主人は「なるほど重くなりますな」と答える。先生はなお同じように撫でおろし、撫でおろし「だんだん重くなりますよ、ようござんすか」と云う。主人もその気になったものか、何とも云わずに黙っている。同じ摩擦法はまた三四分繰り返される。最後に甘木先生は「さあもう開きませんぜ」と云われた。可哀想に主人の眼はとうとう潰れてしまった。「もう開かんのですか」「ええもうあきません」主人は黙然として目を眠っている。吾輩は主人がもう盲目になったものと思い込んでしまった。しばらくして先生は「あけるなら開いて御覧なさい。とうていあけないから」と云われる。「そうですか」と云うが早いか主人は普通の通り両眼を開いていた。主人はにやにや笑いながら「懸かりませんな」と云うと甘木先生も同じく笑いながら「ええ、懸りません」と云う。<span id="evidence-209408-209421"></span><mark class="llmwiki-source-evidence">催眠術はついに不成功に了る</mark>。甘木先生も帰る。<br>
+　その次に来たのが――主人のうちへこのくらい客の来た事はない。交際の少ない主人の家にしてはまるで嘘のようである。しかし来たに相違ない。しかも珍客が来た。吾輩がこの珍客の事を一言でも記述するのは単に珍客であるがためではない。吾輩は先刻申す通り大事件の余瀾を描きつつある。しかしてこの珍客はこの余瀾を描くに方って逸すべからざる材料である。何と云う名前か知らん、ただ顔の長い上に、山羊のような髯を生やしている四十前後の男と云えばよかろう。<span id="evidence-209647-209649"></span><mark class="llmwiki-source-evidence">迷亭</mark>の美学者たるに対して、吾輩はこの男を<span id="evidence-209667-209670"></span><mark class="llmwiki-source-evidence">哲学者</mark>と呼ぶつもりである。なぜ哲学者と云うと、何も迷亭のように自分で振り散らすからではない、ただ主人と対話する時の様子を拝見しているといかにも哲学者らしく思われるからである。これも昔しの同窓と見えて両人共応対振りは至極打ち解けた有様だ。<br>
+「うん迷亭か、あれは池に浮いてる金魚麩のようにふわふわしているね。せんだって友人を連れて一面識もない華族の門前を通行した時、ちょっと寄って茶でも飲んで行こうと云って引っ張り込んだそうだが随分呑気だね」<br>
+「それでどうしたい」<br>
+「どうしたか聞いても見なかったが、――そうさ、まあ<span id="evidence-209923-209928"></span><mark class="llmwiki-source-evidence">天稟の奇人</mark>だろう、その代り考も何もない全く金魚麩だ。<span id="evidence-209949-209951"></span><mark class="llmwiki-source-evidence">鈴木</mark>か、――あれがくるのかい、へえー、あれは理窟はわからんが世間的には利口な男だ。金時計は下げられるたちだ。しかし奥行きがないから落ちつきがなくって駄目だ。円滑円滑と云うが、円滑の意味も何もわかりはせんよ。迷亭が金魚麩ならあれは<span id="evidence-210063-210070"></span><mark class="llmwiki-source-evidence">藁で括った蒟蒻</mark>だね。ただわるく滑かでぶるぶる振えているばかりだ」<br>
+　主人はこの奇警な比喩を聞いて、大に感心したものらしく、久し振りでハハハと笑った。<br>
+「そんなら君は何だい」<br>
+「僕か、そうさな<span id="evidence-210158-210180"></span><mark class="llmwiki-source-evidence">僕なんかは――まあ自然薯くらいなところだろう</mark>。長くなって泥の中に埋ってるさ」<br>
+「君は始終泰然として気楽なようだが、羨ましいな」<br>
+「なに普通の人間と同じようにしているばかりさ。別に羨まれるに足るほどの事もない。ただありがたい事に人を羨む気も起らんから、それだけいいね」<br>
+「会計は近頃豊かかね」<br>
+「なに同じ事さ。足るや足らずさ。しかし食うているから大丈夫。驚かないよ」<br>
+「僕は不愉快で、肝癪が起ってたまらん。どっちを向いても不平ばかりだ」<br>
+「不平もいいさ。不平が起ったら起してしまえば当分</div>
+
+<p><a id="excerpt-106"></a></p>
+<h3 id="106">本文区間 106</h3>
+<p><span class="llmwiki-source-meta">本文区間 106 ・ 文字位置: 210000-212400</span></p>
+<div class="llmwiki-source-text">ちだ。しかし奥行きがないから落ちつきがなくって駄目だ。円滑円滑と云うが、円滑の意味も何もわかりはせんよ。<span id="evidence-210052-210054"></span><mark class="llmwiki-source-evidence">迷亭</mark>が金魚麩ならあれは藁で括った蒟蒻だね。ただわるく滑かでぶるぶる振えているばかりだ」<br>
+　<span id="evidence-210097-210099"></span><span id="evidence-210097-210136"></span><mark class="llmwiki-source-evidence">主人はこの奇警な比喩を聞いて、大に感心したものらしく、久し振りでハハハと笑った</mark>。<br>
+「そんなら君は何だい」<br>
+「僕か、そうさな僕なんかは――まあ自然薯くらいなところだろう。長くなって泥の中に埋ってるさ」<br>
+「<span id="evidence-210198-210214"></span><mark class="llmwiki-source-evidence">君は始終泰然として気楽なようだが</mark>、羨ましいな」<br>
+「なに普通の人間と同じようにしているばかりさ。別に羨まれるに足るほどの事もない。ただありがたい事に人を羨む気も起らんから、それだけいいね」<br>
+「会計は近頃豊かかね」<br>
+「なに同じ事さ。足るや足らずさ。しかし食うているから大丈夫。驚かないよ」<br>
+「僕は不愉快で、肝癪が起ってたまらん。どっちを向いても不平ばかりだ」<br>
+「不平もいいさ。不平が起ったら起してしまえば当分はいい心持ちになれる。人間はいろいろだから、そう自分のように人にもなれと勧めたって、なれるものではない。箸は人と同じように持たんと飯が食いにくいが、自分の麺麭は自分の勝手に切るのが一番都合がいいようだ。上手な仕立屋で着物をこしらえれば、着たてから、からだに合ったのを持ってくるが、下手の裁縫屋に誂えたら当分は我慢しないと駄目さ。しかし世の中はうまくしたもので、着ているうちには洋服の方で、こちらの骨格に合わしてくれるから。今の世に合うように上等な両親が手際よく生んでくれれば、それが幸福なのさ。しかし出来損こなったら世の中に合わないで我慢するか、または世の中で合わせるまで辛抱するよりほかに道はなかろう」<br>
+「しかし僕なんか、いつまで立っても合いそうにないぜ、心細いね」<br>
+「あまり合わない背広を無理にきると綻びる。喧嘩をしたり、自殺をしたり騒動が起るんだね。しかし君なんかただ面白くないと云うだけで自殺は無論しやせず、喧嘩だってやった事はあるまい。まあまあいい方だよ」<br>
+「ところが毎日喧嘩ばかりしているさ。相手が出て来なくっても怒っておれば喧嘩だろう」<br>
+「なるほど一人喧嘩だ。面白いや、いくらでもやるがいい」<br>
+「それがいやになった」<br>
+「そんならよすさ」<br>
+「君の前だが自分の心がそんなに自由になるものじゃない」<br>
+「まあ全体何がそんなに不平なんだい」<br>
+　主人はここにおいて<span id="evidence-210983-211039"></span><mark class="llmwiki-source-evidence">落雲館事件を始めとして、今戸焼の狸から、ぴん助、きしゃごそのほかあらゆる不平を挙げて滔々と哲学者の前に述べ立てた</mark>。<span id="evidence-211040-211045"></span><span id="evidence-211040-211079"></span><mark class="llmwiki-source-evidence">哲学者先生はだまって聞いていたが、ようやく口を開いて、かように主人に説き出した</mark>。<br>
+「ぴん助やきしゃごが何を云ったって知らん顔をしておればいいじゃないか。どうせ下らんのだから。中学の生徒なんか構う価値があるものか。なに妨害になる。だって談判しても、喧嘩をしてもその妨害はとれんのじゃないか。僕はそう云う点になると西洋人より昔しの日本人の方がよほどえらいと思う。西洋人のやり方は積極的積極的と云って近頃大分流行るが、あれは大なる欠点を持っているよ。第一積極的と云ったって際限がない話しだ。いつまで積極的にやり通したって、満足と云う域とか完全と云う境にいけるものじゃない。向に檜があるだろう。あれが目障りになるから取り払う。とその向うの下宿屋がまた邪魔になる。下宿屋を退去させると、その次の家が癪に触る。どこまで行っても際限のない話しさ。西洋人の遣り口はみんなこれさ。ナポレオンでも、アレキサンダーでも勝って満足したものは一人もないんだよ。人が気に喰わん、喧嘩をする、先方が閉口しない、法庭へ訴える、法庭で勝つ、それで落着と思うのは間違さ。心の落着は死ぬまで焦ったって片付く事があるものか。寡人政治がいかんから、代議政体にする。代議政体がいかんから、また何かにしたくなる。川が生意気だって橋をかける、山が気に喰わんと云って隧道を堀る。交通が面倒だと云って鉄道を布く。それで永久満足が出来るものじゃない。さればと云って人間だものどこまで積極的に我意を通す事が出来るものか。西洋の文明は積極的、進取的かも知れないがつまり不満足で一生をくらす人の作った文明さ。日本の文明は自分以外の状態を変化させて満足を求めるのじゃない。西洋と大に違うところは、根本的に周囲の境遇は動かすべからざるものと云う一大仮定の下に発達しているのだ。親子の関係が面白くないと云って欧洲人のようにこの関係を改良して落ちつきをとろうとするのではない。親子の関係は在来のままでとうてい動かす事が出来んものとして、その関係の下に安心を求むる手段を講ずるにある。夫婦君臣の間柄もその通り、武士町人の区別もその通り、自然その物を観るのもその通り。――山があって隣国へ行かれなければ、山を崩すと云う考を起す代りに隣国へ行かんでも困らないと云う工夫をする。山を越さなくとも満足だと云う心持ちを養成するのだ。それだから君見給え。禅家でも儒家でもきっと根本的にこの問題をつらまえる。いくら自分がえらくても世の中はとうてい意のごとくなるものではない、落日を回らす事も、加茂川を逆に流す事も出来ない。ただ出来るものは自分の心だけだからね。心さえ自由にする修業をしたら、落雲館の生徒がいくら騒いでも平気なものではないか、今戸焼の狸でも構わんでおられそうなものだ。ぴん助なんか愚な事を云ったらこの馬鹿野郎とすましておれば仔細なかろう。何でも昔しの坊主は人に斬り付けられた時電光影裏に春風を斬るとか、何とか洒落れた事を云ったと云う話だぜ。心の修業がつんで消極の極に達するとこんな霊活な作用が出来るのじゃないかしらん。僕なんか、そんなむずかしい事は分らないが、とにかく西洋人風の積極主義ばかりがいいと思うのは少々誤まっているようだ。現に君がいくら積極主義に働いたって、<span id="evidence-212389-212400"></span><mark class="llmwiki-source-evidence">生徒が君をひやかしにく</mark></div>
+
+<p><a id="excerpt-107"></a></p>
+<h3 id="107">本文区間 107</h3>
+<p><span class="llmwiki-source-meta">本文区間 107 ・ 文字位置: 212000-214400</span></p>
+<div class="llmwiki-source-text">足だと云う心持ちを養成するのだ。それだから君見給え。禅家でも儒家でもきっと根本的にこの問題をつらまえる。いくら自分がえらくても世の中はとうてい意のごとくなるものではない、落日を回らす事も、加茂川を逆に流す事も出来ない。ただ出来るものは自分の心だけだからね。心さえ自由にする修業をしたら、<span id="evidence-212143-212146"></span><mark class="llmwiki-source-evidence">落雲館</mark>の生徒がいくら騒いでも平気なものではないか、<span id="evidence-212168-212173"></span><mark class="llmwiki-source-evidence">今戸焼の狸</mark>でも構わんでおられそうなものだ。<span id="evidence-212189-212192"></span><mark class="llmwiki-source-evidence">ぴん助</mark>なんか愚な事を云ったらこの馬鹿野郎とすましておれば仔細なかろう。何でも昔しの坊主は人に斬り付けられた時電光影裏に春風を斬るとか、何とか洒落れた事を云ったと云う話だぜ。心の修業がつんで消極の極に達するとこんな霊活な作用が出来るのじゃないかしらん。僕なんか、そんなむずかしい事は分らないが、とにかく西洋人風の積極主義ばかりがいいと思うのは少々誤まっているようだ。現に君がいくら積極主義に働いたって、生徒が君をひやかしにくるのをどうする事も出来ないじゃないか。君の権力であの学校を閉鎖するか、または先方が警察に訴えるだけのわるい事をやれば格別だが、さもない以上は、どんなに積極的に出たったて勝てっこないよ。もし積極的に出るとすれば金の問題になる。多勢に無勢の問題になる。換言すると君が金持に頭を下げなければならんと云う事になる。衆を恃む小供に恐れ入らなければならんと云う事になる。君のような貧乏人でしかもたった一人で積極的に喧嘩をしようと云うのがそもそも君の不平の種さ。どうだい分ったかい」<br>
+　<span id="evidence-212636-212638"></span><mark class="llmwiki-source-evidence">主人</mark>は分ったとも、分らないとも言わずに聞いていた。<span id="evidence-212661-212691"></span><mark class="llmwiki-source-evidence">珍客が帰ったあとで書斎へ這入って書物も読まずに何か考えていた</mark>。<br>
+　<span id="evidence-212694-212700"></span><mark class="llmwiki-source-evidence">鈴木の藤さん</mark>は金と衆とに従えと主人に教えたのである。<span id="evidence-212720-212724"></span><mark class="llmwiki-source-evidence">甘木先生</mark>は催眠術で神経を沈めろと助言したのである。最後の珍客は消極的の修養で安心を得ろと説法したのである。主人がいずれを択ぶかは主人の随意である。ただこのままでは通されないに極まっている。<br>
+<br>
+<span id="evidence-212816-212817"></span><mark class="llmwiki-source-evidence">九</mark><br>
+<br>
+　主人は<span id="evidence-212823-212829"></span><mark class="llmwiki-source-evidence">痘痕面である</mark>。御維新前はあばたも大分流行ったものだそうだが日英同盟の今日から見ると、こんな顔はいささか時候後れの感がある。あばたの衰退は人口の増殖と反比例して近き将来には全くその迹を絶つに至るだろうとは医学上の統計から精密に割り出されたる結論であって、<span id="evidence-212949-212951"></span><mark class="llmwiki-source-evidence">吾輩</mark>のごとき猫といえども毫も疑を挟む余地のないほどの名論である。現今地球上にあばたっ面を有して生息している人間は何人くらいあるか知らんが、吾輩が交際の区域内において打算して見ると、猫には一匹もない。人間にはたった一人ある。しかしてその一人が即ち主人である。はなはだ気の毒である。<br>
+　吾輩は主人の顔を見る度に考える。まあ何の因果でこんな妙な顔をして臆面なく二十世紀の空気を呼吸しているのだろう。昔なら少しは幅も利いたか知らんが、あらゆるあばたが二の腕へ立ち退きを命ぜられた昨今、依然として鼻の頭や頬の上へ陣取って頑として動かないのは自慢にならんのみか、かえってあばたの体面に関する訳だ。出来る事なら今のうち取り払ったらよさそうなものだ。あばた自身だって心細いに違いない。それとも党勢不振の際、誓って落日を中天に挽回せずんばやまずと云う意気込みで、あんなに横風に顔一面を占領しているのか知らん。そうするとこのあばたは決して軽蔑の意をもって視るべきものでない。滔々たる流俗に抗する万古不磨の穴の集合体であって、大に吾人の尊敬に値する凸凹と云って宜しい。ただきたならしいのが欠点である。<br>
+　主人の小供のときに牛込の山伏町に<span id="evidence-213456-213460"></span><mark class="llmwiki-source-evidence">浅田宗伯</mark>と云う漢法の名医があったが、この老人が病家を見舞うときには必ずかごに乗ってそろりそろりと参られたそうだ。ところが宗伯老が亡くなられてその養子の代になったら、かごがたちまち人力車に変じた。だから養子が死んでそのまた養子が跡を続いだら葛根湯がアンチピリンに化けるかも知れない。かごに乗って東京市中を練りあるくのは宗伯老の当時ですらあまり見っともいいものでは無かった。こんな真似をして澄していたものは旧弊な亡者と、汽車へ積み込まれる豚と、宗伯老とのみであった。<br>
+　主人のあばたもその振わざる事においては宗伯老のかごと一般で、はたから見ると気の毒なくらいだが、漢法医にも劣らざる<span id="evidence-213745-213750"></span><mark class="llmwiki-source-evidence">頑固な主人</mark>は依然として孤城落日のあばたを天下に曝露しつつ<span id="evidence-213773-213789"></span><mark class="llmwiki-source-evidence">毎日登校してリードルを教えている</mark>。<br>
+　かくのごとき前世紀の紀念を満面に刻して教壇に立つ彼は、その生徒に対して授業以外に大なる訓戒を垂れつつあるに相違ない。彼は「猿が手を持つ」を反覆するよりも「あばたの顔面に及ぼす影響」と云う大問題を造作もなく解釈して、不言の間にその答案を生徒に与えつつある。もし主人のような人間が教師として存在しなくなった暁には彼等生徒はこの問題を研究するために図書館もしくは博物館へ馳けつけて、吾人がミイラによって埃及人を髣髴すると同程度の労力を費やさねばならぬ。この点から見ると主人の痘痕も冥々の裡に妙な功徳を施こしている。<br>
+　もっとも主人はこの功徳を施こすために顔一面に疱瘡を種え付けたのではない。これでも実は種え疱瘡をしたのである。不幸にして腕に種えたと思ったのが、いつの間にか顔へ伝染していたのである。その頃は小供の事で今のように色気もなにもなかったものだから、痒い痒いと云いながら無暗に顔中引き掻いたのだそうだ。ちょうど噴火山が破裂してラヴァが顔の上を流れたようなもので、親が生んでくれた顔を台なしにしてしまった。主人は折々細君に向って<span id="evidence-214256-214275"></span><mark class="llmwiki-source-evidence">疱瘡をせぬうちは玉のような男子であった</mark>と云っている。浅草の観音様で西洋人が振り反って見たくらい奇麗だったなどと自慢する事さえある。なるほどそうかも知れない。ただ誰も保証人のいないのが残念である。<br>
+　いくら功徳になっても訓戒になっても、きたない者はやっぱりきたないものだから、物心がついて以</div>
+
+<p><a id="excerpt-108"></a></p>
+<h3 id="108">本文区間 108</h3>
+<p><span class="llmwiki-source-meta">本文区間 108 ・ 文字位置: 214000-216400</span></p>
+<div class="llmwiki-source-text">程度の労力を費やさねばならぬ。この点から見ると<span id="evidence-214023-214025"></span><mark class="llmwiki-source-evidence">主人</mark>の痘痕も冥々の裡に妙な功徳を施こしている。<br>
+　もっとも主人はこの功徳を施こすために顔一面に疱瘡を種え付けたのではない。これでも実は種え疱瘡をしたのである。不幸にして腕に種えたと思ったのが、いつの間にか顔へ伝染していたのである。その頃は小供の事で今のように色気もなにもなかったものだから、痒い痒いと云いながら無暗に顔中引き掻いたのだそうだ。ちょうど噴火山が破裂してラヴァが顔の上を流れたようなもので、親が生んでくれた顔を台なしにしてしまった。主人は折々<span id="evidence-214250-214252"></span><mark class="llmwiki-source-evidence">細君</mark>に向って疱瘡をせぬうちは玉のような男子であったと云っている。浅草の観音様で西洋人が振り反って見たくらい奇麗だったなどと自慢する事さえある。なるほどそうかも知れない。ただ誰も保証人のいないのが残念である。<br>
+　いくら功徳になっても訓戒になっても、きたない者はやっぱりきたないものだから、物心がついて以来と云うもの主人は大にあばたについて心配し出して、あらゆる手段を尽してこの醜態を揉み潰そうとした。ところが宗伯老のかごと違って、いやになったからと云うてそう急に打ちやられるものではない。今だに歴然と残っている。この歴然が多少気にかかると見えて、主人は往来をあるく度毎にあばた面を勘定してあるくそうだ。今日何人あばたに出逢って、その主は男か女か、その場所は小川町の勧工場であるか、上野の公園であるか、ことごとく彼の日記につけ込んである。彼はあばたに関する智識においては決して誰にも譲るまいと確信している。せんだってある洋行帰りの<span id="evidence-214663-214665"></span><mark class="llmwiki-source-evidence">友人</mark>が来た折なぞは、「君西洋人にはあばたがあるかな」と聞いたくらいだ。するとその友人が「そうだな」と首を曲げながらよほど考えたあとで「まあ滅多にないね」と云ったら、主人は「滅多になくっても、少しはあるかい」と念を入れて聞き返えした。友人は気のない顔で「あっても乞食か立ん坊だよ。教育のある人にはないようだ」と答えたら、主人は「そうかなあ、日本とは少し違うね」と云った。<br>
+　哲学者の意見によって落雲館との喧嘩を思い留った主人はその後書斎に立て籠ってしきりに何か考えている。彼の忠告を容れて静坐の裡に霊活なる精神を消極的に修養するつもりかも知れないが、元来が気の小さな人間の癖に、ああ陰気な懐手ばかりしていては碌な結果の出ようはずがない。それより英書でも質に入れて芸者から喇叭節でも習った方が遥かにましだとまでは気が付いたが、あんな偏屈な男はとうてい<span id="evidence-215036-215037"></span><mark class="llmwiki-source-evidence">猫</mark>の忠告などを聴く気遣はないから、まあ勝手にさせたらよかろうと五六日は近寄りもせずに暮した。<br>
+　今日はあれからちょうど七日目である。禅家などでは一七日を限って大悟して見せるなどと凄じい勢で結跏する連中もある事だから、うちの主人もどうかなったろう、死ぬか生きるか何とか片付いたろうと、のそのそ椽側から書斎の入口まで来て室内の動静を偵察に及んだ。<br>
+　書斎は南向きの六畳で、日当りのいい所に<span id="evidence-215228-215232"></span><mark class="llmwiki-source-evidence">大きな机</mark>が据えてある。ただ大きな机ではわかるまい。長さ六尺、幅三尺八寸高さこれにかなうと云う大きな机である。無論出来合のものではない。近所の<span id="evidence-215298-215301"></span><mark class="llmwiki-source-evidence">建具屋</mark>に談判して寝台兼机として製造せしめたる稀代の品物である。何の故にこんな大きな机を新調して、また何の故にその上に寝て見ようなどという了見を起したものか、本人に聞いて見ない事だから頓とわからない。ほんの一時の出来心で、かかる難物を担ぎ込んだのかも知れず、あるいはことによると一種の精神病者において吾人がしばしば見出すごとく、縁もゆかりもない二個の観念を連想して、机と寝台を勝手に結び付けたものかも知れない。とにかく奇抜な考えである。ただ奇抜だけで役に立たないのが欠点である。<span id="evidence-215536-215538"></span><mark class="llmwiki-source-evidence">吾輩</mark>はかつて主人がこの机の上へ昼寝をして寝返りをする拍子に椽側へ転げ落ちたのを見た事がある。それ以来この机は決して寝台に転用されないようである。<br>
+　机の前には薄っぺらな<span id="evidence-215620-215628"></span><mark class="llmwiki-source-evidence">メリンスの座布団</mark>があって、煙草の火で焼けた穴が三つほどかたまってる。中から見える綿は薄黒い。この座布団の上に後ろ向きにかしこまっているのが主人である。鼠色によごれた<span id="evidence-215702-215705"></span><mark class="llmwiki-source-evidence">兵児帯</mark>をこま結びにむすんだ左右がだらりと足の裏へ垂れかかっている。この帯へじゃれ付いて、いきなり頭を張られたのはこないだの事である。滅多に寄り付くべき帯ではない。<br>
+　まだ考えているのか下手の考と云う喩もあるのにと後ろから覗き込んで見ると、机の上でいやにぴかぴかと光ったものがある。吾輩は思わず、続け様に二三度瞬をしたが、こいつは変だとまぶしいのを我慢してじっと光るものを見つめてやった。するとこの光りは机の上で動いている<span id="evidence-215912-215913"></span><mark class="llmwiki-source-evidence">鏡</mark>から出るものだと云う事が分った。しかし主人は何のために書斎で鏡などを振り舞わしているのであろう。鏡と云えば風呂場にあるに極まっている。現に吾輩は今朝風呂場でこの鏡を見たのだ。この鏡ととくに云うのは主人のうちにはこれよりほかに鏡はないからである。主人が毎朝顔を洗ったあとで髪を分けるときにもこの鏡を用いる。――主人のような男が髪を分けるのかと聞く人もあるかも知れぬが、実際彼は他の事に無精なるだけそれだけ頭を叮嚀にする。吾輩が当家に参ってから今に至るまで主人はいかなる炎熱の日といえども五分刈に刈り込んだ事はない。必ず二寸くらいの長さにして、それを御大そうに左の方で分けるのみか、右の端をちょっと跳ね返して澄している。これも精神病の徴候かも知れない。こんな気取った分け方はこの机と一向調和しないと思うが、あえて他人に害を及ぼすほどの事でないから、誰も何とも云わない。本人も得意である。分け方のハイカラなのはさておいて、なぜあんなに髪を長くするのかと思ったら実はこう云う訳である。彼のあばたは単に彼の顔を侵蝕せるのみならず、とくの昔しに脳天まで食い込んでいるのだそうだ。だからも</div>
+
+<p><a id="excerpt-109"></a></p>
+<h3 id="109">本文区間 109</h3>
+<p><span class="llmwiki-source-meta">本文区間 109 ・ 文字位置: 216000-218400</span></p>
+<div class="llmwiki-source-text">この<span id="evidence-216002-216003"></span><mark class="llmwiki-source-evidence">鏡</mark>ととくに云うのは<span id="evidence-216011-216013"></span><mark class="llmwiki-source-evidence">主人</mark>のうちにはこれよりほかに鏡はないからである。主人が毎朝顔を洗ったあとで髪を分けるときにもこの鏡を用いる。――主人のような男が髪を分けるのかと聞く人もあるかも知れぬが、実際彼は他の事に無精なるだけそれだけ<span id="evidence-216114-216121"></span><mark class="llmwiki-source-evidence">頭を叮嚀にする</mark>。<span id="evidence-216122-216124"></span><mark class="llmwiki-source-evidence">吾輩</mark>が当家に参ってから今に至るまで主人はいかなる炎熱の日といえども<span id="evidence-216155-216168"></span><mark class="llmwiki-source-evidence">五分刈に刈り込んだ事はない</mark>。必ず二寸くらいの長さにして、それを御大そうに左の方で分けるのみか、右の端をちょっと跳ね返して澄している。これも精神病の徴候かも知れない。こんな気取った分け方はこの机と一向調和しないと思うが、あえて他人に害を及ぼすほどの事でないから、誰も何とも云わない。本人も得意である。分け方のハイカラなのはさておいて、なぜあんなに髪を長くするのかと思ったら実はこう云う訳である。彼のあばたは単に彼の顔を侵蝕せるのみならず、とくの昔しに脳天まで食い込んでいるのだそうだ。だからもし普通の人のように五分刈や三分刈にすると、短かい毛の根本から何十となくあばたがあらわれてくる。いくら撫でても、さすってもぽつぽつがとれない。枯野に蛍を放ったようなもので風流かも知れないが、<span id="evidence-216494-216496"></span><mark class="llmwiki-source-evidence">細君</mark>の御意に入らんのは勿論の事である。髪さえ長くしておけば露見しないですむところを、好んで自己の非を曝くにも当らぬ訳だ。なろう事なら顔まで毛を生やして、こっちのあばたも内済にしたいくらいなところだから、ただで生える毛を銭を出して刈り込ませて、私は頭蓋骨の上まで天然痘にやられましたよと吹聴する必要はあるまい。――これが主人の髪を長くする理由で、髪を長くするのが、彼の髪をわける原因で、その原因が鏡を見る訳で、その鏡が<span id="evidence-216702-216705"></span><mark class="llmwiki-source-evidence">風呂場</mark>にある所以で、しこうしてその鏡が一つしかないと云う事実である。<br>
+　風呂場にあるべき鏡が、しかも一つしかない<span id="evidence-216758-216767"></span><span id="evidence-216760-216762"></span><mark class="llmwiki-source-evidence">鏡が書斎に来ている</mark>以上は鏡が離魂病に罹ったのかまたは主人が風呂場から持って来たに相違ない。持って来たとすれば何のために持って来たのだろう。あるいは例の消極的修養に必要な道具かも知れない。昔し或る学者が何とかいう智識を訪うたら、和尚両肌を抜いで甎を磨しておられた。何をこしらえなさると質問をしたら、なにさ今鏡を造ろうと思うて一生懸命にやっておるところじゃと答えた。そこで学者は驚ろいて、なんぼ名僧でも甎を磨して鏡とする事は出来まいと云うたら、和尚からからと笑いながらそうか、それじゃやめよ、いくら書物を読んでも道はわからぬのもそんなものじゃろと罵ったと云うから、主人もそんな事を聞き噛って風呂場から鏡でも持って来て、したり顔に振り廻しているのかも知れない。大分物騒になって来たなと、そっと窺っている。<br>
+　かくとも知らぬ主人ははなはだ熱心なる容子をもって一張来の鏡を見つめている。元来鏡というものは気味の悪いものである。深夜蝋燭を立てて、広い部屋のなかで一人鏡を覗き込むにはよほどの勇気がいるそうだ。吾輩などは始めて当家の<span id="evidence-217217-217219"></span><mark class="llmwiki-source-evidence">令嬢</mark>から鏡を顔の前へ押し付けられた時に、はっと仰天して屋敷のまわりを三度馳け回ったくらいである。いかに白昼といえども、主人のようにかく一生懸命に見つめている以上は自分で自分の顔が怖くなるに相違ない。ただ見てさえあまり気味のいい顔じゃない。ややあって主人は<span id="evidence-217344-217364"></span><mark class="llmwiki-source-evidence">「なるほどきたない顔だ」と独り言を云った</mark>。自己の醜を自白するのはなかなか見上げたものだ。様子から云うとたしかに気違の所作だが言うことは真理である。これがもう一歩進むと、己れの醜悪な事が怖くなる。人間は吾身が怖ろしい悪党であると云う事実を徹骨徹髄に感じた者でないと苦労人とは云えない。苦労人でないととうてい解脱は出来ない。主人もここまで来たらついでに「おお怖い」とでも云いそうなものであるがなかなか云わない。「なるほどきたない顔だ」と云ったあとで、何を考え出したか、ぷうっと頬っぺたを膨らました。そうしてふくれた頬っぺたを平手で二三度叩いて見る。何のまじないだか分らない。この時吾輩は何だかこの顔に似たものがあるらしいと云う感じがした。よくよく考えて見るとそれは<span id="evidence-217674-217676"></span><mark class="llmwiki-source-evidence">御三</mark>の顔である。ついでだから御三の顔をちょっと紹介するが、それはそれは<span id="evidence-217709-217718"></span><mark class="llmwiki-source-evidence">ふくれたものである</mark>。この間さる人が穴守稲荷から河豚の提灯をみやげに持って来てくれたが、ちょうどあの河豚提灯のようにふくれている。あまりふくれ方が残酷なので眼は両方共紛失している。もっとも河豚のふくれるのは万遍なく真丸にふくれるのだが、お三とくると、元来の骨格が多角性であって、その骨格通りにふくれ上がるのだから、まるで水気になやんでいる六角時計のようなものだ。御三が聞いたらさぞ怒るだろうから、御三はこのくらいにしてまた主人の方に帰るが、かくのごとくあらん限りの空気をもって頬っぺたをふくらませたる彼は前申す通り手のひらで頬ぺたを叩きながら「このくらい皮膚が緊張するとあばたも眼につかん」とまた独り語をいった。<br>
+　こんどは顔を横に向けて半面に光線を受けた所を鏡にうつして見る。「こうして見ると大変目立つ。やっぱりまともに日の向いてる方が平に見える。奇体な物だなあ」と大分感心した様子であった。それから右の手をうんと伸して、出来るだけ鏡を遠距離に持って行って静かに熟視している。「このくらい離れるとそんなでもない。やはり近過ぎるといかん。――顔ばかりじゃない何でもそんなものだ」と悟ったようなことを云う。次に鏡を急に横にした。そうして鼻の根を中心にして眼や額や眉を一度にこの中心に向ってくしゃくしゃとあつめた。見るからに不愉快な容貌が出来上ったと思ったら「いやこれは駄目だ」と当人も気がついたと見えて早々やめてしまった。「なぜこんなに毒々しい顔だろう」と少々不審の体で鏡を眼を去る三寸ばかりの所へ引き寄せる。右の人指しゆびで小鼻を撫でて、撫でた指の頭を机の上にあった吸取り紙の上へ、う</div>
+
+<p><a id="excerpt-110"></a></p>
+<h3 id="110">本文区間 110</h3>
+<p><span class="llmwiki-source-meta">本文区間 110 ・ 文字位置: 218000-220400</span></p>
+<div class="llmwiki-source-text">かん」とまた独り語をいった。<br>
+　こんどは顔を横に向けて半面に光線を受けた所を鏡にうつして見る。「こうして見ると大変目立つ。やっぱりまともに日の向いてる方が平に見える。奇体な物だなあ」と大分感心した様子であった。それから右の手をうんと伸して、出来るだけ鏡を遠距離に持って行って静かに熟視している。「このくらい離れるとそんなでもない。やはり近過ぎるといかん。――顔ばかりじゃない何でもそんなものだ」と悟ったようなことを云う。次に鏡を急に横にした。そうして鼻の根を中心にして眼や額や眉を一度にこの中心に向ってくしゃくしゃとあつめた。見るからに不愉快な容貌が出来上ったと思ったら「いやこれは駄目だ」と当人も気がついたと見えて早々やめてしまった。「なぜこんなに毒々しい顔だろう」と少々不審の体で鏡を眼を去る三寸ばかりの所へ引き寄せる。右の人指しゆびで小鼻を撫でて、撫でた指の頭を机の上にあった<span id="evidence-218391-218395"></span><mark class="llmwiki-source-evidence">吸取り紙</mark>の上へ、うんと押しつける。吸い取られた鼻の膏が丸るく紙の上へ浮き出した。いろいろな芸をやるものだ。それから<span id="evidence-218448-218450"></span><mark class="llmwiki-source-evidence">主人</mark>は鼻の膏を塗抹した指頭を転じてぐいと右眼の下瞼を裏返して、俗に云う<span id="evidence-218483-218499"></span><mark class="llmwiki-source-evidence">べっかんこうを見事にやって退けた</mark>。あばたを研究しているのか、鏡と睨め競をしているのかその辺は少々不明である。気の多い主人の事だから見ているうちにいろいろになると見える。それどころではない。もし善意をもって蒟蒻問答的に解釈してやれば主人は見性自覚の方便としてかように鏡を相手にいろいろな仕草を演じているのかも知れない。<span id="evidence-218641-218666"></span><mark class="llmwiki-source-evidence">すべて人間の研究と云うものは自己を研究するのである</mark>。天地と云い山川と云い日月と云い星辰と云うも皆自己の異名に過ぎぬ。自己を措いて他に研究すべき事項は誰人にも見出し得ぬ訳だ。もし人間が自己以外に飛び出す事が出来たら、飛び出す途端に自己はなくなってしまう。しかも自己の研究は自己以外に誰もしてくれる者はない。いくら仕てやりたくても、貰いたくても、出来ない相談である。それだから古来の豪傑はみんな自力で豪傑になった。人のお蔭で自己が分るくらいなら、自分の代理に牛肉を喰わして、堅いか柔かいか判断の出来る訳だ。朝に法を聴き、夕に道を聴き、梧前灯下に書巻を手にするのは皆この自証を挑撥するの方便の具に過ぎぬ。人の説く法のうち、他の弁ずる道のうち、乃至は五車にあまる蠧紙堆裏に自己が存在する所以がない。あれば自己の幽霊である。もっともある場合において幽霊は無霊より優るかも知れない。影を追えば本体に逢着する時がないとも限らぬ。多くの影は大抵本体を離れぬものだ。この意味で主人が鏡をひねくっているなら大分話せる男だ。エピクテタスなどを鵜呑にして学者ぶるよりも遥かにましだと思う。<br>
+　<span id="evidence-219125-219136"></span><mark class="llmwiki-source-evidence">鏡は己惚の醸造器である</mark>ごとく、同時に自慢の消毒器である。もし浮華虚栄の念をもってこれに対する時はこれほど愚物を煽動する道具はない。昔から増上慢をもって己を害し他を※うた事蹟の三分の二はたしかに鏡の所作である。仏国革命の当時物好きな御医者さんが改良首きり器械を発明して飛んだ罪をつくったように、始めて鏡をこしらえた人も定めし寝覚のわるい事だろう。しかし自分に愛想の尽きかけた時、自我の萎縮した折は鏡を見るほど薬になる事はない。妍醜瞭然だ。こんな顔でよくまあ人で候と反りかえって今日まで暮らされたものだと気がつくにきまっている。そこへ気がついた時が人間の生涯中もっともありがたい期節である。自分で自分の馬鹿を承知しているほど尊とく見える事はない。この自覚性馬鹿の前にはあらゆるえらがり屋がことごとく頭を下げて恐れ入らねばならぬ。当人は昂然として吾を軽侮嘲笑しているつもりでも、こちらから見るとその昂然たるところが恐れ入って頭を下げている事になる。主人は鏡を見て己れの愚を悟るほどの賢者ではあるまい。しかし吾が顔に印せられる<span id="evidence-219584-219586"></span><mark class="llmwiki-source-evidence">痘痕</mark>の銘くらいは公平に読み得る男である。顔の醜いのを自認するのは心の賤しきを会得する楷梯にもなろう。たのもしい男だ。これも哲学者からやり込められた結果かも知れぬ。<br>
+　かように考えながらなお様子をうかがっていると、それとも知らぬ主人は<span id="evidence-219700-219712"></span><mark class="llmwiki-source-evidence">思う存分あかんべえをした</mark>あとで「大分充血しているようだ。やっぱり<span id="evidence-219732-219737"></span><mark class="llmwiki-source-evidence">慢性結膜炎</mark>だ」と言いながら、人さし指の横つらでぐいぐい<span id="evidence-219759-219771"></span><mark class="llmwiki-source-evidence">充血した瞼をこすり始めた</mark>。大方痒いのだろうけれども、たださえあんなに赤くなっているものを、こう擦ってはたまるまい。遠からぬうちに塩鯛の眼玉のごとく腐爛するにきまってる。やがて眼を開いて鏡に向ったところを見ると、果せるかなどんよりとして北国の冬空のように曇っていた。もっとも平常からあまり晴れ晴れしい眼ではない。誇大な形容詞を用いると混沌として黒眼と白眼が剖判しないくらい漠然としている。彼の精神が朦朧として不得要領底に一貫しているごとく、彼の眼も曖々然昧々然として長えに眼窩の奥に漂うている。これは<span id="evidence-220008-220010"></span><mark class="llmwiki-source-evidence">胎毒</mark>のためだとも云うし、あるいは疱瘡の余波だとも解釈されて、小さい時分はだいぶ柳の虫や赤蛙の厄介になった事もあるそうだが、せっかく<span id="evidence-220073-220075"></span><mark class="llmwiki-source-evidence">母親</mark>の丹精も、あるにその甲斐あらばこそ、今日まで生れた当時のままでぼんやりしている。<span id="evidence-220115-220117"></span><mark class="llmwiki-source-evidence">吾輩</mark>ひそかに思うにこの状態は決して胎毒や疱瘡のためではない。彼の眼玉がかように晦渋溷濁の悲境に彷徨しているのは、とりも直さず彼の頭脳が不透不明の実質から構成されていて、その作用が暗憺溟濛の極に達しているから、自然とこれが形体の上にあらわれて、知らぬ母親にいらぬ心配を掛けたんだろう。煙たって火あるを知り、まなこ濁って愚なるを証す。して見ると彼の眼は彼の心の象徴で、彼の心は<span id="evidence-220301-220315"></span><mark class="llmwiki-source-evidence">天保銭のごとく穴があいている</mark>から、彼の眼もまた天保銭と同じく、大きな割合に通用しないに違ない。<br>
+　今度は髯をねじり始めた。元来から行儀のよくない髯でみんな思い思いの姿勢をとって生えている。いくら個人</div>
+
+<p><a id="excerpt-111"></a></p>
+<h3 id="111">本文区間 111</h3>
+<p><span class="llmwiki-source-meta">本文区間 111 ・ 文字位置: 220000-222400</span></p>
+<div class="llmwiki-source-text">うている。これは胎毒のためだとも云うし、あるいは疱瘡の余波だとも解釈されて、小さい時分はだいぶ柳の虫や赤蛙の厄介になった事もあるそうだが、せっかく母親の丹精も、あるにその甲斐あらばこそ、今日まで生れた当時のままでぼんやりしている。吾輩ひそかに思うにこの状態は決して胎毒や疱瘡のためではない。彼の眼玉がかように晦渋溷濁の悲境に彷徨しているのは、とりも直さず彼の頭脳が不透不明の実質から構成されていて、その作用が暗憺溟濛の極に達しているから、自然とこれが形体の上にあらわれて、知らぬ母親にいらぬ心配を掛けたんだろう。煙たって火あるを知り、まなこ濁って愚なるを証す。して見ると彼の眼は彼の心の象徴で、彼の心は天保銭のごとく穴があいているから、彼の眼もまた天保銭と同じく、大きな割合に通用しないに違ない。<br>
+　今度は髯をねじり始めた。元来から行儀のよくない髯でみんな思い思いの姿勢をとって生えている。いくら個人主義が流行る世の中だって、こう町々に我儘を尽くされては持主の迷惑はさこそと思いやられる、<span id="evidence-220444-220446"></span><mark class="llmwiki-source-evidence">主人</mark>もここに鑑みるところあって近頃は大に訓練を与えて、出来る限り系統的に按排するように尽力している。その熱心の功果は空しからずして昨今ようやく歩調が少しととのうようになって来た。今までは髯が生えておったのであるが、この頃は髯を生やしているのだと自慢するくらいになった。熱心は成効の度に応じて鼓舞せられるものであるから、吾が髯の前途有望なりと見てとって主人は朝な夕な、手がすいておれば必ず髯に向って鞭撻を加える。彼のアムビションは独逸皇帝陛下のように、向上の念の熾な髯を蓄えるにある。それだから毛孔が横向であろうとも、下向であろうとも聊か頓着なく十把一とからげに握っては、上の方へ引っ張り上げる。髯もさぞかし難儀であろう、所有主たる主人すら時々は痛い事もある。がそこが訓練である。否でも応でもさかに扱き上げる。門外漢から見ると気の知れない道楽のようであるが、当局者だけは至当の事と心得ている。教育者がいたずらに生徒の本性を撓めて、僕の手柄を見給えと誇るようなもので毫も非難すべき理由はない。<br>
+　主人が満腔の熱誠をもって髯を調練していると、台所から<span id="evidence-220916-220922"></span><mark class="llmwiki-source-evidence">多角性の御三</mark>が郵便が参りましたと、例のごとく赤い手をぬっと書斎の中へ出した。右手に髯をつかみ、左手に鏡を持った主人は、そのまま入口の方を振りかえる。八の字の尾に逆か立ちを命じたような髯を見るや否や御多角はいきなり台所へ引き戻して、ハハハハと御釜の蓋へ身をもたして笑った。主人は平気なものである。悠々と鏡をおろして郵便を取り上げた。第一信は活版ずりで何だかいかめしい文字が並べてある。読んで見ると<br>
+<br>
+拝啓愈御多祥奉賀候回顧すれば<span id="evidence-221129-221152"></span><mark class="llmwiki-source-evidence">日露の戦役は連戦連勝の勢に乗じて平和克復を告げ</mark>吾忠勇義烈なる将士は今や過半万歳声裡に凱歌を奏し国民の歓喜何ものか之に若かん曩に宣戦の大詔煥発せらるるや義勇公に奉じたる将士は久しく万里の異境に在りて克く寒暑の苦難を忍び一意戦闘に従事し命を国家に捧げたるの至誠は永く銘して忘るべからざる所なり而して軍隊の凱旋は本月を以て殆んど終了を告げんとす依って本会は来る二十五日を期し本区内一千有余の出征将校下士卒に対し本区民一般を代表し以て<span id="evidence-221342-221367"></span><mark class="llmwiki-source-evidence">一大凱旋祝賀会を開催し兼て軍人遺族を慰藉せんが為め</mark>熱誠之を迎え聊感謝の微衷を表し度就ては各位の御協賛を仰ぎ此盛典を挙行するの幸を得ば本会の面目不過之と存候間何卒御賛成奮って義捐あらんことを只管希望の至に堪えず候敬具<br>
+<br>
+とあって差し出し人は<span id="evidence-221461-221464"></span><mark class="llmwiki-source-evidence">華族様</mark>である。主人は黙読一過の後直ちに封の中へ巻き納めて知らん顔をしている。義捐などは恐らくしそうにない。せんだって東北凶作の義捐金を二円とか三円とか出してから、逢う人毎に義捐をとられた、とられたと吹聴しているくらいである。義捐とある以上は差し出すもので、とられるものでないには極っている。泥棒にあったのではあるまいし、とられたとは不穏当である。しかるにも関せず、盗難にでも罹ったかのごとくに思ってるらしい主人がいかに軍隊の歓迎だと云って、いかに華族様の勧誘だと云って、強談で持ちかけたらいざ知らず、活版の手紙くらいで金銭を出すような人間とは思われない。主人から云えば軍隊を歓迎する前にまず自分を歓迎したいのである。自分を歓迎した後なら大抵のものは歓迎しそうであるが、自分が朝夕に差し支える間は、歓迎は華族様に任せておく了見らしい。主人は第二信を取り上げたが「ヤ、これも活版だ」と云った。<br>
+<br>
+時下秋冷の候に候処貴家益々御隆盛の段奉賀上候陳れば本校儀も御承知の通り一昨々年以来二三野心家の為めに妨げられ一時其極に達し候得共是れ皆不肖針作が足らざる所に起因すと存じ深く自ら警むる所あり臥薪甞胆其の苦辛の結果漸く茲に独力以て我が理想に適するだけの校舎新築費を得るの途を講じ候其は別義にも御座なく<span id="evidence-222005-222013"></span><mark class="llmwiki-source-evidence">別冊裁縫秘術綱要</mark>と命名せる書冊出版の義に御座候本書は不肖針作が多年苦心研究せる工芸上の原理原則に法とり真に肉を裂き血を絞るの思を為して著述せるものに御座候因って本書を普く一般の家庭へ製本実費に些少の利潤を附して御購求を願い一面斯道発達の一助となすと同時に又一面には僅少の利潤を蓄積して校舎建築費に当つる心算に御座候依っては近頃何共恐縮の至りに存じ候えども本校建築費中へ御寄附被成下と御思召し茲に呈供仕候秘術綱要一部を御購求の上御侍女の方へなりとも御分与被成下候て御賛同の意を御表章被成下度伏して懇願仕候※々敬具<br>
+<br>
+<span id="evidence-222262-222275"></span><mark class="llmwiki-source-evidence">大日本女子裁縫最高等大学院</mark><br>
+校長　　<span id="evidence-222280-222284"></span><mark class="llmwiki-source-evidence">縫田針作</mark>　九拝<br>
+とある。主人はこの鄭重なる書面を、冷淡に丸めてぽんと屑籠の中へ抛り込んだ。せっかくの針作君の九拝も臥薪甞胆も何の役にも立たなかったのは気の毒である。第三信にかかる。第三信はすこぶる風変りの光彩を放っている。状袋が紅白のだんだ</div>
+
+<p><a id="excerpt-112"></a></p>
+<h3 id="112">本文区間 112</h3>
+<p><span class="llmwiki-source-meta">本文区間 112 ・ 文字位置: 222000-224400</span></p>
+<div class="llmwiki-source-text">も御座なく別冊裁縫秘術綱要と命名せる書冊出版の義に御座候本書は不肖針作が多年苦心研究せる工芸上の原理原則に法とり真に肉を裂き血を絞るの思を為して著述せるものに御座候因って本書を普く一般の家庭へ製本実費に些少の利潤を附して御購求を願い一面斯道発達の一助となすと同時に又一面には僅少の利潤を蓄積して校舎建築費に当つる心算に御座候依っては近頃何共恐縮の至りに存じ候えども本校建築費中へ御寄附被成下と御思召し茲に呈供仕候秘術綱要一部を御購求の上御侍女の方へなりとも御分与被成下候て御賛同の意を御表章被成下度伏して懇願仕候※々敬具<br>
+<br>
+大日本女子裁縫最高等大学院<br>
+校長　　縫田針作　九拝<br>
+とある。<span id="evidence-222292-222294"></span><span id="evidence-222292-222324"></span><mark class="llmwiki-source-evidence">主人はこの鄭重なる書面を、冷淡に丸めてぽんと屑籠の中へ抛り込んだ</mark>。せっかくの針作君の九拝も臥薪甞胆も何の役にも立たなかったのは気の毒である。<span id="evidence-222362-222365"></span><mark class="llmwiki-source-evidence">第三信</mark>にかかる。第三信はすこぶる風変りの光彩を放っている。状袋が紅白のだんだらで、飴ん棒の看板のごとくはなやかなる真中に<span id="evidence-222422-222427"></span><mark class="llmwiki-source-evidence">珍野苦沙弥</mark>先生虎皮下と八分体で肉太に認めてある。中からお太さんが出るかどうだか受け合わないが表だけはすこぶる立派なものだ。<br>
+<br>
+若し我を以て天地を律すれば一口にして西江の水を吸いつくすべく、若し天地を以て我を律すれば我は則ち陌上の塵のみ。すべからく道え、天地と我と什麼の交渉かある。……始めて海鼠を食い出せる人は其胆力に於て敬すべく、始めて河豚を喫せる漢は其勇気に於て重んずべし。海鼠を食えるものは親鸞の再来にして、河豚を喫せるものは日蓮の分身なり。苦沙弥先生の如きに至っては只干瓢の酢味噌を知るのみ。干瓢の酢味噌を食って天下の士たるものは、われ未だ之を見ず。……<br>
+親友も汝を売るべし。父母も汝に私あるべし。愛人も汝を棄つべし。富貴は固より頼みがたかるべし。爵禄は一朝にして失うべし。汝の頭中に秘蔵する学問には黴が生えるべし。汝何を恃まんとするか。天地の裡に何をたのまんとするか。神？　神は人間の苦しまぎれに捏造せる土偶のみ。人間のせつな糞の凝結せる臭骸のみ。恃むまじきを恃んで安しと云う。咄々、酔漢漫りに胡乱の言辞を弄して、蹣跚として墓に向う。油尽きて灯自ら滅す。業尽きて何物をか遺す。苦沙弥先生よろしく御茶でも上がれ。……<br>
+人を人と思わざれば畏るる所なし。人を人と思わざるものが、吾を吾と思わざる世を憤るは如何。権貴栄達の士は人を人と思わざるに於て得たるが如し。只他の吾を吾と思わぬ時に於て怫然として色を作す。任意に色を作し来れ。馬鹿野郎。……<br>
+吾の人を人と思うとき、他の吾を吾と思わぬ時、不平家は発作的に天降る。此発作的活動を名づけて革命という。革命は不平家の所為にあらず。権貴栄達の士が好んで産する所なり。朝鮮に人参多し先生何が故に服せざる。<br>
+<br>
+在巣鴨　　<span id="evidence-223153-223157"></span><mark class="llmwiki-source-evidence">天道公平</mark>　再拝<br>
+　針作君は九拝であったが、この男は単に再拝だけである。寄附金の依頼でないだけに七拝ほど横風に構えている。寄附金の依頼ではないがその代りすこぶる分りにくいものだ。どこの雑誌へ出しても没書になる価値は充分あるのだから、<span id="evidence-223268-223282"></span><mark class="llmwiki-source-evidence">頭脳の不透明をもって鳴る主人</mark>は必ず寸断寸断に引き裂いてしまうだろうと思のほか、打ち返し打ち返し読み直している。こんな手紙に意味があると考えて、あくまでその意味を究めようという決心かも知れない。およそ天地の間にわからんものは沢山あるが意味をつけてつかないものは一つもない。どんなむずかしい文章でも解釈しようとすれば容易に解釈の出来るものだ。人間は馬鹿であると云おうが、人間は利口であると云おうが手もなくわかる事だ。それどころではない。人間は犬であると云っても豚であると云っても別に苦しむほどの命題ではない。山は低いと云っても構わん、宇宙は狭いと云っても差し支えはない。烏が白くて小町が醜婦で苦沙弥先生が君子でも通らん事はない。だからこんな無意味な手紙でも何とか蚊とか理窟さえつければどうとも意味はとれる。ことに主人のように知らぬ英語を無理矢理にこじ附けて説明し通して来た男はなおさら意味をつけたがるのである。天気の悪るいのになぜグード・モーニングですかと生徒に問われて七日間考えたり、コロンバスと云う名は日本語で何と云いますかと聞かれて三日三晩かかって答を工夫するくらいな男には、干瓢の酢味噌が天下の士であろうと、朝鮮の仁参を食って革命を起そうと随意な意味は随処に湧き出る訳である。<span id="evidence-223808-223841"></span><mark class="llmwiki-source-evidence">主人はしばらくしてグード・モーニング流にこの難解な言句を呑み込んだ</mark>と見えて「なかなか意味深長だ。何でもよほど哲理を研究した人に違ない。天晴な見識だ」と大変賞賛した。この一言でも主人の愚なところはよく分るが、翻って考えて見るといささかもっともな点もある。<span id="evidence-223934-223962"></span><mark class="llmwiki-source-evidence">主人は何に寄らずわからぬものをありがたがる癖を有している</mark>。これはあながち主人に限った事でもなかろう。分らぬところには馬鹿に出来ないものが潜伏して、測るべからざる辺には何だか気高い心持が起るものだ。それだから俗人はわからぬ事をわかったように吹聴するにも係らず、学者はわかった事をわからぬように講釈する。大学の講義でもわからん事を喋舌る人は評判がよくってわかる事を説明する者は人望がないのでもよく知れる。主人がこの手紙に敬服したのも意義が明瞭であるからではない。その主旨が那辺に存するかほとんど捕え難いからである。急に海鼠が出て来たり、せつな糞が出てくるからである。だから主人がこの文章を尊敬する唯一の理由は、道家で道徳経を尊敬し、儒家で易経を尊敬し、禅家で臨済録を尊敬すると一般で全く分らんからである。但し全然分らんでは気がすまんから勝手な註釈をつけてわかった顔だけはする。わからんものをわかったつもりで尊敬するのは昔から愉快なものである。――<span id="evidence-224355-224398"></span><mark class="llmwiki-source-evidence">主人は恭しく八分体の名筆を巻き納めて、これを机上に置いたまま懐手をして冥想に沈んでいる</mark>。<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

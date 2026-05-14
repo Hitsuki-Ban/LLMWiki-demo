@@ -1,0 +1,1799 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>原文 - LLMWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/llmwiki.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../index.html" title="LLMWiki" class="md-header__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLMWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              原文
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="LLMWiki" class="md-nav__button md-logo" aria-label="LLMWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLMWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作品総覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    登場人物
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    登場人物
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-636e7702bc4b.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-6d13c46d1713.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    吾輩
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-329ba6e19a81.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    迷亭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-b8a027dc606a.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    寒月
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-4a0f0bb2d256.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    細君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-7fea9196da35.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    東風子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-309784734428.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    独仙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-a35e53bebdb7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    金田
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-39c771f004e2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鈴木
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-289975567886.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    武右衛門君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-8c23b5660884.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    御三
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-d4205aea07c4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    車屋の黒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-43a9411b8d4d.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三毛子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-f870e90b2eed.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雪江
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-4aac88471a3b.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鼻子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-a188b52afee7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三平君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-179c403c8cce.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    老梅君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-090dcbf52bbf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    すん子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-de6ceb8caaa5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    とん子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-69c16131ba60.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    令嬢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-1805a9157818.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    伯父
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-ad19605bfb65.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    坊ば
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-249a9f7d79c7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多々良君
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/character-5a7daafe9c0f.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    御師匠さん
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/characters/others.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    その他の登場人物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相関関係
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出来事の流れ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界設定
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../locations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    場所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    組織
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アイテム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語・概念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-questions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    待確認情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coverage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抽出状況
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出典と原文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出典と原文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evidence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    証拠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../source-preview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文 1（第16部）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本文 1（第16部）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 121
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 122
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 123
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 124
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 125
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 126
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 127
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本文区間 128
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">原文</h1>
+<h2 id="116">本文 1（第16部）</h2>
+<p>第16部 / 全21部</p>
+<p><span class="llmwiki-source-meta">本文区間数: 8</span></p>
+<p><a id="excerpt-121"></a></p>
+<h3 id="121">本文区間 121</h3>
+<p><span class="llmwiki-source-meta">本文区間 121 ・ 文字位置: 240000-242400</span></p>
+<div class="llmwiki-source-text">ているのだか、寝ているのだか、向うむきになったぎり<span id="evidence-240025-240031"></span><mark class="llmwiki-source-evidence">返事もしない</mark>。返事をしないのはこの男の癖である。ぜひ何とか口を切らなければならない時はうんと云う。このうんも容易な事では出てこない。人間も返事がうるさくなるくらい無精になると、どことなく趣があるが、こんな人に限って女に好かれた試しがない。現在<span id="evidence-240146-240152"></span><span id="evidence-240150-240152"></span><mark class="llmwiki-source-evidence">連れ添う細君</mark>ですら、あまり珍重しておらんようだから、その他は推して知るべしと云っても大した間違はなかろう。親兄弟に見離され、あかの他人の傾城に、可愛がらりょうはずがない、とある以上は、細君にさえ持てない<span id="evidence-240247-240249"></span><mark class="llmwiki-source-evidence">主人</mark>が、世間一般の淑女に気に入るはずがない。何も異性間に不人望な主人をこの際ことさらに暴露する必要もないのだが、本人において存外な考え違をして、全く年廻りのせいで細君に好かれないのだなどと理窟をつけていると、迷の種であるから、自覚の一助にもなろうかと親切心からちょっと申し添えるまでである。<br>
+　言いつけられた時刻に、時刻がきたと注意しても、先方がその注意を無にする以上は、向をむいてうんさえ発せざる以上は、その曲は夫にあって、妻にあらずと論定したる細君は、遅くなっても知りませんよと云う姿勢で箒とはたきを担いで<span id="evidence-240502-240514"></span><mark class="llmwiki-source-evidence">書斎の方へ行ってしまった</mark>。やがてぱたぱた書斎中を叩き散らす音がするのは例によって例のごとき掃除を始めたのである。一体掃除の目的は運動のためか、遊戯のためか、掃除の役目を帯びぬ<span id="evidence-240589-240591"></span><mark class="llmwiki-source-evidence">吾輩</mark>の関知するところでないから、知らん顔をしていれば差し支えないようなものの、ここの細君の掃除法のごときに至ってはすこぶる無意義のものと云わざるを得ない。何が無意義であるかと云うと、この細君は<span id="evidence-240685-240700"></span><mark class="llmwiki-source-evidence">単に掃除のために掃除をしている</mark>からである。はたきを一通り障子へかけて、箒を一応畳の上へ滑らせる。それで掃除は完成した者と解釈している。掃除の源因及び結果に至っては微塵の責任だに背負っておらん。かるが故に奇麗な所は毎日奇麗だが、ごみのある所、ほこりの積っている所はいつでもごみが溜ってほこりが積っている。告朔の※羊と云う故事もある事だから、これでもやらんよりはましかも知れない。しかしやっても別段主人のためにはならない。ならないところを毎日毎日御苦労にもやるところが細君のえらいところである。細君と掃除とは多年の習慣で、器械的の連想をかたちづくって頑として結びつけられているにもかかわらず、掃除の実に至っては、妻君がいまだ生れざる以前のごとく、はたきと箒が発明せられざる昔のごとく、毫も挙っておらん。思うにこの両者の関係は形式論理学の命題における名辞のごとくその内容のいかんにかかわらず結合せられたものであろう。<br>
+　吾輩は主人と違って、元来が早起の方だから、この時すでに空腹になって参った。とうていうちのものさえ膳に向わぬさきから、猫の身分をもって朝めしに有りつける訳のものではないが、そこが猫の浅ましさで、もしや煙の立った汁の香が<span id="evidence-241200-241202"></span><mark class="llmwiki-source-evidence">鮑貝</mark>の中から、うまそうに立ち上っておりはすまいかと思うと、じっとしていられなくなった。はかない事を、はかないと知りながら頼みにするときは、ただその頼みだけを頭の中に描いて、動かずに落ちついている方が得策であるが、さてそうは行かぬ者で、心の願と実際が、合うか合わぬか是非とも試験して見たくなる。試験して見れば必ず失望するにきまってる事ですら、最後の失望を自ら事実の上に受取るまでは承知出来んものである。吾輩はたまらなくなって台所へ這出した。まずへっついの影にある鮑貝の中を覗いて見ると案に違わず、夕べ舐め尽したまま、闃然として、怪しき光が引窓を洩る初秋の日影にかがやいている。<span id="evidence-241487-241489"></span><mark class="llmwiki-source-evidence">御三</mark>はすでに炊き立の飯を、御櫃に移して、今や七輪にかけた<span id="evidence-241515-241527"></span><mark class="llmwiki-source-evidence">鍋の中をかきまぜつつある</mark>。釜の周囲には沸き上がって流れだした米の汁が、かさかさに幾条となくこびりついて、あるものは吉野紙を貼りつけたごとくに見える。もう飯も汁も出来ているのだから食わせてもよさそうなものだと思った。こんな時に遠慮するのはつまらない話だ、よしんば自分の望通りにならなくったって元々で損は行かないのだから、思い切って朝飯の催促をしてやろう、いくら居候の身分だってひもじいに変りはない。と考え定めた吾輩は<span id="evidence-241722-241735"></span><mark class="llmwiki-source-evidence">にゃあにゃあと甘えるごとく</mark>、訴うるがごとく、あるいはまた怨ずるがごとく泣いて見た。御三はいっこう顧みる景色がない。生れついてのお多角だから人情に疎いのはとうから承知の上だが、そこをうまく泣き立てて同情を起させるのが、こっちの手際である。今度はにゃごにゃごとやって見た。その泣き声は吾ながら悲壮の音を帯びて天涯の遊子をして断腸の思あらしむるに足ると信ずる。<span id="evidence-241899-241910"></span><mark class="llmwiki-source-evidence">御三は恬として顧みない</mark>。この女は聾なのかも知れない。聾では下女が勤まる訳がないが、ことによると猫の声だけには聾なのだろう。世の中には色盲というのがあって、当人は完全な視力を具えているつもりでも、医者から云わせると片輪だそうだが、この御三は<span id="evidence-242018-242020"></span><mark class="llmwiki-source-evidence">声盲</mark>なのだろう。声盲だって片輪に違いない。片輪のくせにいやに横風なものだ。夜中なぞでも、いくらこっちが用があるから開けてくれろと云っても決して開けてくれた事がない。たまに出してくれたと思うと今度はどうしても入れてくれない。夏だって夜露は毒だ。いわんや霜においてをやで、軒下に立ち明かして、日の出を待つのは、どんなに辛いかとうてい想像が出来るものではない。この間しめ出しを食った時なぞは野良犬の襲撃を蒙って、すでに危うく見えたところを、ようやくの事で物置の家根へかけ上って、終夜顫えつづけた事さえある。これ等は皆御三の不人情から胚胎した不都合である。こんなものを相手にして鳴いて見せたって、感応のあるはずはないのだが、そこが、ひもじい時の神頼み、貧のぬすみに恋のふみと云うくらいだから、たいていの事ならやる気になる。にゃごおうにゃごおうと三度目には、注意を喚起するた</div>
+
+<p><a id="excerpt-122"></a></p>
+<h3 id="122">本文区間 122</h3>
+<p><span class="llmwiki-source-meta">本文区間 122 ・ 文字位置: 242000-244400</span></p>
+<div class="llmwiki-source-text">云わせると片輪だそうだが、この<span id="evidence-242015-242017"></span><mark class="llmwiki-source-evidence">御三</mark>は声盲なのだろう。声盲だって片輪に違いない。片輪のくせにいやに横風なものだ。夜中なぞでも、いくらこっちが用があるから開けてくれろと云っても決して開けてくれた事がない。たまに出してくれたと思うと今度はどうしても入れてくれない。夏だって夜露は毒だ。いわんや霜においてをやで、軒下に立ち明かして、日の出を待つのは、どんなに辛いかとうてい想像が出来るものではない。この間しめ出しを食った時なぞは野良犬の襲撃を蒙って、すでに危うく見えたところを、ようやくの事で物置の家根へかけ上って、終夜顫えつづけた事さえある。これ等は皆御三の不人情から胚胎した不都合である。こんなものを相手にして鳴いて見せたって、感応のあるはずはないのだが、そこが、ひもじい時の神頼み、貧のぬすみに恋のふみと云うくらいだから、たいていの事ならやる気になる。にゃごおうにゃごおうと三度目には、注意を喚起するためにことさらに複雑なる泣き方をして見た。自分ではベトヴェンのシンフォニーにも劣らざる美妙の音と確信しているのだが御三には何等の影響も生じないようだ。<span id="evidence-242474-242520"></span><mark class="llmwiki-source-evidence">御三は突然膝をついて、揚げ板を一枚はね除けて、中から堅炭の四寸ばかり長いのを一本つかみ出した</mark>。それからその長い奴を七輪の角でぽんぽんと敲いたら、長いのが三つほどに砕けて近所は炭の粉で真黒くなった。少々は汁の中へも這入ったらしい。御三はそんな事に頓着する女ではない。直ちにくだけたる三個の炭を鍋の尻から七輪の中へ押し込んだ。とうてい吾輩のシンフォニーには耳を傾けそうにもない。仕方がないから悄然と茶の間の方へ引きかえそうとして風呂場の横を通り過ぎると、ここは今女の子が三人で顔を洗ってる最中で、なかなか繁昌している。<br>
+　顔を洗うと云ったところで、上の二人が幼稚園の生徒で、三番目は姉の尻についてさえ行かれないくらい小さいのだから、正式に顔が洗えて、器用に御化粧が出来るはずがない。一番小さいのがバケツの中から濡れ雑巾を引きずり出してしきりに顔中撫で廻わしている。雑巾で顔を洗うのは定めし心持ちがわるかろうけれども、地震がゆるたびにおもちろいわと云う子だからこのくらいの事はあっても驚ろくに足らん。ことによると八木独仙君より悟っているかも知れない。さすがに<span id="evidence-242950-242952"></span><mark class="llmwiki-source-evidence">長女</mark>は長女だけに、姉をもって自ら任じているから、うがい茶碗をからからかんと抛出して「<span id="evidence-242992-242997"></span><mark class="llmwiki-source-evidence">坊やちゃん</mark>、それは雑巾よ」と雑巾をとりにかかる。坊やちゃんもなかなか自信家だから容易に姉の云う事なんか聞きそうにしない。「いやーよ、<span id="evidence-243058-243060"></span><mark class="llmwiki-source-evidence">ばぶ</mark>」と云いながら雑巾を引っ張り返した。このばぶなる語はいかなる意義で、いかなる語源を有しているか、誰も知ってるものがない。ただこの坊やちゃんが癇癪を起した時に折々ご使用になるばかりだ。雑巾はこの時姉の手と、坊やちゃんの手で左右に引っ張られるから、水を含んだ真中からぽたぽた雫が垂れて、容赦なく坊やの足にかかる、足だけなら我慢するが膝のあたりがしたたか濡れる。坊やはこれでも<span id="evidence-243245-243247"></span><mark class="llmwiki-source-evidence">元禄</mark>を着ているのである。元禄とは何の事だとだんだん聞いて見ると、中形の模様なら何でも元禄だそうだ。一体だれに教わって来たものか分らない。「坊やちゃん、元禄が濡れるから御よしなさい、ね」と姉が洒落れた事を云う。その癖この姉はついこの間まで元禄と双六とを間違えていた物識りである。<br>
+　元禄で思い出したからついでに喋舌ってしまうが、この子供の言葉ちがいをやる事は夥しいもので、折々人を馬鹿にしたような間違を云ってる。火事で茸が飛んで来たり、御茶の味噌の女学校へ行ったり、恵比寿、台所と並べたり、或る時などは「わたしゃ藁店の子じゃないわ」と云うから、よくよく聞き糺して見ると裏店と藁店を混同していたりする。<span id="evidence-243544-243546"></span><mark class="llmwiki-source-evidence">主人</mark>はこんな間違を聞くたびに笑っているが、自分が学校へ出て英語を教える時などは、これよりも滑稽な誤謬を真面目になって、生徒に聞かせるのだろう。<br>
+　坊やは――当人は坊やとは云わない。いつでも坊ばと云う――元禄が濡れたのを見て「元どこがべたい」と云って泣き出した。元禄が冷たくては大変だから、<span id="evidence-243688-243718"></span><mark class="llmwiki-source-evidence">御三が台所から飛び出して来て、雑巾を取上げて着物を拭いてやる</mark>。この騒動中比較的静かであったのは、次女の<span id="evidence-243739-243743"></span><mark class="llmwiki-source-evidence">すん子嬢</mark>である。すん子嬢は向うむきになって棚の上からころがり落ちた、お白粉の瓶をあけて、しきりに御化粧を施している。第一に突っ込んだ指をもって鼻の頭をキューと撫でたから竪に一本白い筋が通って、鼻のありかがいささか分明になって来た。次に塗りつけた指を転じて頬の上を摩擦したから、そこへもってきて、これまた白いかたまりが出来上った。これだけ装飾がととのったところへ、下女がはいって来て坊ばの着物を拭いたついでに、すん子の顔もふいてしまった。すん子は少々不満の体に見えた。<br>
+　吾輩はこの光景を横に見て、茶の間から主人の寝室まで来てもう起きたかとひそかに様子をうかがって見ると、主人の頭がどこにも見えない。その代り十文半の甲の高い足が、夜具の裾から一本食み出している。頭が出ていては起こされる時に迷惑だと思って、かくもぐり込んだのであろう。亀の子のような男である。ところへ書斎の掃除をしてしまった妻君がまた箒とはたきを担いでやってくる。最前のように襖の入口から<br>
+「まだお起きにならないのですか」と声をかけたまま、しばらく立って、首の出ない夜具を見つめていた。今度も返事がない。<span id="evidence-244223-244225"></span><mark class="llmwiki-source-evidence">細君</mark>は入口から二歩ばかり進んで、箒をとんと突きながら「まだなんですか、あなた」と重ねて返事を承わる。この時主人はすでに目が覚めている。覚めているから、細君の襲撃にそなうるため、あらかじめ夜具の中に首もろとも立て籠ったのである。首さえ出さなければ、見逃してくれる事もあろうかと、詰まらない事を頼みにして寝ていたところ、なかなか許しそうもない。しかし第一回の</div>
+
+<p><a id="excerpt-123"></a></p>
+<h3 id="123">本文区間 123</h3>
+<p><span class="llmwiki-source-meta">本文区間 123 ・ 文字位置: 244000-246400</span></p>
+<div class="llmwiki-source-text">てもう起きたかとひそかに様子をうかがって見ると、<span id="evidence-244024-244026"></span><mark class="llmwiki-source-evidence">主人</mark>の頭がどこにも見えない。その代り十文半の甲の高い足が、夜具の裾から一本食み出している。頭が出ていては起こされる時に迷惑だと思って、かくもぐり込んだのであろう。<span id="evidence-244105-244116"></span><mark class="llmwiki-source-evidence">亀の子のような男である</mark>。ところへ書斎の掃除をしてしまった<span id="evidence-244133-244135"></span><mark class="llmwiki-source-evidence">妻君</mark>がまた箒とはたきを担いでやってくる。最前のように襖の入口から<br>
+「まだお起きにならないのですか」と声をかけたまま、しばらく立って、首の出ない夜具を見つめていた。今度も返事がない。細君は入口から二歩ばかり進んで、箒をとんと突きながら「まだなんですか、あなた」と重ねて返事を承わる。この時主人はすでに目が覚めている。覚めているから、細君の襲撃にそなうるため、あらかじめ夜具の中に首もろとも立て籠ったのである。首さえ出さなければ、見逃してくれる事もあろうかと、詰まらない事を頼みにして寝ていたところ、なかなか許しそうもない。しかし第一回の声は敷居の上で、少くとも一間の間隔があったから、まず安心と腹のうちで思っていると、とんと突いた箒が何でも三尺くらいの距離に追っていたにはちょっと驚ろいた。のみならず第二の「まだなんですか、あなた」が距離においても音量においても前よりも倍以上の勢を以て夜具のなかまで聞えたから、こいつは駄目だと覚悟をして、小さな声でうんと返事をした。<br>
+「九時までにいらっしゃるのでしょう。早くなさらないと間に合いませんよ」<br>
+「そんなに言わなくても今起きる」と夜着の袖口から答えたのは奇観である。妻君はいつでもこの手を食って、起きるかと思って安心していると、また寝込まれつけているから、油断は出来ないと「さあお起きなさい」とせめ立てる。起きると云うのに、なお起きろと責めるのは気に食わんものだ。主人のごとき我儘者にはなお気に食わん。ここにおいてか<span id="evidence-244763-244788"></span><mark class="llmwiki-source-evidence">主人は今まで頭から被っていた夜着を一度に跳ねのけた</mark>。見ると大きな眼を二つとも開いている。<br>
+「何だ騒々しい。起きると云えば起きるのだ」<br>
+「起きるとおっしゃってもお起きなさらんじゃありませんか」<br>
+「誰がいつ、そんな嘘をついた」<br>
+「いつでもですわ」<br>
+「馬鹿を云え」<br>
+「どっちが馬鹿だか分りゃしない」と妻君ぷんとして箒を突いて枕元に立っているところは勇ましかった。この時裏の車屋の子供、<span id="evidence-244952-244957"></span><mark class="llmwiki-source-evidence">八っちゃん</mark>が急に大きな声をしてワーと泣き出す。八っちゃんは<span id="evidence-244981-245001"></span><mark class="llmwiki-source-evidence">主人が怒り出しさえすれば必ず泣き出すべく</mark>、<span id="evidence-245002-245009"></span><mark class="llmwiki-source-evidence">車屋のかみさん</mark>から命ぜられるのである。かみさんは主人が怒るたんびに八っちゃんを泣かして小遣になるかも知れんが、八っちゃんこそいい迷惑だ。こんな御袋を持ったが最後朝から晩まで泣き通しに泣いていなくてはならない。少しはこの辺の事情を察して主人も少々怒るのを差し控えてやったら、八っちゃんの寿命が少しは延びるだろうに、いくら<span id="evidence-245161-245164"></span><span id="evidence-245161-245172"></span><mark class="llmwiki-source-evidence">金田君から頼まれたって</mark>、こんな愚な事をするのは、天道公平君よりもはげしくおいでになっている方だと鑑定してもよかろう。怒るたんびに泣かせられるだけなら、まだ余裕もあるけれども、金田君が近所のゴロツキを傭って今戸焼をきめ込むたびに、八っちゃんは泣かねばならんのである。主人が怒るか怒らぬか、まだ判然しないうちから、必ず怒るべきものと予想して、早手廻しに八っちゃんは泣いているのである。こうなると主人が八っちゃんだか、八っちゃんが主人だか判然しなくなる。主人にあてつけるに手数は掛らない、ちょっと八っちゃんに剣突を食わせれば何の苦もなく、主人の横っ面を張った訳になる。昔し西洋で犯罪者を所刑にする時に、本人が国境外に逃亡して、捕えられん時は、偶像をつくって人間の代りに火あぶりにしたと云うが、彼等のうちにも西洋の故事に通暁する軍師があると見えて、うまい計略を授けたものである。落雲館と云い、八っちゃんの御袋と云い、腕のきかぬ主人にとっては定めし苦手であろう。そのほか苦手はいろいろある。あるいは町内中ことごとく苦手かも知れんが、ただいまは関係がないから、だんだん成し崩しに紹介致す事にする。<br>
+　八っちゃんの泣き声を聞いた主人は、朝っぱらからよほど癇癪が起ったと見えて、たちまちがばと布団の上に起き直った。こうなると<span id="evidence-245715-245736"></span><mark class="llmwiki-source-evidence">精神修養も八木独仙も何もあったものじゃない</mark>。起き直りながら両方の手でゴシゴシゴシと表皮のむけるほど、頭中引き掻き廻す。一ヵ月も溜っているフケは遠慮なく、頸筋やら、寝巻の襟へ飛んでくる。非常な壮観である。髯はどうだと見るとこれはまた驚ろくべく、ぴん然とおっ立っている。持主が怒っているのに髯だけ落ちついていてはすまないとでも心得たものか、一本一本に癇癪を起して、勝手次第の方角へ猛烈なる勢をもって突進している。これとてもなかなかの見物である。昨日は鏡の手前もある事だから、おとなしく独乙皇帝陛下の真似をして整列したのであるが、一晩寝れば訓練も何もあった者ではない、直ちに本来の面目に帰って思い思いの出で立に戻るのである。あたかも主人の一夜作りの精神修養が、あくる日になると拭うがごとく奇麗に消え去って、生れついての野猪的本領が直ちに全面を暴露し来るのと一般である。こんな乱暴な髯をもっている、こんな乱暴な男が、よくまあ今まで免職にもならずに教師が勤まったものだと思うと、始めて日本の広い事がわかる。広ければこそ金田君や金田君の犬が人間として通用しているのでもあろう。彼等が人間として通用する間は主人も免職になる理由がないと確信しているらしい。いざとなれば巣鴨へ端書を飛ばして天道公平君に聞き合せて見れば、すぐ分る事だ。<br>
+　この時主人は、昨日紹介した混沌たる太古の眼を精一杯に見張って、向うの戸棚をきっと見た。これは高さ一間を横に仕切って上下共各二枚の袋戸をはめたものである。下の方の戸棚は、布団の裾とすれすれの距離にあるから、起き直った主人が眼をあきさえすれば、天然自然こ</div>
+
+<p><a id="excerpt-124"></a></p>
+<h3 id="124">本文区間 124</h3>
+<p><span class="llmwiki-source-meta">本文区間 124 ・ 文字位置: 246000-248400</span></p>
+<div class="llmwiki-source-text">来の面目に帰って思い思いの出で立に戻るのである。あたかも<span id="evidence-246028-246030"></span><mark class="llmwiki-source-evidence">主人</mark>の一夜作りの精神修養が、あくる日になると拭うがごとく奇麗に消え去って、生れついての野猪的本領が直ちに全面を暴露し来るのと一般である。こんな乱暴な髯をもっている、こんな乱暴な男が、よくまあ今まで免職にもならずに<span id="evidence-246134-246141"></span><mark class="llmwiki-source-evidence">教師が勤まった</mark>ものだと思うと、始めて日本の広い事がわかる。広ければこそ<span id="evidence-246169-246172"></span><mark class="llmwiki-source-evidence">金田君</mark>や金田君の犬が人間として通用しているのでもあろう。彼等が人間として通用する間は主人も免職になる理由がないと確信しているらしい。いざとなれば巣鴨へ端書を飛ばして<span id="evidence-246251-246256"></span><mark class="llmwiki-source-evidence">天道公平君</mark>に聞き合せて見れば、すぐ分る事だ。<br>
+　この時主人は、昨日紹介した混沌たる太古の眼を精一杯に見張って、向うの戸棚をきっと見た。これは高さ一間を横に仕切って上下共各二枚の袋戸をはめたものである。下の方の戸棚は、布団の裾とすれすれの距離にあるから、起き直った主人が眼をあきさえすれば、天然自然ここに視線がむくように出来ている。見ると模様を置いた紙がところどころ破れて妙な腸があからさまに見える。腸にはいろいろなのがある。あるものは活版摺で、あるものは肉筆である。あるものは裏返しで、あるものは逆さまである。主人はこの腸を見ると同時に、何がかいてあるか読みたくなった。今までは車屋のかみさんでも捕えて、鼻づらを松の木へこすりつけてやろうくらいにまで怒っていた主人が、突然この反古紙を読んで見たくなるのは不思議のようであるが、こう云う陽性の癇癪持ちには珍らしくない事だ。小供が泣くときに最中の一つもあてがえばすぐ笑うと一般である。主人が昔し去る所の御寺に下宿していた時、襖一と重を隔てて尼が五六人いた。尼などと云うものは元来意地のわるい女のうちでもっとも意地のわるいものであるが、この尼が主人の性質を見抜いたものと見えて自炊の鍋をたたきながら、今泣いた烏がもう笑った、今泣いた烏がもう笑ったと拍子を取って歌ったそうだ、主人が尼が大嫌になったのはこの時からだと云うが、尼は嫌にせよ全くそれに違ない。主人は泣いたり、笑ったり、嬉しがったり、悲しがったり人一倍もする代りにいずれも長く続いた事がない。よく云えば執着がなくて、心機がむやみに転ずるのだろうが、これを俗語に翻訳してやさしく云えば<span id="evidence-246943-246965"></span><mark class="llmwiki-source-evidence">奥行のない、薄っ片の、鼻っ張だけ強いだだっ子</mark>である。すでにだだっ子である以上は、喧嘩をする勢で、むっくと刎ね起きた主人が急に気をかえて<span id="evidence-247010-247021"></span><mark class="llmwiki-source-evidence">袋戸の腸を読みにかかる</mark>のももっともと云わねばなるまい。第一に眼にとまったのが<span id="evidence-247048-247057"></span><mark class="llmwiki-source-evidence">伊藤博文の逆か立ち</mark>である。上を見ると明治十一年九月廿八日とある。韓国統監もこの時代から御布令の尻尾を追っ懸けてあるいていたと見える。大将この時分は何をしていたんだろうと、読めそうにないところを無理によむと大蔵卿とある。なるほどえらいものだ、いくら逆か立ちしても大蔵卿である。少し左の方を見ると今度は大蔵卿横になって昼寝をしている。もっともだ。逆か立ちではそう長く続く気遣はない。下の方に大きな木板で汝はと二字だけ見える、あとが見たいがあいにく露出しておらん。次の行には早くの二字だけ出ている。こいつも読みたいがそれぎれで手掛りがない。もし主人が警視庁の探偵であったら、人のものでも構わずに引っぺがすかも知れない。探偵と云うものには高等な教育を受けたものがないから事実を挙げるためには何でもする。あれは始末に行かないものだ。願くばもう少し遠慮をしてもらいたい。遠慮をしなければ事実は決して挙げさせない事にしたらよかろう。聞くところによると彼等は羅織虚構をもって良民を罪に陥れる事さえあるそうだ。良民が金を出して雇っておく者が、雇主を罪にするなどときてはこれまた立派な気狂である。次に眼を転じて真中を見ると真中には<span id="evidence-247553-247560"></span><mark class="llmwiki-source-evidence">大分県が宙返り</mark>をしている。伊藤博文でさえ逆か立ちをするくらいだから、大分県が宙返りをするのは当然である。主人はここまで読んで来て、双方へ握り拳をこしらえて、これを高く天井に向けて突きあげた。あくびの用意である。<br>
+　このあくびがまた鯨の遠吠のようにすこぶる変調を極めた者であったが、それが一段落を告げると、主人はのそのそと着物をきかえて<span id="evidence-247720-247736"></span><mark class="llmwiki-source-evidence">顔を洗いに風呂場へ出掛けて行った</mark>。待ちかねた<span id="evidence-247742-247744"></span><mark class="llmwiki-source-evidence">細君</mark>はいきなり<span id="evidence-247749-247762"></span><mark class="llmwiki-source-evidence">布団をまくって夜着を畳んで</mark>、例の通り掃除をはじめる。掃除が例の通りであるごとく、主人の顔の洗い方も十年一日のごとく例の通りである。先日紹介をしたごとく依然としてがーがー、げーげーを持続している。やがて頭を分け終って、西洋手拭を肩へかけて、茶の間へ出御になると、超然として<span id="evidence-247884-247887"></span><mark class="llmwiki-source-evidence">長火鉢</mark>の横に座を占めた。長火鉢と云うと欅の如輪木か、銅の総落しで、洗髪の姉御が立膝で、長煙管を黒柿の縁へ叩きつける様を想見する諸君もないとも限らないが、わが<span id="evidence-247962-247967"></span><mark class="llmwiki-source-evidence">苦沙弥先生</mark>の長火鉢に至っては決して、そんな意気なものではない、何で造ったものか素人には見当のつかんくらい古雅なものである。長火鉢は拭き込んでてらてら光るところが身上なのだが、この代物は欅か桜か桐か元来不明瞭な上に、ほとんど布巾をかけた事がないのだから陰気で引き立たざる事夥しい。こんなものをどこから買って来たかと云うと、決して買った覚はない。そんなら貰ったかと聞くと、誰もくれた人はないそうだ。しからば盗んだのかと糺して見ると、何だかその辺が曖昧である。昔し親類に隠居がおって、その隠居が死んだ時、当分留守番を頼まれた事がある。ところがその後一戸を構えて、隠居所を引き払う際に、そこで自分のもののように使っていた<span id="evidence-248268-248289"></span><mark class="llmwiki-source-evidence">火鉢を何の気もなく、つい持って来てしまった</mark>のだそうだ。少々たちが悪いようだ。考えるとたちが悪いようだがこんな事は世間に往々ある事だと思う。銀行家などは毎日人の金をあつかいつけているうちに人の金が、自分の金のように見えてくるそうだ。役人は人民の召使である。用事を弁じ</div>
+
+<p><a id="excerpt-125"></a></p>
+<h3 id="125">本文区間 125</h3>
+<p><span class="llmwiki-source-meta">本文区間 125 ・ 文字位置: 248000-250400</span></p>
+<div class="llmwiki-source-text">か素人には見当のつかんくらい古雅なものである。<span id="evidence-248023-248026"></span><mark class="llmwiki-source-evidence">長火鉢</mark>は拭き込んでてらてら光るところが身上なのだが、この代物は欅か桜か桐か元来不明瞭な上に、ほとんど布巾をかけた事がないのだから陰気で引き立たざる事夥しい。こんなものをどこから買って来たかと云うと、決して買った覚はない。そんなら貰ったかと聞くと、誰もくれた人はないそうだ。しからば盗んだのかと糺して見ると、何だかその辺が曖昧である。昔し親類に隠居がおって、その隠居が死んだ時、当分留守番を頼まれた事がある。ところがその後一戸を構えて、隠居所を引き払う際に、そこで自分のもののように使っていた火鉢を何の気もなく、つい持って来てしまったのだそうだ。少々たちが悪いようだ。考えるとたちが悪いようだがこんな事は世間に往々ある事だと思う。銀行家などは毎日人の金をあつかいつけているうちに人の金が、自分の金のように見えてくるそうだ。役人は人民の召使である。用事を弁じさせるために、ある権限を委托した代理人のようなものだ。ところが委任された権力を笠に着て毎日事務を処理していると、これは自分が所有している権力で、人民などはこれについて何らの喙を容るる理由がないものだなどと狂ってくる。こんな人が世の中に充満している以上は長火鉢事件をもって主人に泥棒根性があると断定する訳には行かぬ。もし主人に泥棒根性があるとすれば、天下の人にはみんな泥棒根性がある。<br>
+　長火鉢の傍に陣取って、食卓を前に控えたる主人の三面には、先刻雑巾で顔を洗った<span id="evidence-248631-248633"></span><mark class="llmwiki-source-evidence">坊ば</mark>と御茶の味噌の学校へ行く<span id="evidence-248645-248648"></span><mark class="llmwiki-source-evidence">とん子</mark>と、お白粉罎に指を突き込んだ<span id="evidence-248662-248665"></span><mark class="llmwiki-source-evidence">すん子</mark>が、すでに勢揃をして朝飯を食っている。主人は一応この三女子の顔を公平に見渡した。とん子の顔は南蛮鉄の刀の鍔のような輪廓を有している。すん子も妹だけに多少姉の面影を存して琉球塗の朱盆くらいな資格はある。ただ坊ばに至っては独り異彩を放って、面長に出来上っている。但し竪に長いのなら世間にその例もすくなくないが、この子のは横に長いのである。いかに流行が変化し易くったって、横に長い顔がはやる事はなかろう。主人は自分の子ながらも、つくづく考える事がある。これでも生長しなければならぬ。生長するどころではない、その生長の速かなる事は禅寺の筍が若竹に変化する勢で大きくなる。主人はまた大きくなったなと思うたんびに、後ろから追手にせまられるような気がしてひやひやする。いかに空漠なる主人でもこの三令嬢が女であるくらいは心得ている。女である以上はどうにか片付けなくてはならんくらいも承知している。承知しているだけで片付ける手腕のない事も自覚している。そこで自分の子ながらも少しく持て余しているところである。持て余すくらいなら製造しなければいいのだが、そこが人間である。人間の定義を云うとほかに何にもない。ただ入らざる事を捏造して自ら苦しんでいる者だと云えば、それで充分だ。<br>
+　さすがに子供はえらい。これほどおやじが処置に窮しているとは夢にも知らず、楽しそうにご飯をたべる。ところが始末におえないのは坊ばである。坊ばは当年とって三歳であるから、細君が気を利かして、食事のときには、三歳然たる小形の箸と茶碗をあてがうのだが、坊ばは決して承知しない。必ず姉の茶碗を奪い、姉の箸を引ったくって、持ちあつかい悪い奴を無理に持ちあつかっている。世の中を見渡すと無能無才の小人ほど、いやにのさばり出て柄にもない官職に登りたがるものだが、あの性質は全くこの坊ば時代から萌芽しているのである。その因って来るところはかくのごとく深いのだから、決して教育や薫陶で癒せる者ではないと、早くあきらめてしまうのがいい。<br>
+　坊ばは隣りから分捕った偉大なる茶碗と、長大なる箸を専有して、しきりに暴威を擅にしている。使いこなせない者をむやみに使おうとするのだから、勢暴威を逞しくせざるを得ない。<span id="evidence-249587-249621"></span><mark class="llmwiki-source-evidence">坊ばはまず箸の根元を二本いっしょに握ったままうんと茶碗の底へ突込んだ</mark>。茶碗の中は飯が八分通り盛り込まれて、その上に味噌汁が一面に漲っている。箸の力が茶碗へ伝わるやいなや、今までどうか、こうか、平均を保っていたのが、急に襲撃を受けたので三十度ばかり傾いた。<span id="evidence-249714-249741"></span><mark class="llmwiki-source-evidence">同時に味噌汁は容赦なくだらだらと胸のあたりへこぼれだす</mark>。坊ばはそのくらいな事で辟易する訳がない。<span id="evidence-249762-249770"></span><mark class="llmwiki-source-evidence">坊ばは暴君である</mark>。<span id="evidence-249771-249799"></span><mark class="llmwiki-source-evidence">今度は突き込んだ箸を、うんと力一杯茶碗の底から刎ね上げた</mark>。同時に小さな口を縁まで持って行って、刎ね上げられた米粒を這入るだけ口の中へ受納した。打ち洩らされた米粒は黄色な汁と相和して鼻のあたまと頬っぺたと顋とへ、やっと掛声をして飛びついた。<span id="evidence-249890-249916"></span><mark class="llmwiki-source-evidence">飛びつき損じて畳の上へこぼれたものは打算の限りでない</mark>。随分無分別な飯の食い方である。吾輩は謹んで有名なる金田君及び天下の勢力家に忠告する。公等の他をあつかう事、坊ばの茶碗と箸をあつかうがごとくんば、公等の口へ飛び込む米粒は極めて僅少のものである。必然の勢をもって飛び込むにあらず、戸迷をして飛び込むのである。どうか御再考を煩わしたい。世故にたけた敏腕家にも似合しからぬ事だ。<br>
+　姉のとん子は、自分の箸と茶碗を坊ばに掠奪されて、不相応に小さな奴をもってさっきから我慢していたが、もともと小さ過ぎるのだから、一杯にもった積りでも、あんとあけると三口ほどで食ってしまう。したがって頻繁に御はちの方へ手が出る。もう四膳かえて、今度は五杯目である。<span id="evidence-250209-250235"></span><mark class="llmwiki-source-evidence">とん子は御はちの蓋をあけて大きなしゃもじを取り上げて</mark>、しばらく眺めていた。これは食おうか、よそうかと迷っていたものらしいが、ついに決心したものと見えて、焦げのなさそうなところを見計って一掬いしゃもじの上へ乗せたまでは無難であったが、<span id="evidence-250325-250372"></span><mark class="llmwiki-source-evidence">それを裏返して、ぐいと茶碗の上をこいたら、茶碗に入りきらん飯は塊まったまま畳の上へ転がり出した</mark>。<span id="evidence-250373-250400"></span><mark class="llmwiki-source-evidence">とん子は驚ろく景色もなく、こぼれた飯を鄭寧に拾い始めた</mark></div>
+
+<p><a id="excerpt-126"></a></p>
+<h3 id="126">本文区間 126</h3>
+<p><span class="llmwiki-source-meta">本文区間 126 ・ 文字位置: 250000-252400</span></p>
+<div class="llmwiki-source-text">は極めて僅少のものである。必然の勢をもって飛び込むにあらず、戸迷をして飛び込むのである。どうか御再考を煩わしたい。世故にたけた敏腕家にも似合しからぬ事だ。<br>
+　姉の<span id="evidence-250081-250084"></span><mark class="llmwiki-source-evidence">とん子</mark>は、自分の箸と茶碗を<span id="evidence-250094-250096"></span><mark class="llmwiki-source-evidence">坊ば</mark>に掠奪されて、不相応に小さな奴をもってさっきから我慢していたが、もともと小さ過ぎるのだから、一杯にもった積りでも、あんとあけると三口ほどで食ってしまう。したがって頻繁に御はちの方へ手が出る。もう四膳かえて、今度は五杯目である。とん子は御はちの蓋をあけて大きなしゃもじを取り上げて、しばらく眺めていた。これは食おうか、よそうかと迷っていたものらしいが、ついに決心したものと見えて、焦げのなさそうなところを見計って一掬いしゃもじの上へ乗せたまでは無難であったが、それを裏返して、ぐいと茶碗の上をこいたら、茶碗に入りきらん飯は塊まったまま畳の上へ転がり出した。とん子は驚ろく景色もなく、こぼれた飯を鄭寧に拾い始めた。拾って何にするかと思ったら、みんな御はちの中へ入れてしまった。少しきたないようだ。<br>
+　<span id="evidence-250444-250462"></span><mark class="llmwiki-source-evidence">坊ばが一大活躍を試みて箸を刎ね上げた</mark>時は、ちょうどとん子が飯をよそい了った時である。さすがに姉は姉だけで、坊ばの顔のいかにも乱雑なのを見かねて「あら坊ばちゃん、大変よ、顔が御ぜん粒だらけよ」と云いながら、早速坊ばの顔の掃除にとりかかる。第一に鼻のあたまに寄寓していたのを取払う。取払って捨てると思のほか、すぐ自分の口のなかへ入れてしまったのには驚ろいた。それから頬っぺたにかかる。ここには大分群をなして数にしたら、両方を合せて約二十粒もあったろう。<span id="evidence-250668-250683"></span><mark class="llmwiki-source-evidence">姉は丹念に一粒ずつ取っては食い</mark>、取っては食い、とうとう妹の顔中にある奴を一つ残らず食ってしまった。この時ただ今まではおとなしく沢庵をかじっていた<span id="evidence-250740-250743"></span><mark class="llmwiki-source-evidence">すん子</mark>が、急に盛り立ての味噌汁の中から薩摩芋のくずれたのをしゃくい出して、勢よく口の内へ抛り込んだ。諸君も御承知であろうが、汁にした薩摩芋の熱したのほど口中にこたえる者はない。大人ですら注意しないと火傷をしたような心持ちがする。ましてすん子のごとき、薩摩芋に経験の乏しい者は無論狼狽する訳である。<span id="evidence-250888-250915"></span><mark class="llmwiki-source-evidence">すん子はワッと云いながら口中の芋を食卓の上へ吐き出した</mark>。その二三片がどう云う拍子か、坊ばの前まですべって来て、ちょうどいい加減な距離でとまる。<span id="evidence-250959-250975"></span><mark class="llmwiki-source-evidence">坊ばは固より薩摩芋が大好きである</mark>。大好きな薩摩芋が眼の前へ飛んで来たのだから、早速箸を抛り出して、手攫みにしてむしゃむしゃ食ってしまった。<br>
+　先刻からこの体たらくを目撃していた<span id="evidence-251047-251049"></span><mark class="llmwiki-source-evidence">主人</mark>は、一言も云わずに、専心自分の飯を食い、自分の汁を飲んで、この時はすでに楊枝を使っている最中であった。<span id="evidence-251100-251111"></span><mark class="llmwiki-source-evidence">主人は娘の教育に関して</mark>絶体的放任主義を執るつもりと見える。今に三人が海老茶式部か鼠式部かになって、三人とも申し合せたように情夫をこしらえて出奔しても、やはり自分の飯を食って、自分の汁を飲んで澄まして見ているだろう。働きのない事だ。しかし今の世の働きのあると云う人を拝見すると、嘘をついて人を釣る事と、先へ廻って馬の眼玉を抜く事と、虚勢を張って人をおどかす事と、鎌をかけて人を陥れる事よりほかに何も知らないようだ。中学などの少年輩までが見様見真似に、こうしなくては幅が利かないと心得違いをして、本来なら赤面してしかるべきのを得々と履行して未来の紳士だと思っている。これは働き手と云うのではない。ごろつき手と云うのである。吾輩も日本の猫だから多少の愛国心はある。こんな働き手を見るたびに撲ってやりたくなる。こんなものが一人でも殖えれば国家はそれだけ衰える訳である。こんな生徒のいる学校は、学校の恥辱であって、こんな人民のいる国家は国家の恥辱である。恥辱であるにも関らず、ごろごろ世間にごろついているのは心得がたいと思う。日本の人間は猫ほどの気概もないと見える。情ない事だ。こんなごろつき手に比べると主人などは遥かに上等な人間と云わなくてはならん。意気地のないところが上等なのである。無能なところが上等なのである。猪口才でないところが上等なのである。<br>
+　かくのごとく働きのない食い方をもって、<span id="evidence-251693-251735"></span><span id="evidence-251723-251726"></span><mark class="llmwiki-source-evidence">無事に朝食を済ましたる主人は、やがて洋服を着て、車へ乗って、日本堤分署へ出頭に及んだ</mark>。格子をあけた時、車夫に日本堤という所を知ってるかと聞いたら、車夫はへへへと笑った。あの遊廓のある吉原の近辺の日本堤だぜと念を押したのは少々滑稽であった。<br>
+　主人が珍らしく車で玄関から出掛けたあとで、<span id="evidence-251835-251837"></span><mark class="llmwiki-source-evidence">妻君</mark>は例のごとく食事を済ませて「さあ学校へおいで。遅くなりますよ」と催促すると、小供は平気なもので「あら、でも今日は御休みよ」と支度をする景色がない。「御休みなもんですか、早くなさい」と叱るように言って聞かせると「それでも昨日、先生が御休だって、おっしゃってよ」と姉はなかなか動じない。妻君もここに至って多少変に思ったものか、戸棚から暦を出して繰り返して見ると、赤い字でちゃんと御祭日と出ている。主人は祭日とも知らずに学校へ欠勤届を出したのだろう。細君も知らずに郵便箱へ抛り込んだのだろう。ただし迷亭に至っては実際知らなかったのか、知って知らん顔をしたのか、そこは少々疑問である。この発明におやと驚ろいた妻君はそれじゃ、みんなでおとなしく御遊びなさいと平生の通り針箱を出して仕事に取りかかる。<br>
+　その後三十分間は家内平穏、別段吾輩の材料になるような事件も起らなかったが、<span id="evidence-252220-252231"></span><mark class="llmwiki-source-evidence">突然妙な人が御客に来た</mark>。十七八の女学生である。踵のまがった靴を履いて、紫色の袴を引きずって、髪を算盤珠のようにふくらまして勝手口から案内も乞わずに上って来た。これは主人の姪である。学校の生徒だそうだが、折々日曜にやって来て、よく叔父さんと喧嘩をして帰って行く<span id="evidence-252349-252351"></span><mark class="llmwiki-source-evidence">雪江</mark>とか云う奇麗な名のお嬢さんである。もっとも顔は名前ほどでもない、ちょっと表へ出て一二町あるけば必ず</div>
+
+<p><a id="excerpt-127"></a></p>
+<h3 id="127">本文区間 127</h3>
+<p><span class="llmwiki-source-meta">本文区間 127 ・ 文字位置: 252000-254400</span></p>
+<div class="llmwiki-source-text">から暦を出して繰り返して見ると、赤い字でちゃんと御祭日と出ている。<span id="evidence-252033-252054"></span><mark class="llmwiki-source-evidence">主人は祭日とも知らずに学校へ欠勤届を出した</mark>のだろう。細君も知らずに郵便箱へ抛り込んだのだろう。ただし迷亭に至っては実際知らなかったのか、知って知らん顔をしたのか、そこは少々疑問である。この発明におやと驚ろいた妻君はそれじゃ、みんなでおとなしく御遊びなさいと平生の通り針箱を出して仕事に取りかかる。<br>
+　その後三十分間は家内平穏、別段吾輩の材料になるような事件も起らなかったが、突然妙な人が御客に来た。十七八の女学生である。踵のまがった靴を履いて、紫色の袴を引きずって、髪を算盤珠のようにふくらまして勝手口から案内も乞わずに上って来た。これは<span id="evidence-252302-252309"></span><mark class="llmwiki-source-evidence">主人の姪である</mark>。学校の生徒だそうだが、折々日曜にやって来て、よく叔父さんと喧嘩をして帰って行く雪江とか云う奇麗な名のお嬢さんである。もっとも顔は名前ほどでもない、ちょっと表へ出て一二町あるけば必ず逢える人相である。<br>
+「叔母さん今日は」と茶の間へつかつか這入って来て、針箱の横へ尻をおろした。<br>
+「おや、よく早くから……」<br>
+「今日は大祭日ですから、朝のうちにちょっと上がろうと思って、八時半頃から家を出て急いで来たの」<br>
+「そう、何か用があるの？」<br>
+「いいえ、ただあんまり御無沙汰をしたから、ちょっと上がったの」<br>
+「ちょっとでなくっていいから、緩くり遊んでいらっしゃい。今に叔父さんが帰って来ますから」<br>
+「叔父さんは、もう、どこへかいらしったの。珍らしいのね」<br>
+「ええ今日はね、妙な所へ行ったのよ。……警察へ行ったの、妙でしょう」<br>
+「あら、何で？」<br>
+「この春這入った泥棒がつらまったんだって」<br>
+「それで引き合に出されるの？　いい迷惑ね」<br>
+「なあに品物が戻るのよ。取られたものが出たから取りに来いって、昨日巡査がわざわざ来たもんですから」<br>
+「おや、そう、それでなくっちゃ、こんなに早く叔父さんが出掛ける事はないわね。いつもなら今時分はまだ寝ていらっしゃるんだわ」<br>
+「叔父さんほど、寝坊はないんですから……そうして起こすとぷんぷん怒るのよ。今朝なんかも七時までに是非おこせと云うから、起こしたんでしょう。すると夜具の中へ潜って返事もしないんですもの。こっちは心配だから二度目にまたおこすと、夜着の袖から何か云うのよ。本当にあきれ返ってしまうの」<br>
+「なぜそんなに眠いんでしょう。きっと神経衰弱なんでしょう」<br>
+「何ですか」<br>
+「本当にむやみに怒る方ね。あれでよく学校が勤まるのね」<br>
+「なに学校じゃおとなしいんですって」<br>
+「じゃなお悪るいわ。まるで<span id="evidence-253067-253071"></span><mark class="llmwiki-source-evidence">蒟蒻閻魔</mark>ね」<br>
+「なぜ？」<br>
+「なぜでも蒟蒻閻魔なの。だって蒟蒻閻魔のようじゃありませんか」<br>
+「ただ怒るばかりじゃないのよ。人が右と云えば左、左と云えば右で、何でも人の言う通りにした事がない、――そりゃ強情ですよ」<br>
+「天探女でしょう。叔父さんはあれが道楽なのよ。だから何かさせようと思ったら、うらを云うと、こっちの思い通りになるのよ。こないだ蝙蝠傘を買ってもらう時にも、いらない、いらないって、わざと云ったら、いらない事があるものかって、すぐ買って下すったの」<br>
+「ホホホホ旨いのね。わたしもこれからそうしよう」<br>
+「そうなさいよ。それでなくっちゃ損だわ」<br>
+「こないだ保険会社の人が来て、是非御這入んなさいって、勧めているんでしょう、――いろいろ訳を言って、こう云う利益があるの、ああ云う利益があるのって、何でも一時間も話をしたんですが、どうしても這入らないの。うちだって貯蓄はなし、こうして小供は三人もあるし、せめて保険へでも這入ってくれるとよっぽど心丈夫なんですけれども、そんな事は少しも構わないんですもの」<br>
+「そうね、もしもの事があると不安心だわね」と十七八の娘に似合しからん世帯染みたことを云う。<br>
+「その談判を蔭で聞いていると、本当に面白いのよ。なるほど保険の必要も認めないではない。必要なものだから会社も存在しているのだろう。しかし死なない以上は保険に這入る必要はないじゃないかって強情を張っているんです」<br>
+「叔父さんが？」<br>
+「ええ、すると会社の男が、それは死ななければ無論保険会社はいりません。しかし人間の命と云うものは丈夫なようで脆いもので、知らないうちに、いつ危険が逼っているか分りませんと云うとね、叔父さんは、大丈夫僕は<span id="evidence-253782-253795"></span><mark class="llmwiki-source-evidence">死なない事に決心をしている</mark>って、まあ無法な事を云うんですよ」<br>
+「決心したって、死ぬわねえ。わたしなんか是非及第するつもりだったけれども、とうとう落第してしまったわ」<br>
+「保険社員もそう云うのよ。寿命は自分の自由にはなりません。決心で長が生きが出来るものなら、誰も死ぬものはございませんって」<br>
+「保険会社の方が至当ですわ」<br>
+「至当でしょう。それがわからないの。いえ決して死なない。誓って死なないって威張るの」<br>
+「妙ね」<br>
+「妙ですとも、大妙ですわ。保険の掛金を出すくらいなら銀行へ貯金する方が遥かにましだってすまし切っているんですよ」<br>
+「貯金があるの？」<br>
+「あるもんですか。自分が死んだあとなんか、ちっとも構う考なんかないんですよ」<br>
+「本当に心配ね。なぜ、あんななんでしょう、ここへいらっしゃる方だって、叔父さんのようなのは一人もいないわね」<br>
+「いるものですか。無類ですよ」<br>
+「ちっと<span id="evidence-254171-254173"></span><mark class="llmwiki-source-evidence">鈴木</mark>さんにでも頼んで意見でもして貰うといいんですよ。ああ云う穏やかな人だとよっぽど楽ですがねえ」<br>
+「ところが鈴木さんは、うちじゃ評判がわるいのよ」<br>
+「みんな逆なのね。それじゃ、あの方がいいでしょう――ほらあの落ちついてる――」<br>
+「<span id="evidence-254286-254290"></span><mark class="llmwiki-source-evidence">八木さん</mark>？」<br>
+「ええ」<br>
+「八木さんには大分閉口しているんですがね。昨日迷亭さんが来て悪口をいったものだから、思ったほど利かないかも知れない」<br>
+「だっていいじゃありませんか。あんな風に鷹揚に落ちついていれば、――こないだ学校で演説</div>
+
+<p><a id="excerpt-128"></a></p>
+<h3 id="128">本文区間 128</h3>
+<p><span class="llmwiki-source-meta">本文区間 128 ・ 文字位置: 254000-256400</span></p>
+<div class="llmwiki-source-text">すわ。保険の掛金を出すくらいなら銀行へ貯金する方が遥かにましだってすまし切っているんですよ」<br>
+「貯金があるの？」<br>
+「あるもんですか。自分が死んだあとなんか、ちっとも構う考なんかないんですよ」<br>
+「本当に心配ね。なぜ、あんななんでしょう、ここへいらっしゃる方だって、叔父さんのようなのは一人もいないわね」<br>
+「いるものですか。無類ですよ」<br>
+「ちっと<span id="evidence-254171-254175"></span><mark class="llmwiki-source-evidence">鈴木さん</mark>にでも頼んで意見でもして貰うといいんですよ。ああ云う穏やかな人だとよっぽど楽ですがねえ」<br>
+「ところが鈴木さんは、うちじゃ評判がわるいのよ」<br>
+「みんな逆なのね。それじゃ、あの方がいいでしょう――ほらあの落ちついてる――」<br>
+「八木さん？」<br>
+「ええ」<br>
+「八木さんには大分閉口しているんですがね。昨日<span id="evidence-254321-254325"></span><mark class="llmwiki-source-evidence">迷亭さん</mark>が来て悪口をいったものだから、思ったほど利かないかも知れない」<br>
+「だっていいじゃありませんか。あんな風に鷹揚に落ちついていれば、――こないだ学校で演説をなすったわ」<br>
+「八木さんが？」<br>
+「ええ」<br>
+「<span id="evidence-254423-254440"></span><span id="evidence-254428-254432"></span><mark class="llmwiki-source-evidence">八木さんは雪江さんの学校の先生なの</mark>」<br>
+「いいえ、先生じゃないけども、淑徳婦人会のときに招待して、演説をして頂いたの」<br>
+「面白かって？」<br>
+「そうね、そんなに面白くもなかったわ。だけども、あの先生が、あんな長い顔なんでしょう。そうして天神様のような髯を生やしているもんだから、みんな感心して聞いていてよ」<br>
+「御話しって、どんな御話なの？」と<span id="evidence-254591-254593"></span><mark class="llmwiki-source-evidence">妻君</mark>が聞きかけていると椽側の方から、雪江さんの話し声をききつけて、<span id="evidence-254624-254644"></span><mark class="llmwiki-source-evidence">三人の子供がどたばた茶の間へ乱入して来た</mark>。今までは竹垣の外の空地へ出て遊んでいたものであろう。<br>
+「あら雪江さんが来た」と二人の姉さんは嬉しそうに大きな声を出す。妻君は「そんなに騒がないで、みんな静かにして御坐わりなさい。雪江さんが今面白い話をなさるところだから」と仕事を隅へ片付ける。<br>
+「雪江さん何の御話し、わたし御話しが大好き」と云ったのは<span id="evidence-254795-254798"></span><mark class="llmwiki-source-evidence">とん子</mark>で「やっぱりかちかち山の御話し？」と聞いたのは<span id="evidence-254821-254824"></span><mark class="llmwiki-source-evidence">すん子</mark>である。「<span id="evidence-254829-254831"></span><mark class="llmwiki-source-evidence">坊ば</mark>も御はなち」と云い出した三女は姉と姉の間から膝を前の方に出す。ただしこれは御話を承わると云うのではない、坊ばもまた御話を仕ると云う意味である。「あら、また坊ばちゃんの話だ」と姉さんが笑うと、妻君は「坊ばはあとでなさい。雪江さんの御話がすんでから」と賺かして見る。坊ばはなかなか聞きそうにない。「いやーよ、ばぶ」と大きな声を出す。「おお、よしよし坊ばちゃんからなさい。何と云うの？」と雪江さんは謙遜した。<br>
+「あのね。坊たん、坊たん、どこ行くのって」<br>
+「面白いのね。それから？」<br>
+「わたちは田圃へ稲刈いに」<br>
+「そう、よく知ってる事」<br>
+「御前がくうと邪魔になる」<br>
+「あら、くうとじゃないわ、くるとだわね」ととん子が口を出す。坊ばは相変らず「ばぶ」と一喝して直ちに姉を辟易させる。しかし中途で口を出されたものだから、続きを忘れてしまって、あとが出て来ない。「坊ばちゃん、それぎりなの？」と雪江さんが聞く。<br>
+「あのね。あとでおならは御免だよ。ぷう、ぷうぷうって」<br>
+「ホホホホ、いやだ事、誰にそんな事を、教わったの？」<br>
+「<span id="evidence-255286-255288"></span><mark class="llmwiki-source-evidence">御三</mark>に」<br>
+「わるい御三ね、そんな事を教えて」と妻君は苦笑をしていたが「さあ今度は雪江さんの番だ。坊やはおとなしく聞いているのですよ」と云うと、さすがの暴君も納得したと見えて、それぎり当分の間は沈黙した。<br>
+「八木先生の演説はこんなのよ」と雪江さんがとうとう口を切った。「昔ある辻の真中に大きな石地蔵があったんですってね。ところがそこがあいにく馬や車が通る大変賑やかな場所だもんだから邪魔になって仕様がないんでね、町内のものが大勢寄って、相談をして、どうしてこの石地蔵を隅の方へ片づけたらよかろうって考えたんですって」<br>
+「そりゃ本当にあった話なの？」<br>
+「どうですか、そんな事は何ともおっしゃらなくってよ。――でみんながいろいろ相談をしたら、その町内で一番強い男が、そりゃ訳はありません、わたしがきっと片づけて見せますって、一人でその辻へ行って、両肌を抜いで汗を流して引っ張ったけれども、どうしても動かないんですって」<br>
+「よっぽど重い石地蔵なのね」<br>
+「ええ、それでその男が疲れてしまって、うちへ帰って寝てしまったから、町内のものはまた相談をしたんですね。すると今度は町内で一番利口な男が、私に任せて御覧なさい、一番やって見ますからって、重箱のなかへ牡丹餅を一杯入れて、地蔵の前へ来て、『ここまでおいで』と云いながら牡丹餅を見せびらかしたんだって、地蔵だって食意地が張ってるから牡丹餅で釣れるだろうと思ったら、少しも動かないんだって。利口な男はこれではいけないと思ってね。今度は瓢箪へお酒を入れて、その瓢箪を片手へぶら下げて、片手へ猪口を持ってまた地蔵さんの前へ来て、さあ飲みたくはないかね、飲みたければここまでおいでと三時間ばかり、からかって見たがやはり動かないんですって」<br>
+「雪江さん、地蔵様は御腹が減らないの」ととん子がきくと「牡丹餅が食べたいな」とすん子が云った。<br>
+「利口な人は二度共しくじったから、その次には贋札を沢山こしらえて、さあ欲しいだろう、欲しければ取りにおいでと札を出したり引っ込ましたりしたがこれもまるで益に立たないんですって。よっぽど頑固な地蔵様なのよ」<br>
+「そうね。すこし叔父さんに似ているわ」<br>
+「ええまるで叔父さんよ、しまいに利口な人も愛想をつかしてやめてしまったんですとさ。それでそのあとからね、大きな法螺を吹く人が出て、私ならきっと片づけて見せますからご安心なさいとさも容易い事のように受合ったそうです」<br>
+「その法螺を吹く人は何をしたんです」<br>
+「それが面白いのよ。最初にはね巡査の服をきて、付け髯をして、地蔵様の前へきて、こらこら、動かんとその方のためにならんぞ、警察で棄てておかんぞと威張って見せたんです</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
